@@ -7,6 +7,16 @@ font-family: 'Poppins', sans-serif;
 */
 
 /* root styling */
+
+:root{
+  --light: #f8f9fa;
+  --secondary: #adb5bd;
+  --dark: #343a40;
+  --primary-color: #f15bb5;
+  --secondary-color: #2ec4b6;
+  --border: #e9ecef;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   padding: 0;
@@ -22,6 +32,22 @@ a{
 }
 
 /* global styling */
+.text-light{
+  color: var(--light);
 
+.text-secondary{
+  color: var(--secondary);
+
+.text-dark{
+  color: var(--dark);
+
+.text-primary{
+  color: var(--primary-color);
+
+.bg-light{
+  background-color: var(--light);
+
+
+}
 
 /* section styling */
