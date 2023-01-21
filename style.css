@@ -94,4 +94,52 @@ a{
   margin-right: 10px;
 }
 
+.toggle-button {
+  font-size: 21px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin: 8px 10px;
+  display: none;
+}
+
+.toggle-button:focus{
+  outline: none;
+}
+
 /*------ .Navigation Menu ------*/
+
+/* Media Query */
+
+@media (max-width:992px){
+  .navbar{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:574px){
+  .toggle-button{
+    display: initial;
+  }
+
+
+  .collapse{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.51,-0.15, 0, 0.98);
+  }
+
+  .collapse .nav-link{
+    display: block;
+    text-align: center;
+  }
+
+  .search-box{
+    border-right: none;
+  }
+
+  .collapse-toggle{
+    max-height: 500px;
+  }
+}
