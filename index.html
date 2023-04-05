@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Your Homepage</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-qqDgA6g1lT0JiSoo1ONsfZzLyRDvMOqaWWlHQ6Y9Mk2JfgTJ4+0pGQ6H5KRz+/Kd" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="notes.html">Notes</a></li>
-          <li><a href="chapters.html">Chapters</a></li>
-          <li><a href="references.html">References</a></li>
-          <li><a href="#"><i class="fas fa-search"></i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="far fa-envelope"></i></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h1>About</h1>
-        <p>Insert information about yourself here</p>
-      </section>
-    </main>
-    <footer>
-      <p>Insert footer information here</p>
-    </footer>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeppeO</title>
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- Header -->
+       <header id="header" class="shadow bg-light">
+           <nav class="container navbar">
+               <a href="/index.html" class="nav-brand text-dark">
+                    JeppeO
+                  </a>
+  
+                  <!-- toggle button -->
+                  <button class="toggle-button">
+                      <span><i class="fas fa-bars"></i></span>
+                  </button>
+  
+                  <!-- collapse on toggle button click -->
+                  <div class="collapse">
+                      <ul class="navbar-nav">
+                          <a href="#" class="nav-link">Home</a>
+                          <a href="#" class="nav-link">Notes</a>
+                          <a href="#" class="nav-link">Themes</a>
+                          <a href="#" class="nav-link">Lables</a>
+                          <a href="#" class="nav-link">Talks</a>
+                          <a href="#" class="nav-link">About</a>
+                      </ul>
+                  </div>
+      
+                      <!-- collapse on toggle button click -->
+                      <div class="collapse">
+                          <ul class="navbar-nav">
+                                <div class="search-box">
+                                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                                </div>
+                                <a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                          </ul>
+                      </div>
+            </nav>
+        </header>
+        <!--.Header-->
+
+        <!-- custom javascript main.js file-->
+        <script src="main.js"></script>
+      
+</body>
 </html>
