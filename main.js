@@ -1,58 +1,45 @@
-let toggle = document.querySelector("#header .toggle-button");
-let collapse = document.querySelectorAll("#header .collapse");
+// Navigation Menu
+const toggleNav = document.querySelector('.toggle-nav');
+const navLinks = document.querySelector('.nav-links');
 
-toggle.addEventListener('click' , function(){
-    collapse.forEach(col => col.classList.toggle("collapse-toggle"));
-})
-
-// with masonry
-new Masonry("#posts .grid", {
-    itemSelector : '.grid-item',
-    gutter : 20
+toggleNav.addEventListener('click', () => {
+  navLinks.classList.toggle('show-nav');
 });
 
-// swiper libray initialization
-new Swiper('.swiper-container', {
-    direction : 'horizontal',
-    loop : true,
-    slidesPerView : 5,
-    autoplay : {
-        delay : 3000
-    },
-    // responsive brakpoints
-    breakpoints : {
-        '@0' : {
-            slidesPerView : 2
-        },
-        // 888px
-        '@1.00' : {
-            slidesPerView : 3
-        },
-        // 1110px
-        '@1.25' : {
-            slidesPerView : 4
-        },
-        // 1330px
-        '@1.50' : {
-            slidesPerView: 5
-        }
-    }
-})
+// Smooth Scrolling
+const scrollLinks = document.querySelectorAll('a.scroll-link');
 
-// Sticky Navigation
-window.onscroll = function(){ myFunction()};
+scrollLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = e.target.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    const position = element.offsetTop - 100;
 
-// get the current value 
-let navbar = document.getElementById("header");
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: 'smooth',
+    });
+    navLinks.classList.remove('show-nav');
+  });
+});
 
-// get the navbar position
-let sticky = navbar.offsetTop;
+// Scroll to Top Button
+const scrollToTopBtn = document.querySelector('.scroll-to-top-btn');
 
-// sticky function
-function myFunction(){
-    if(window.pageYOffset >= sticky){
-        navbar.classList.add("sticky");
-    }else{
-        navbar.classList.remove("sticky");
-    }
-}
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 500) {
+    scrollToTopBtn.classList.add('show-scroll-btn');
+  } else {
+    scrollToTopBtn.classList.remove('show-scroll-btn');
+  }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: 'smooth',
+  });
+});
