@@ -14,13 +14,21 @@
     <!-- custom style.css file -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- htaccess file to remove file extensions from URLs -->
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME}\.html -f
+        RewriteRule ^(.*)$ $1.html
+    </IfModule>
+
 </head>
 <body>
     
     <!-- Header -->
        <header id="header" class="shadow bg-light">
            <nav class="container navbar">
-               <a href="/index.html" class="nav-brand text-dark">
+               <a href="/" class="nav-brand text-dark">
                     JeppeO
                   </a>
   
@@ -32,10 +40,10 @@
                   <!-- collapse on toggle button click -->
                   <div class="collapse">
                       <ul class="navbar-nav">
-                          <a href="notes.html" class="nav-link">Notes</a>
-                          <a href="#" class="nav-link">Articles</a>
-                          <a href="#" class="nav-link">Chapters</a>
-                          <a href="#" class="nav-link">Sources</a>
+                          <a href="/notes" class="nav-link">Notes</a>
+                          <a href="/articles" class="nav-link">Articles</a>
+                          <a href="/chapters" class="nav-link">Chapters</a>
+                          <a href="/sources" class="nav-link">Sources</a>
                       </ul>
                   </div>
       
