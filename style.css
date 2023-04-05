@@ -9,12 +9,12 @@
 /* root styling */
 
 :root{
-  --light: #f8f9fa;
-  --secondary: #adb5bd;
-  --dark: #343a40;
-  --primary-color: #f15bb5;
-  --secondary-color: #2ec4b6;
-  --border: #e9ecef;
+  --light: #f9f9f9;
+  --secondary: #d4af37;
+  --dark: #2c2c2c;
+  --primary-color: #ffcccc;
+  --secondary-color: #ccffcc;
+  --border: #ffffcc;
 }
 
 body{
