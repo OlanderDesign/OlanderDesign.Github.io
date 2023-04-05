@@ -1,140 +1,145 @@
-/* Color Palette */
-:root {
-  --dark-gray: #2d2d2d;
-  --gold: #ffd700;
-  --creamy-white: #f5f5f5;
-  --post-it-yellow: #ffff99;
-  --dusty-red: #a53c3c;
-  --dusty-green: #4f7942;
-}
-
 /* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  color: var(--dark-gray);
-  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #282828;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  color: inherit;
+  color: #f2f2f2;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-/* Navigation */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: var(--creamy-white);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+a:hover {
+  color: #ffd700;
 }
 
-nav .container {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #363636;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-nav .logo {
-  font-size: 1.5rem;
+.logo {
+  color: #ffd700;
+  font-size: 2rem;
   font-weight: 700;
 }
 
-nav .toggle-nav {
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: none;
-}
-
-nav .nav-links {
+nav {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-nav .nav-links ul {
+.nav-links {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
 }
 
-nav .nav-links ul li:not(:last-child) {
-  margin-right: 20px;
+.nav-links li a {
+  font-size: 1.5rem;
+  margin-left: 2rem;
 }
 
-nav .nav-links ul li a {
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 10px;
+.toggle-nav {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #f2f2f2;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Main Content Styles */
+main {
+  padding: 5rem 2rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #ffd700;
+}
+
+section ul li a {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  padding: 1rem;
+  border: 1px solid #f2f2f2;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-nav .nav-links ul li a:hover {
-  background-color: var(--post-it-yellow);
+section ul li a:hover {
+  background-color: #ffd700;
+  color: #282828;
 }
 
-nav .show-nav .toggle-nav:before {
-  content: '\f00d';
+/* Footer Styles */
+footer {
+  background-color: #363636;
+  color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
 }
-
-/* Mobile Navigation */
-@media screen and (max-width: 768px) {
-  nav .logo {
-    font-size: 1.3rem;
-  }
-
-  nav .toggle-nav {
-    display: block;
-  }
-
-  nav .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: var(--creamy-white);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  nav .nav-links ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav .nav-links ul li {
-    margin: 10px 0;
-  }
-
-  nav .show-nav .nav-links {
-    display: flex;
-    flex-direction: column;
-  }
-
-  nav .show-nav .toggle-nav:before {
-    content: '\f00c';
-  }
-}
-
-/* Scroll to Top Button */
-.scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--post-it-yellow);
-  color: var(--dark-gray);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size
