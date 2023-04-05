@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded", function () {
+    var nav = document.getElementById("navbar");
+    nav.innerHTML =
+      '<nav class="container navbar"><a href="/index.html" class="nav-brand text-dark">JeppeO</a><button class="toggle-button"><span><i class="fas fa-bars"></i></span></button><div class="collapse"><ul class="navbar-nav"><li class="nav-item"><a href="/notes.html" class="nav-link">Notes</a></li><li class="nav-item"><a href="/articles.html" class="nav-link">Articles</a></li><li class="nav-item"><a href="/chapters.html" class="nav-link">Chapters</a></li><li class="nav-item"><a href="/sources.html" class="nav-link">Sources</a></li></ul></div><div class="collapse"><ul class="navbar-nav"><div class="search-box"><a href="#" class="nav-link"><i class="fas fa-search"></i></a></div><a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a><a href="#" class="nav-link"><i class="fab fa-instagram"></i></a></ul></div></nav>';
+  });
+  
