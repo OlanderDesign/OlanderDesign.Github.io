@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JeppeO - Articles</title>
+    <title>Articles - JeppeO</title>
 
     <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
 
     <!-- custom style.css file -->
     <link rel="stylesheet" href="style.css">
@@ -14,59 +17,27 @@
 </head>
 <body>
     
-    <!-- Header -->
+    <!-- Include navigation.html -->
     <header id="header" class="shadow bg-light">
         <nav class="container navbar">
-            <a href="/index.html" class="nav-brand text-dark">
-                JeppeO
-            </a>
-
-            <!-- toggle button -->
-            <button class="toggle-button">
-                <span><i class="fas fa-bars"></i></span>
-            </button>
-
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <a href="/notes.html" class="nav-link">Notes</a>
-                    <a href="#" class="nav-link active">Articles</a>
-                    <a href="#" class="nav-link">Chapters</a>
-                    <a href="#" class="nav-link">Sources</a>
-                </ul>
-            </div>
-
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <div class="search-box">
-                        <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                </ul>
-            </div>
+            <!-- Include navigation.html -->
+            <!-- Use server-side includes (SSI) to include navigation.html. -->
+            <!-- SSI syntax varies depending on the server environment. -->
+            <!-- Example: -->
+            <!-- #include virtual="/path/to/navigation.html" -->
+            <!-- For more information, consult the documentation of your server environment. -->
+            <!-- Alternatively, you can use a server-side preprocessor like PHP or a static site generator like Jekyll to include navigation.html. -->
+            <!-- Example using PHP: -->
+            <!-- <?php include 'navigation.html'; ?> -->
+            <!-- Example using Jekyll: -->
+            <!-- {% include navigation.html %} -->
+            <!-- For more information, consult the documentation of your server environment or static site generator. -->
         </nav>
     </header>
     <!--.Header-->
 
-    <!-- Main content -->
-    <main class="container">
-        <h1 class="text-center mt-5">Articles</h1>
-        <p class="lead text-center mb-5">Check out the latest articles below.</p>
-
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Article Title 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis tristique nulla. Nulla facilisi. Etiam eget bibendum lectus. Mauris suscipit odio nec pharetra maximus.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <img src="https://via.placeholder.com/350x200" class="card
+    <main id="main">
+        <section class="container">
+            <h1 class="section-title">Articles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac posuere ex. Sed nec justo in eros volutpat eleifend. Sed convallis, massa ac auctor bibendum, sem ex commodo nisi, eu aliquet enim sapien in metus. Nullam euismod neque id venenatis ultrices. Ut non est quis lectus fringilla fringilla sit amet ut tortor. Aliquam porttitor convallis lacus, vel pellentesque metus. Fusce blandit turpis nulla, vitae placerat arcu cursus vel. Nulla id dolor lectus. Fusce non mauris non est tincidunt fringilla. Donec sodales sapien vel nisi bibendum luctus.</p>
+            <p>Etiam bibendum semper ligula id vestibulum. Morbi congue nisl auctor, hendrerit lectus in, vehicula quam. Sed eget orci sed est gravida bibendum ac nec justo. Praesent vitae lacinia ipsum. Aliquam mollis tinc

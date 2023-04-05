@@ -17,45 +17,39 @@
 </head>
 <body>
     
-    <!-- Header -->
-       <header id="header" class="shadow bg-light">
-           <nav class="container navbar">
-               <a href="/index.html" class="nav-brand text-dark">
-                    JeppeO
-                  </a>
-  
-                  <!-- toggle button -->
-                  <button class="toggle-button">
-                      <span><i class="fas fa-bars"></i></span>
-                  </button>
-  
-                  <!-- collapse on toggle button click -->
-                  <div class="collapse">
-                      <ul class="navbar-nav">
-                          <a href="/notes.html" class="nav-link">Notes</a>
-                          <a href="/articles.html" class="nav-link">Articles</a>
-                          <a href="/chapters.html" class="nav-link">Chapters</a>
-                          <a href="/sources.html" class="nav-link">Sources</a>
-                      </ul>
-                  </div>
-      
-                      <!-- collapse on toggle button click -->
-                      <div class="collapse">
-                          <ul class="navbar-nav">
-                                <div class="search-box">
-                                    <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                                </div>
-                                <a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                          </ul>
-                      </div>
-            </nav>
-        </header>
-        <!--.Header-->
+    <!-- Navigation -->
+    <nav id="navigation">
+        <!-- include navigation.html here -->
+        <?php include "navigation.html"; ?>
+    </nav>
+    <!-- End Navigation -->
 
-        <!-- custom javascript main.js file-->
-        <script src="main.js"></script>
-      
-</body>
-</html>
+    <!-- Header -->
+    <header id="header" class="shadow bg-light">
+        <div class="container">
+            <h1 class="text-center my-5">Welcome to my website!</h1>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <main id="main" class="py-5">
+        <div class="container">
+            <h2 class="mb-5">Latest Posts</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/400x300.png?text=Image+1" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Post Title 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor mauris vitae tempor maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed sem faucibus, varius magna nec, tempus lacus. </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/400x300.png?text=Image+2" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Post Title 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor mauris vitae tempor maximus. Pellentesque habitant morbi tristique senectus et net

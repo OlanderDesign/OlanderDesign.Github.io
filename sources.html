@@ -14,50 +14,53 @@
 </head>
 <body>
     
-    <!-- Header -->
-    <header id="header" class="shadow bg-light">
-        <nav class="container navbar">
-            <a href="/index.html" class="nav-brand text-dark">
-                JeppeO
-            </a>
+    <!-- Include Navigation Bar -->
+    <?php include('navigation.html'); ?>
 
-            <!-- toggle button -->
-            <button class="toggle-button">
-                <span><i class="fas fa-bars"></i></span>
-            </button>
-
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <a href="/notes.html" class="nav-link">Notes</a>
-                    <a href="/articles.html" class="nav-link">Articles</a>
-                    <a href="/chapters.html" class="nav-link">Chapters</a>
-                    <a href="/sources.html" class="nav-link">Sources</a>
-                </ul>
-            </div>
-
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <div class="search-box">
-                        <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!--.Header-->
-
-    <main class="container">
+    <!-- Main Content -->
+    <main class="container my-5">
         <h1>Sources</h1>
-        <!-- Add your sources here -->
+        <hr>
+
+        <div class="row my-5">
+            <div class="col-md-4 my-3">
+                <div class="card">
+                    <img src="https://picsum.photos/200/300" alt="Sample Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor vulputate urna, quis faucibus mi tempor vel.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="card">
+                    <img src="https://picsum.photos/200/300" alt="Sample Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor vulputate urna, quis faucibus mi tempor vel.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="card">
+                    <img src="https://picsum.photos/200/300" alt="Sample Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor vulputate urna, quis faucibus mi tempor vel.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <!-- custom javascript main.js file-->
     <script src="main.js"></script>
-  
+      
 </body>
 </html>

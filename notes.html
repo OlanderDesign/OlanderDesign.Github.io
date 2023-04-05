@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes - JeppeO</title>
+    <title>My Notes</title>
 
     <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -13,63 +13,59 @@
 
     <!-- custom style.css file -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    
-    <!-- Header -->
-    <header id="header" class="shadow bg-light">
-        <nav class="container navbar">
-            <a href="/index.html" class="nav-brand text-dark">
-                JeppeO
-            </a>
 
-            <!-- toggle button -->
-            <button class="toggle-button">
-                <span><i class="fas fa-bars"></i></span>
-            </button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/" class="nav-logo">My Website</a>
 
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav">
+            <!-- Menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
                     <a href="/notes.html" class="nav-link active">Notes</a>
-                    <a href="#" class="nav-link">Articles</a>
-                    <a href="#" class="nav-link">Chapters</a>
-                    <a href="#" class="nav-link">Sources</a>
-                </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/articles.html" class="nav-link">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/chapters.html" class="nav-link">Chapters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sources.html" class="nav-link">Sources</a>
+                </li>
+            </ul>
+
+            <!-- Search -->
+            <div class="nav-search">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
 
-            <!-- collapse on toggle button click -->
-            <div class="collapse">
-                <ul class="navbar-nav">
-                    <div class="search-box">
-                        <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="#" class="nav-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!--.Header-->
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- End Navigation -->
 
     <!-- Main Content -->
-    <main>
-        <div class="container">
-            <h1>Notes</h1>
-            <p>This is where you can take notes.</p>
-        </div>
-    </main>
-    <!--.Main Content-->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 JeppeO. All rights reserved.</p>
-        </div>
-    </footer>
-    <!--.Footer-->
-
-    <!-- font awesome icons cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js
+    <div class="container">
+        <h1 class="page-title">My Notes</h1>
+        <p>Welcome to my notes page! Here I'll share some of my insights and ideas on various topics.</p>
+        <p>Check out some of my recent notes below:</p>
+        
+        <!-- Notes -->
+        <div class="notes-wrapper">
+            <div class="note-item">
+                <h2 class="note-title">The Importance of Sleep</h2>
+                <p class="note-date">April 1st, 2023</p>
+                <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada odio sit amet purus ultrices, id tincidunt nisi ultricies. Sed aliquam augue a odio vulputate mollis.</p>
+            </div>
+            
+            <div class
