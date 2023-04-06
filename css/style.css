@@ -132,8 +132,8 @@ nav button img {
 
 /* Footer */
 footer {
-  background-color: var(--filler-color);
-  color: var(--text-color);
+  background-color: var(--background-color);
+  color: var(--filler-color);
   text-align: center;
   padding: 20px;
   margin-top: 20px;
