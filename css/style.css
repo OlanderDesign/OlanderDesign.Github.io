@@ -137,21 +137,12 @@ nav button img {
   width: 100px;
   height: 100px;
   padding: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15), 0 16px 32px rgba(0,0,0,0.15);
+} /* Add shadow effect */
   transform: rotate(-2deg); /* Add rotation effect */
   position: relative;
 }
 
-.post-it:before {
-  content: ""; /* Add pseudo element */
-  position: absolute; /* Set position to absolute */
-  top: 0;
-  right: 0;
-  border-top: 20px solid transparent; /* Create triangle shape */
-  border-bottom: 20px solid var(--pale-yellow); /* Create triangle shape */
-  border-left: 20px solid transparent; /* Create triangle shape */
-  transform: rotate(-45deg); /* Rotate pseudo element */
-}
 
 
 
