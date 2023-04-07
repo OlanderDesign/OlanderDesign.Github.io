@@ -51,7 +51,7 @@ mark {
 .blue-line {
   position: relative;
   display: inline-block;
-  font-size: inherit;
+  font-size: inherit !important;
 }
 
 .blue-line::after {
