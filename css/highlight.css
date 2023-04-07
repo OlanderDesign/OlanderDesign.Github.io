@@ -27,7 +27,7 @@ mark {
   top: -0.2em;
   width: calc(100% + 0.4em);
   height: calc(100% + 0.4em);
-  border: 1px solid var(--red);
+  border: 1px solid #ff0000;
   border-radius: 50%;
   opacity: 0.7;
   transform: rotate(2deg);
@@ -50,11 +50,6 @@ mark {
 /* Creates a blue line under text */
 .blue-line {
   position: relative;
-  font-size: inherit;
-}
-
-.blue-line {
-  position: relative;
   display: inline-block;
   font-size: inherit;
 }
@@ -67,7 +62,7 @@ mark {
   width: 100%;
   border-bottom: 1px solid blue;
   opacity: 0.7;
-  transform: skewY(-3deg);
+  transform: skewY(-1deg);
 }
 
 
