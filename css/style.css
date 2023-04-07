@@ -89,28 +89,31 @@ mark {
 
 /* create a red circle around a word */
 .red-circle {
-  position: relative;
   display: inline-block;
-  border: 2px solid red;
-  border-radius: 50%;
-  padding: 0.1em;
+  position: relative;
+  padding: 0.1em 0.2em;
+  overflow: hidden;
 }
 
-.red-circle:before, .red-circle:after {
-  content: '';
+.red-circle:before,
+.red-circle:after {
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 2px;
-  background: red;
-  top: 50%;
-  left: 0;
-  transform: rotate(-45deg);
+  z-index: -1;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  border: 1px solid red;
 }
 
 .red-circle:after {
-  left: auto;
-  right: 0;
-  transform: rotate(135deg);
+  transform: rotate(45deg);
+}
+
+.red-circle:before {
+  transform: rotate(-45deg);
 }
 
 
