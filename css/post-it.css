@@ -20,7 +20,7 @@
 /* post-it */
 .post-it {
   font-family: 'Indie Flower', cursive; /* Set font */
-  font-size: clamp(14px, 4vw, 30px); /* Add font size */
+  font-size: clamp(10px, 4vw, 30px); /* Add font size */
   line-height: 1.2; /* Add line spacing */
   background-color: var(--yellow); /* Set background color */
   width: 150px;
