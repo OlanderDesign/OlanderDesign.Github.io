@@ -74,6 +74,10 @@ a {
   transform: skew(-10deg);
 }
 
+mark {
+  background: var(--yellow);
+}
+
 /* Footer */
 footer {
   background-color: var(--background-color);
