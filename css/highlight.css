@@ -1,13 +1,6 @@
-/* Colors */
-:root {
-  --text-color: #222222;
-  --red: #FF9A9A;
-  --green: #e6eebf;
-  --yellow: #fff4bc;
-
 /* highlighter */
 mark {
-  background: linear-gradient(to bottom, transparent 40%, var(--yellow) 60%);
+  background: linear-gradient(to bottom, transparent 40%, #F3d643 60%);
   font-size: inherit;
 }
 
