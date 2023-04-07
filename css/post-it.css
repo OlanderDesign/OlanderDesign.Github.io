@@ -1,0 +1,42 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,700;1,300&family=Patrick+Hand+SC&display=swap');
+
+/* Colors */
+:root {
+  --text-color: #222222;
+  --red: #fa897b;
+  --green: #d0e6a5;
+  --pale-yellow: #f8ffd6;
+}
+
+/* Container for post-its */
+.post-its-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  flex-wrap: wrap; /* allow multiple post-its in the same line */
+}
+
+/* post-it */
+.post-it {
+  font-family: 'Indie Flower', cursive; /* Set font */
+  font-size: 14px; /* Add font size */
+  line-height: 1.2; /* Add line spacing */
+  background-color: var(--pale-yellow); /* Set background color */
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15), 0 16px 32px rgba(0,0,0,0.15);
+  /* Add shadow effect */
+  transform: rotate(-2deg); /* Add rotation effect */
+  position: relative;
+  margin: 10px; /* add margin for spacing */
+}
+
+/* used for filling out no post-it areas */
+.empty-slot {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px dashed #ccc;
+}
