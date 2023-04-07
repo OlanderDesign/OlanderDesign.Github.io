@@ -6,7 +6,7 @@
   --text-color: #222222;
   --red: #fa897b;
   --green: #d0e6a5;
-  --pale-yellow: #f8ffd6;
+  --yellow: #ffff99;
 }
 
 /* Container for post-its */
@@ -22,7 +22,7 @@
   font-family: 'Indie Flower', cursive; /* Set font */
   font-size: 14px; /* Add font size */
   line-height: 1.2; /* Add line spacing */
-  background-color: var(--pale-yellow); /* Set background color */
+  background-color: var(--yellow); /* Set background color */
   width: 150px;
   height: 150px;
   padding: 10px;
