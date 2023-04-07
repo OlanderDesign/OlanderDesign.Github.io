@@ -1,0 +1,109 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,700;1,300&family=Patrick+Hand+SC&display=swap');
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Colors */
+:root {
+  --text-color: #222222;
+  --background-color: #fffff0;
+  --filler-color: #e6be8a;
+  --red: #fa897b;
+  --green: #d0e6a5;
+  --pale-yellow: #f8ffd6;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'lato', cursive;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Navigation bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--filler-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+}
+
+nav button img {
+  height: 20px;
+}
+
+/* Font Awesome icons */
+.fa {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-linkedin:before {
+  content: "\f08c";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
