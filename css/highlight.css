@@ -5,11 +5,12 @@
 }*/
 
 mark {
-  background: linear-gradient(to right, transparent 5%, #F3d643 90%, transparent 5%);
+  background: linear-gradient(to right, transparent 2%, #F3d643 5%, #F3d643 102%, transparent 105%);
   font-size: inherit;
   background-size: 100% 80%;
-  background-position-y: -10%;
+  background-position: -10% 10%;
 }
+
 
 
 /* cirkle a text w red */
