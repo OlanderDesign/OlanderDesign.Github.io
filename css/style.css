@@ -152,7 +152,13 @@ nav button img {
   margin: 10px; /* add margin for spacing */
 }
 
-
+/* used for filling out no post-it areas */
+.empty-slot {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 1px dashed #ccc;
+}
 
 
 /* Footer */
