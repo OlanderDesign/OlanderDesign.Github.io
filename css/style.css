@@ -132,26 +132,27 @@ nav button img {
 
 /* post-it */
 .post-it {
-  font-family: 'Indie Flower', cursive;
-  background-color: var(--pale-yellow);
+  font-family: 'Indie Flower', cursive; /* Set font */
+  background-color: var(--pale-yellow); /* Set background color */
   width: 100px;
   height: 100px;
   padding: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  transform: rotate(-2deg);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  transform: rotate(-2deg); /* Add rotation effect */
   position: relative;
 }
 
 .post-it:before {
-  content: "";
-  position: absolute;
+  content: ""; /* Add pseudo element */
+  position: absolute; /* Set position to absolute */
   top: 0;
   right: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid var(--pale-yellow);
-  border-left: 20px solid transparent;
-  transform: rotate(-45deg);
+  border-top: 20px solid transparent; /* Create triangle shape */
+  border-bottom: 20px solid var(--pale-yellow); /* Create triangle shape */
+  border-left: 20px solid transparent; /* Create triangle shape */
+  transform: rotate(-45deg); /* Rotate pseudo element */
 }
+
 
 
 /* Footer */
