@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,700;1,300&family=Patrick+Hand+SC&display=swap');
 
 /* Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: 'lato', cursive;
   font-size: 18px;
   color: var(--text-color);
   background-color: var(--background-color);
