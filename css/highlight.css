@@ -6,46 +6,34 @@ mark {
 
 /* Create a red circle around a word */
 .red-circle {
-  /* Add padding to keep circle close to word */
-  padding: 0.1em 0.2em;
-  /* Set position property to relative */
   position: relative;
-  /* Set display property to inline-block */
-  display: inline-block;
 }
 
-/* Create a thin red line for the circle */
-.red-circle:before,
-.red-circle:after {
-  /* Create an empty pseudo-element */
-  content: "";
-  /* Set position property to absolute */
+.red-circle::before {
+  content: '';
   position: absolute;
-  /* Set the z-index to be below the text */
   z-index: -1;
-  /* Set the width and height to create a circle */
-  width: 1.1em;
-  height: 1.1em;
-  /* Set the border to create a thin red line */
+  left: -0.2em;
+  top: -0.2em;
+  width: calc(100% + 0.4em);
+  height: calc(100% + 0.4em);
   border: 2px solid var(--red);
-  /* Set the border radius to create a circular shape */
   border-radius: 50%;
-  /* Rotate the circle slightly to give a hand-drawn look */
-  transform: rotate(-5deg);
-  /* Set the opacity to make it semi-transparent */
   opacity: 0.7;
+  transform: rotate(2deg);
 }
 
-/* Position the before pseudo-element */
-.red-circle:before {
-  /* Position it at the top-left corner of the text */
-  top: -0.1em;
-  left: -0.1em;
+.red-circle::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -0.2em;
+  top: -0.2em;
+  width: calc(100% + 0.4em);
+  height: calc(100% + 0.4em);
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+  opacity: 0.7;
+  transform: rotate(-1deg);
 }
 
-/* Position the after pseudo-element */
-.red-circle:after {
-  /* Position it at the bottom-right corner of the text */
-  bottom: -0.1em;
-  right: -0.1em;
-}
