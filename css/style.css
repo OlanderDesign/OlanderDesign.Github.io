@@ -11,7 +11,7 @@
   --filler-color: #e6be8a;
   --red: #fa897b;
   --green: #d0e6a5;
-  --yellow: #f8ffd6;
+  --pale-yellow: #f8ffd6;
 }
 
 /* Global styles */
@@ -129,6 +129,30 @@ nav button img {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
+/* post-it */
+.post-it {
+  font-family: 'Indie Flower', cursive;
+  background-color: var(--pale-yellow);
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transform: rotate(-2deg);
+  position: relative;
+}
+
+.post-it:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid var(--pale-yellow);
+  border-left: 20px solid transparent;
+  transform: rotate(-45deg);
+}
+
 
 /* Footer */
 footer {
