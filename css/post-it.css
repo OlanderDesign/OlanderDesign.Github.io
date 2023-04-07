@@ -33,6 +33,15 @@
   margin: 10px; /* add margin for spacing */
 }
 
+/* Define background colors using CSS variables */
+.post-it.green {
+  background-color: var(--green); /* Set background color */
+}
+
+.post-it.red {
+  background-color: var(--red); /* Set background color */
+}
+
 /* used for filling out no post-it areas */
 .empty-post {
   font-family: 'Indie Flower', cursive; /* Set font */
