@@ -7,8 +7,8 @@
 mark {
   background: linear-gradient(to right, transparent 2%, #F3d643 5%, #F3d643 102%, transparent 105%);
   font-size: inherit;
-  background-size: 80% 80%;
-  background-position: -10% 10%;
+  background-size: 105%, 80%;
+  background-position: -10px, 10px;
 }
 
 
@@ -60,7 +60,7 @@ mark {
   left: 0;
   bottom: 0.2em;
   width: 100%;
-  border-bottom: 1px solid 00ff00;
+  border-bottom: 1px solid #00ff00;
   opacity: 0.7;
   transform: skewY(-1deg);
 }
