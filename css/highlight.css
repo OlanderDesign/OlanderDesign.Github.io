@@ -1,0 +1,26 @@
+/* highlighter */
+mark {
+  background: linear-gradient(to bottom, transparent 40%, yellow 60%);
+  font-size: inherit;
+}
+
+/* create a red circle around a word */
+.red-circle {
+  position: relative;
+  display: inline-block;
+  padding: 0.1em 0.2em;
+}
+
+.red-circle::before {
+  content: "";
+  position: absolute;
+  top: 0.1em;
+  left: 0.1em;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 1.1em;
+  height: 1.1em;
+  transform: rotate(-5deg);
+  z-index: -1;
+  opacity: 0.7;
+}
