@@ -35,8 +35,23 @@
 
 /* used for filling out no post-it areas */
 .empty-slot {
+  font-family: 'Indie Flower', cursive; /* Set font */
+  font-size: 14px; /* Add font size */
+  line-height: 1.2; /* Add line spacing */
   width: 150px;
   height: 150px;
   background-color: transparent;
   border: 1px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-slot::before {
+  content: "post-it!";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ccc;
+  opacity: 0.5;
 }
