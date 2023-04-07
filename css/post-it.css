@@ -30,7 +30,7 @@
   /* Add shadow effect */
   transform: rotate(-2deg); /* Add rotation effect */
   position: relative;
-  margin: 10px; /* add margin for spacing */
+  margin: 20px; /* add margin for spacing */
   display: flex; /* Add display flex */
   flex-direction: column; /* Add flex direction */
   justify-content: center;
