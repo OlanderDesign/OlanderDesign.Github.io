@@ -1,8 +1,16 @@
 /* highlighter */
-mark {
+/*mark {
   background: linear-gradient(to bottom, transparent 40%, #F3d643 60%);
   font-size: inherit;
+}*/
+
+mark {
+  background: linear-gradient(to right, transparent 5%, #F3d643 90%, transparent 5%);
+  font-size: inherit;
+  background-size: 105% 80%;
+  background-position-y: -10%;
 }
+
 
 /* cirkle a text w red */
 .red-circle {
