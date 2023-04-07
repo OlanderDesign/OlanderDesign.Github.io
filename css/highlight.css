@@ -60,7 +60,7 @@ mark {
   left: 0;
   bottom: 0.2em;
   width: 100%;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid 00ff00;
   opacity: 0.7;
   transform: skewY(-1deg);
 }
