@@ -141,6 +141,8 @@ nav button img {
 /* post-it */
 .post-it {
   font-family: 'Indie Flower', cursive; /* Set font */
+  font-size: 14px; /* Add font size */
+  line-height: 1.2; /* Add line spacing */
   background-color: var(--pale-yellow); /* Set background color */
   width: 150px;
   height: 150px;
