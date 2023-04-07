@@ -130,6 +130,14 @@ nav button img {
   margin-bottom: 20px;
 }
 
+/* Container for post-its */
+.post-its-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  flex-wrap: wrap; /* allow multiple post-its in the same line */
+}
+
 /* post-it */
 .post-it {
   font-family: 'Indie Flower', cursive; /* Set font */
@@ -140,10 +148,8 @@ nav button img {
   box-shadow: 0 1px 2px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15), 0 8px 16px rgba(0,0,0,0.15), 0 16px 32px rgba(0,0,0,0.15);
   /* Add shadow effect */
   transform: rotate(-2deg); /* Add rotation effect */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 10px; /* add margin for spacing */
 }
 
 
