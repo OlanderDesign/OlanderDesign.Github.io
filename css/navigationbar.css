@@ -9,9 +9,6 @@
   --text-color: #222222;
   --background-color: #fffff0;
   --filler-color: #e6be8a;
-  --red: #fa897b;
-  --green: #d0e6a5;
-  --pale-yellow: #fdfd96;
 }
 
 /* Global styles */
@@ -46,6 +43,7 @@ nav {
   align-items: center;
   padding: 0 20px;
   z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
