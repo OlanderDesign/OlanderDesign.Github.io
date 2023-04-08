@@ -1,22 +1,10 @@
 /* highlighter */
-/*mark {
-  background: linear-gradient(to bottom, transparent 40%, #F3d643 60%);
-  font-size: inherit;
-}
-
-.highlight {
-  background: linear-gradient(to right, transparent 5%, #F3d643 95%);
-  font-size: inherit;
-  background-size: 120% 100%;
-  background-position: center center;
-}*/
-
 .highlight {
   position: relative;
 }
 
 .highlight::before {
-  background-color: #46b96c;
+  background-color: linear-gradient(to right, transparent 5%, #46b96c 95%);
   content: "";
   position: absolute;
   width: calc(100% + 4px);
