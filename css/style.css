@@ -60,7 +60,7 @@ mark {
 
 /* underlining */
 u {
-  font-size: inherit;
+  font-size: 16px;
   border-bottom: 1px solid red;
   display: inline-block;
   padding: 0 0.1em;
