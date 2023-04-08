@@ -51,11 +51,11 @@ mark {
 .blue-line {
   position: relative;
   display: inline-block;
-  font-size: 1em;
+  font-size: inherit;
 }
 
 .blue-line::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0.2em;
