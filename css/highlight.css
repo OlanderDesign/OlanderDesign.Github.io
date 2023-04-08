@@ -50,7 +50,7 @@ red-circle::after {
 /* Creates a blue line under text */
 .blue-line {
   position: relative;
-  display: inline-block;
+/*  display: inline-block;*/
   font-size: inherit;
 }
 
