@@ -47,7 +47,7 @@ a {
 }
 
 .container p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -60,7 +60,7 @@ mark {
 
 /* underlining */
 u {
-  font-size: 16px;
+  font-size: inherit;
   border-bottom: 1px solid red;
   display: inline-block;
   padding: 0 0.1em;
