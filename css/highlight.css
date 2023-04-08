@@ -1,10 +1,12 @@
 /* highlighter */
 .highlight {
   position: relative;
+  
 }
 
 .highlight::before {
   background-color: linear-gradient(to right, transparent 5%, #46b96c 95%);
+  border-radius: 0 0 0.5em 0;
   content: "";
   position: absolute;
   width: calc(100% + 4px);
