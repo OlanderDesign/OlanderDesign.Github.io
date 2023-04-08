@@ -15,12 +15,12 @@
 
 .side-panel {
   position: fixed;
-  top: 60px;
+  top: 55px;
   left: 0;
   width: 20%;
   padding: 20px;
   background-color: #fffff0;
-  border: 0.1px solid #222222;
+  border: 0.01px solid #222222;
   font-size: 16px;
   box-shadow: 2px 2px 4px rgba(0, -1, 0, 0.1);
 }

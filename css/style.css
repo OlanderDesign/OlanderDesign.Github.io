@@ -64,14 +64,14 @@ mark {
   border-bottom: 1px solid red;
   display: inline-block;
   padding: 0 0.1em;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 /* red circle */
 /* cirkle a text w red */
 .red-o {
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .red-o::before {
