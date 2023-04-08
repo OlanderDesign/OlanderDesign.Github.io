@@ -14,12 +14,12 @@
 
 
 /* cirkle a text w red */
-red-circle {
+.red-circle {
   position: relative;
   font-size: inherit;
 }
 
-red-circle::before {
+.red-circle::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -33,7 +33,7 @@ red-circle::before {
   transform: rotate(2deg);
 }
 
-red-circle::after {
+.red-circle::after {
   content: '';
   position: absolute;
   z-index: -1;
