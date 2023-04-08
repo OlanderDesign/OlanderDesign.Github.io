@@ -1,6 +1,6 @@
 /* highlighter */
 mark {
-  background: linear-gradient(to bottom, transparent 50%, #fedc56 45%, transparent 5%);
+  background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
   font-size: inherit;
 }
 
