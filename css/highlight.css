@@ -5,10 +5,10 @@
 }*/
 
 mark {
-  background: linear-gradient(to right, transparent 1%, #F3d643 10%, #F3d643 90%, transparent 100%);
+  background: linear-gradient(to right, transparent 5%, #F3d643 10%, #F3d643 90%, transparent 100%);
   font-size: inherit;
-  background-size: 110% 50% !important;
-  background-position: -10px 10px !important;
+  background-size: 120% 50% !important;
+  background-position: -10% 10% !important;
 }
 
 
