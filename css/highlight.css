@@ -2,20 +2,20 @@
 /*mark {
   background: linear-gradient(to bottom, transparent 40%, #F3d643 60%);
   font-size: inherit;
-}*/
+}
 
 .highlight {
   background: linear-gradient(to right, transparent 5%, #F3d643 95%);
   font-size: inherit;
   background-size: 120% 100%;
   background-position: center center;
-}
+}*/
 
-mark {
+.highlight {
   position: relative;
 }
 
-mark::before {
+.highlight::before {
   background-color: #46b96c;
   content: "";
   position: absolute;
