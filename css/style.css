@@ -23,7 +23,7 @@
 
 body {
   font-family: 'lato', cursive;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -48,10 +48,9 @@ a {
 }
 
 .container p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
   margin-bottom: 20px;
-  resize: none;
 }
 
 /* highlighter */
