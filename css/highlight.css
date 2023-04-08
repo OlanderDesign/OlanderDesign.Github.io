@@ -5,7 +5,7 @@
 }
 
 .highlight::before {
-  background-color: linear-gradient(to right, transparent 5%, #46b96c 95%);
+  background-color: #46b96c;
   border-radius: 0 0 0.5em 0;
   content: "";
   position: absolute;
