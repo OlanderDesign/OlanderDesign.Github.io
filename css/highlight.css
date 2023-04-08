@@ -24,15 +24,18 @@ mark {
 
 /* circle a text with red */
 .red-circle {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: inherit;
-  z-index: 1; /* add this property to .red-circle */
+  z-index: 0;
 }
 
-.red-circle::before {
+.red-circle::before,
+.red-circle::after {
   content: "";
   position: absolute;
-  z-index: 1; /* add this property to .red-circle::before */
+  z-index: -1;
   left: -0.2em;
   top: -0.2em;
   width: calc(100% + 0.4em);
@@ -40,22 +43,16 @@ mark {
   border: 1px solid #ff0000;
   border-radius: 50%;
   opacity: 0.7;
+}
+
+.red-circle::before {
   transform: rotate(2deg);
 }
 
 .red-circle::after {
-  content: "";
-  position: absolute;
-  z-index: 1; /* add this property to .red-circle::after */
-  left: -0.2em;
-  top: -0.2em;
-  width: calc(100% + 0.4em);
-  height: calc(100% + 0.4em);
-  border: 1px solid #ff0000;
-  border-radius: 50%;
-  opacity: 0.7;
   transform: rotate(-1deg);
 }
+
 
 /* Creates a blue line under text */
 .blue-line {
