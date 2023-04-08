@@ -61,12 +61,11 @@ mark {
 }
 
 /* underlining */
-u {
+.redLine {
   border-bottom: 1px solid red;
   display: inline-block;
   padding: 0 0.1em;
-  text-decoration: none; /* remove default underline */
-  resize: none;
+  font-size: inherit;
 }
 
 /* red circle */
