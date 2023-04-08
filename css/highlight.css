@@ -5,12 +5,8 @@ mark {
 }
 
 /* underlining */
-u::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  border-bottom: 2px solid red;
-  transform: skew(-20deg) rotate(5deg);
+u {
+  border-bottom: 1px solid red;
+  display: inline-block;
+  padding: 0 0.1em;
 }
-
