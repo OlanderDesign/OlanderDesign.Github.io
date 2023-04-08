@@ -7,7 +7,7 @@
 .highlight::before {
   background-color: #46b96c;
   border-radius: 0 0 0.5em 0;
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100% + 4px);
   height: 60%;
@@ -26,7 +26,7 @@
 }
 
 .red-circle::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: -0.2em;
@@ -40,7 +40,7 @@
 }
 
 .red-circle::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: -0.2em;
@@ -62,7 +62,7 @@
 }
 
 .blue-line::before {
-  content: '';
+  content: "";
   z-index: -1;
   left: 0;
   bottom: 0;
