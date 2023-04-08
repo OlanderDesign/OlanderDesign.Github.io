@@ -4,7 +4,7 @@
   font-size: inherit;
 }*/
 
-mark {
+.highlight {
   background: linear-gradient(to right, transparent 5%, #F3d643 10%, #F3d643 90%, transparent 100%);
   font-size: inherit;
   background-size: 120% 50% !important;
