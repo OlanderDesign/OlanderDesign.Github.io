@@ -7,8 +7,8 @@
 mark {
   background: linear-gradient(to right, transparent 1%, #F3d643 10%, #F3d643 90%, transparent 100%);
   font-size: inherit;
-  background-size: 110% 50%;
-  background-position: -10px 10px;
+  background-size: 110% 50% !important;
+  background-position: -10px 10px !important;
 }
 
 
