@@ -5,11 +5,12 @@ mark {
 }
 
 /* underlining */
-u {
-  border-bottom: 1px solid red; /* change the color to red */
-  display: inline-block;
-  transform: skew(-15deg);
-  font-style: italic;
-  letter-spacing: 0.2em;
-  padding: 0 0.1em;
+u::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 2px solid red;
+  transform: skew(-20deg) rotate(5deg);
 }
+
