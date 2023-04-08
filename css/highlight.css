@@ -2,13 +2,11 @@
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 45%, transparent 5%);
   font-size: inherit;
+  position: relative; /* add this property to mark */
 }
-
-
 
 .highlight {
   position: relative;
-  
 }
 
 .highlight::before {
@@ -24,18 +22,17 @@ mark {
   transform: rotate(-2deg);
 }
 
-
-
-/* cirkle a text w red */
+/* circle a text with red */
 .red-circle {
   position: relative;
   font-size: inherit;
+  z-index: 1; /* add this property to .red-circle */
 }
 
 .red-circle::before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1; /* add this property to .red-circle::before */
   left: -0.2em;
   top: -0.2em;
   width: calc(100% + 0.4em);
@@ -49,7 +46,7 @@ mark {
 .red-circle::after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1; /* add this property to .red-circle::after */
   left: -0.2em;
   top: -0.2em;
   width: calc(100% + 0.4em);
@@ -84,4 +81,3 @@ mark {
   opacity: 0.5;
   border-radius: 0.25em;
 }
-
