@@ -7,7 +7,7 @@
 .highlight::before {
   background-color: #46b96c;
   border-radius: 0 0 0.5em 0;
-  content: "";
+  content: '';
   position: absolute;
   width: calc(100% + 4px);
   height: 60%;
@@ -58,10 +58,11 @@
   position: relative;
   display: inline-block;
   padding-bottom: 0.25em; /* add some space between text and line */
+  font-size: inherit;
 }
 
 .blue-line::before {
-  content: "";
+  content: '';
   z-index: -1;
   left: 0;
   bottom: 0;
