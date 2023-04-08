@@ -56,19 +56,24 @@
 /* Creates a blue line under text */
 .blue-line {
   position: relative;
-/*  display: inline-block;*/
-  font-size: inherit;
+  display: inline-block;
+  padding-bottom: 0.25em; /* add some space between text and line */
 }
 
-.blue-line::after {
-  content: '';
-  position: absolute;
+.blue-line::before {
+  content: "";
+  z-index: -1;
   left: 0;
-  bottom: 0.2em;
-  width: 100%;
-  border-bottom: 1px solid #0000ff;
-  opacity: 0.7;
-  transform: skewY(-1deg);
+  bottom: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0077be; /* change to a brighter shade of blue */
+  position: absolute;
+  border-top-color: transparent; /* remove the right border */
+  width: 70%; /* make the line narrower */
+  height: 0; /* remove the height */
+  transform: rotate(-2deg);
+  opacity: 0.5;
+  border-radius: 0.25em;
 }
-
 
