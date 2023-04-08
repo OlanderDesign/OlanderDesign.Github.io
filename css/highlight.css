@@ -1,4 +1,11 @@
 /* highlighter */
+mark {
+  background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
+  font-size: inherit;
+}
+
+
+
 .highlight {
   position: relative;
   
