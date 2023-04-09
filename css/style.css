@@ -42,6 +42,7 @@ a {
   border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
 }
 
+
 .container-panel {
   max-width: calc(80vw - 20%); /* set max width to 80% of available width (100% - 20% for the side panel) */
   margin: 100px 0; /* add 100 pixels of margin on the top and bottom, and 0 margin on left and right */
