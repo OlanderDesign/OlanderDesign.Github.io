@@ -92,6 +92,12 @@ mark {
   z-index: -1;
 }
 
+.text-with-line {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
 
 /* red circle */
 /* cirkle a text w red */
