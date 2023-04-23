@@ -7,8 +7,8 @@
 /* Colors */
 :root {
   --text-color: #222222;
-  --background-color: #fffff0;
-  --filler-color: #e6be8a;
+  --background-color: #f9f9f9; /*#fffff0*/
+  --filler-color: #ffffff; /*#e6be8a*/
 }
 
 /* Global styles */
