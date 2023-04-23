@@ -75,6 +75,24 @@ mark {
   font-size: 1.6em;
 }
 
+.corp-rebels-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.corp-rebels-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #d91e18;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+
+
 /* red circle */
 /* cirkle a text w red */
 .red-o {
