@@ -23,10 +23,18 @@
 
 body {
   font-family: 'lato', cursive;
-  font-size: 16px;
+  font-size: 2.5vw; /* Set font size based on viewport width */
+  line-height: 1.5; /* Set line height */
   color: var(--text-color);
   background-color: var(--background-color);
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 4vw; /* Set font size for smaller screens */
+  }
+}
+
 
 /* remove underline and color change on hyperlinks and give them a normal look. could be interesting to do a hover over effect though */
 a {
