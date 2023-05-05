@@ -59,12 +59,12 @@ a {
 }
 
 .container h1 {
-  font-size: 32px;
+  font-size: 5vw;
   margin-bottom: 20px;
 }
 
 .container p {
-  font-size: 16px;
+  font-size: 2.5vw;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -80,7 +80,6 @@ mark {
   border-bottom: 1px solid red;
   display: inline-block;
   padding: 0 0.1em;
-  font-size: 1.6em;
 }
 
 .corp-rebels-underline {
