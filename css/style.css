@@ -29,10 +29,14 @@ body {
   background-color: var(--background-color);
 }
 
+/* Portrait / square view styles */
 @media (max-width: 768px) {
-  body {
-    font-size: 4vw; /* Set font size for smaller screens */
-  }
+  /* Add any styles you want for portrait / square view here */
+}
+
+/* Landscape view styles */
+@media (min-width: 769px) {
+  /* Add any styles you want for landscape view here */
 }
 
 
