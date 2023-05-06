@@ -142,12 +142,12 @@ mark {
 
 .red-label {
   background-color: var(--red);
-  color: #FFFFFF;
+  color: var(--text-color);
 }
 
 .green-label {
   background-color: var(--green);
-  color: #FFFFFF;
+  color: var(--text-color);
 }
 
 
