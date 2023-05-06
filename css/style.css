@@ -102,12 +102,12 @@ a {
   text-align: justify;
 } 
 
-.container two-columns {
+.container .two-columns {
   column-count: 2;
 }
 
-.container column-break {
-  column-break-before: always;
+.column-break {
+  break-before: column;
 }
 
 .container blockquote {
