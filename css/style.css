@@ -96,14 +96,10 @@ a {
   text-align: justify;
 }
 
-.container p2 {
-  font-size: 2vw;
-  line-height: 1.2;
-  text-align: justify;
+.container p.columns {
   column-count: 2;
   column-gap: 20px;
 }
-
 
 .container ol {
   font-size: 2vw;
