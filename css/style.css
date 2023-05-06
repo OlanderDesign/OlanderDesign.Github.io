@@ -103,9 +103,7 @@ a {
 } 
 
 .two-columns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  column-count: 2;
 }
 
 .container blockquote {
