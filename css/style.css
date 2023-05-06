@@ -106,7 +106,7 @@ a {
   column-count: 2;
 }
 
-.container p.column-break {
+.container column-break {
   column-break-before: always;
 }
 
