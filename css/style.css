@@ -102,7 +102,7 @@ a {
   text-align: justify;
 } 
 
-.two-columns {
+.container two-columns {
   column-count: 2;
 }
 
