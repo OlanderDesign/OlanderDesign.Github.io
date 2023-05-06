@@ -102,6 +102,12 @@ a {
   text-align: justify;
 } 
 
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .container blockquote {
   padding-left: 40px;
 } 
