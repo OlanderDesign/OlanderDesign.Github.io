@@ -59,11 +59,16 @@ a {
 }
 
 .container h1 {
-  font-size: 5vw;
-  margin-top: 20px;
+  font-size: 7vw;
+  margin-bottom: 20px
 }
 
 .container h2 {
+  font-size: 5vw;
+  margin-top: 20px
+}
+
+.container h3 {
   font-size: 3vw;
   margin-top: 20px
 }
@@ -81,7 +86,7 @@ a {
 } 
 
 .container blockquote {
-  padding-left: 20px;
+  padding-left: 40px;
 } 
 
 /* highlighter */
