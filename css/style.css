@@ -107,7 +107,7 @@ a {
 }
 
 .column-break {
-  break-before: column;
+  break-after: column;
 }
 
 .container blockquote {
