@@ -96,7 +96,7 @@ a {
   text-align: justify;
 }
 
-.container p.columns {
+.container p.columns ol {
   column-count: 2;
   column-gap: 20px;
 }
