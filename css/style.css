@@ -140,14 +140,14 @@ mark {
   margin-right: 8px;
 }
 
-.red-label {
-  background-color: var(--red);
-  color: var(--text-color);
+.blue-label {
+  background-color: #284455;
+  color: #FFFFFF;
 }
 
-.green-label {
-  background-color: var(--green);
-  color: var(--text-color);
+.gold-label {
+  background-color: #E4B485;
+  color: #FFFFFF;
 }
 
 
