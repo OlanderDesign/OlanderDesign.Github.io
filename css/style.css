@@ -129,6 +129,24 @@ mark {
   text-decoration-style: wavy;
 }
 
+/* labels */
+.link-label {
+  padding: 2px 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.red-label {
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+.green-label {
+  background-color: #00FF00;
+  color: #FFFFFF;
+}
+
+
 /* Footer */
 footer {
   background-color: var(--background-color);
