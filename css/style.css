@@ -135,18 +135,18 @@ mark {
   padding: 2px 6px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-right: 8px;
 }
 
 .red-label {
-  background-color: #FF0000;
+  background-color: --red;
   color: #FFFFFF;
 }
 
 .green-label {
-  background-color: #00FF00;
+  background-color: --green;
   color: #FFFFFF;
 }
 
