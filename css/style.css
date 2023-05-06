@@ -80,6 +80,10 @@ a {
   text-align: justify;
 } 
 
+.container blockquote {
+  padding-left: 20px;
+} 
+
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
