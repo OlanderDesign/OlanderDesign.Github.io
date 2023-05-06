@@ -108,6 +108,8 @@ a {
 
 .container p .column-break {
   break-after: column;
+  font-size: 2vw;
+  line-height: 1.2;
 }
 
 .container blockquote {
