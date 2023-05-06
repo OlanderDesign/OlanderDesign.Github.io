@@ -50,12 +50,25 @@ a {
   border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
 }
 
+@media (orientation: landscape) {
+  .container {
+    max-width: 60vw; /* set max width to 60% of viewport width for landscape view */
+    padding: 20px; /* add 40 pixels of padding to the container */
+  }
+}
 
 .container-panel {
   max-width: calc(80vw - 20%); /* set max width to 80% of available width (100% - 20% for the side panel) */
   margin: 100px 0; /* add 100 pixels of margin on the top and bottom, and 0 margin on left and right */
   padding: 10px; /* add 20 pixels of padding to the container */
   border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
+}
+
+@media (orientation: landscape) {
+  .container-panel {
+    max-width: calc(60vw - 20%); /* set max width to 60% of available width (100% - 20% for the side panel) for landscape view */
+    padding: 20px; /* add 40 pixels of padding to the container */
+  }
 }
 
 .container h1 {
