@@ -29,15 +29,15 @@ body {
   background-color: var(--background-color);
 }
 
-/* Portrait / square view styles */
+/* Portrait / square view styles
 @media (max-width: 768px) {
-  /* Add any styles you want for portrait / square view here */
-}
+  /* Add any styles you want for portrait / square view here
+} */
 
-/* Landscape view styles */
+/* Landscape view styles 
 @media (min-width: 769px) {
-  /* Add any styles you want for landscape view here */
-}
+  /* Add any styles you want for landscape view here 
+}*/
 
 
 /* remove underline and color change on hyperlinks and give them a normal look. could be interesting to do a hover over effect though */
