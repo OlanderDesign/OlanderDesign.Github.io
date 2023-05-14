@@ -23,8 +23,8 @@
 
 body {
   font-family: 'lato', cursive;
-  font-size: 2.5vw; /* Set font size based on viewport width */
-  line-height: 1.5; /* Set line height */
+  font-size: 1.5vw; /* Set font size based on viewport width */
+  line-height: 1.0; /* Set line height */
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -91,14 +91,14 @@ a {
 }
 
 .container p {
-  font-size: 2vw;
-  line-height: 1.2;
+  font-size: 1.5vw;
+  line-height: 1.0;
   text-align: justify;
 }
 
 .container ol {
-  font-size: 2vw;
-  line-height: 1.2;
+  font-size: 1.5vw;
+  line-height: 1.0;
   text-align: justify;
 } 
 
