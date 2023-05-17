@@ -159,33 +159,30 @@ mark {
   color: #FFFFFF;
 }
 
-/* Mind map */
+/* mindmap */
 .mindmap {
-  margin: 0;
-  padding: 0;
-  font-family: 'Indie Flower', cursive; /* Use the Indie Flower font for the mind map */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .node {
-  list-style: none;
-  padding-left: 20px;
-  position: relative;
-  margin-bottom: 10px; /* Add margin between nodes */
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #F9F9F9;
+  font-family: Arial, sans-serif;
 }
 
-.node::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 10px; /* Adjust the positioning of the connecting lines */
-  border-left: 2px solid var(--text-color); /* Use the text color as the line color */
-  height: 100%;
+.node > .node {
+  margin-top: 20px;
+  border-color: #AAA;
+  background-color: #EEE;
 }
 
-.node > ul {
-  margin: 0;
-  padding-left: 40px; /* Adjust the padding for nested nodes */
-}
 
 
 /* Footer */
