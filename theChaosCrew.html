@@ -80,22 +80,25 @@
         </p></ol>
       </div>
     </div>
-    <div>
-      <ul class="mindmap">
-        <li class="node">Root Node
-          <ul>
-            <li class="node">Child Node 1</li>
-            <li class="node">Child Node 2
-              <ul>
-                <li class="node">Grandchild Node 1</li>
-                <li class="node">Grandchild Node 2</li>
-              </ul>
-            </li>
-            <li class="node">Child Node 3</li>
-          </ul>
-        </li>
-      </ul>
-    </div> 
+    <div class="mindmap">
+      <div class="node">Root Node
+        <div class="branch">
+          <div class="node">Child Node 1</div>
+          <div class="node">Child Node 2
+            <div class="branch">
+              <div class="node">Grandchild Node 1</div>
+              <div class="node">Grandchild Node 2</div>
+            </div>
+          </div>
+          <div class="node">Child Node 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-in-box">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+    </div>
 
 
     <!-- Footer -->

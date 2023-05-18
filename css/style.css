@@ -162,9 +162,8 @@ mark {
 /* mindmap */
 .mindmap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
@@ -177,11 +176,42 @@ mark {
   font-family: Arial, sans-serif;
 }
 
-.node > .node {
+.branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
-  border-color: #AAA;
-  background-color: #EEE;
 }
+
+.branch::before {
+  content: "";
+  display: block;
+  width: 2px;
+  background-color: #AAA;
+  margin: 0 auto;
+}
+
+.branch:last-child::before {
+  display: none;
+}
+
+/* box in boxes */
+.box-in-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #F9F9F9;
+  font-family: Arial, sans-serif;
+}
+
 
 
 
