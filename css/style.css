@@ -164,35 +164,35 @@ mark {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.mindmap-node {
-  margin: 10px;
+.node {
+  position: relative;
+  margin: 20px;
+}
+
+.node-text {
+  background-color: #eee;
   padding: 10px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  background-color: #F9F9F9;
-  font-family: Arial, sans-serif;
 }
 
-.mindmap-branch {
+.children {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  justify-content: center;
 }
 
-.mindmap-branch::before {
+.children::before {
   content: "";
-  display: block;
-  width: 2px;
-  background-color: #AAA;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  border-left: 1px solid #000;
+  height: 100%;
+  transform: translateX(-50%);
 }
 
-.mindmap-branch:last-child::before {
-  display: none;
+.node + .node {
+  margin-top: 40px;
 }
 
 
