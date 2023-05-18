@@ -159,67 +159,6 @@ mark {
   color: #FFFFFF;
 }
 
-/* mindmap */
-.mindmap-container {
-  position: relative;
-}
-
-.mindmap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.node {
-  position: relative;
-  margin: 20px;
-}
-
-.node-text {
-  background-color: #eee;
-  padding: 10px;
-}
-
-.children {
-  display: flex;
-  justify-content: center;
-}
-
-.children::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  border-left: 1px solid #000;
-  height: 100%;
-  transform: translateX(-50%);
-}
-
-.node + .node {
-  margin-top: 40px;
-}
-
-
-
-/* box in boxes */
-.box-in-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.box {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  background-color: #F9F9F9;
-  font-family: Arial, sans-serif;
-}
-
-
-
 
 /* Footer */
 footer {
