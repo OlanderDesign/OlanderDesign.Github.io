@@ -167,24 +167,32 @@ mark {
   height: 100vh;
 }
 
-.node {
+.mindmap-node {
   margin: 10px;
   padding: 10px;
   border: 2px solid #000;
   border-radius: 5px;
   background-color: #F9F9F9;
   font-family: Arial, sans-serif;
-  position: relative;
 }
 
-.branch::before {
+.mindmap-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mindmap-branch::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 2px solid #000;
-  height: 20px;
+  display: block;
+  width: 2px;
+  background-color: #AAA;
+  margin: 0 auto;
+}
+
+.mindmap-branch:last-child::before {
+  display: none;
 }
 
 
