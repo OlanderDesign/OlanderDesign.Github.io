@@ -125,6 +125,12 @@ a {
   padding-left: 40px;
 }
 
+.container img {
+  position: absolute; /* Position the image absolutely within the container */
+  width: 100%; /* Set the width of the image to 100% of the container */
+  object-fit: cover; /* Scale the image to cover the entire container */
+}
+
 .room {
   width: calc(100% / 2); /* Adjust the value based on the number of rooms you want horizontally */
   float: left;
@@ -135,7 +141,7 @@ a {
 }
 
 .room li{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 
