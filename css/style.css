@@ -126,7 +126,7 @@ a {
 }
 
 .room {
-  width: calc(100% / 3); /* Adjust the value based on the number of rooms you want horizontally */
+  width: calc(100% / 2); /* Adjust the value based on the number of rooms you want horizontally */
   float: left;
   padding: 20px;
   /* Add any other styling you want for each room */
