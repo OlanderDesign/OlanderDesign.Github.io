@@ -134,6 +134,9 @@ a {
   /* Add any other styling you want for each room */
 }
 
+.room li{
+  font-size: 2rem;
+}
 
 
 /* highlighter */
