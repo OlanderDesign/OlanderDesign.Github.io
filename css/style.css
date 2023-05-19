@@ -111,16 +111,6 @@ a {
   text-align: justify;
 } 
 
-.container .two-columns {
-  column-count: 2;
-}
-
-.container p .column-break {
-  break-after: column;
-  font-size: 2vw;
-  line-height: 1.2;
-}
-
 .container blockquote {
   padding-left: 40px;
 }
@@ -142,7 +132,7 @@ a {
 }
 
 .room li{
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 
 
