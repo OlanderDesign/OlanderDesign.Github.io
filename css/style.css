@@ -129,8 +129,8 @@ a {
   width: calc(100% / 2); /* Adjust the value based on the number of rooms you want horizontally */
   float: left;
   padding: 20px;
-  font-size: 2rem;
-  line-height: 1.2;
+  /*font-size: 2rem;
+  line-height: 1.2;*/
   /* Add any other styling you want for each room */
 }
 
