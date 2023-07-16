@@ -174,5 +174,8 @@ footer {
   color: var(--text-color);
   text-align: center;
   padding: 20px;
-  margin-top: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
