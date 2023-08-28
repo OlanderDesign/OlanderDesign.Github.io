@@ -21,6 +21,12 @@ a {
     height: 100vh;
 }
 
+.section--about {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
 .img--logo {
     /*My img--logo images have to act totally opporsit so I cant put any general info. But if they were to act as the same it would be in this section of the code*/
 }
@@ -38,9 +44,9 @@ a {
 }
 
 .contact__inner {
-    display: flex;
+    display: flex; /*This enamles the column setting to be assight eachother*/
 }
 
 .contact__column {
-    width: 50%;
+    width: 50%; /* This determines the column shall fill up 50% of the width, so 33% for 3 columns */
 }
