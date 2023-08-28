@@ -11,15 +11,17 @@ body {
 }
 
 .img--logo {
-    position: absolute;
+
 }
 
 .img--JeppeO {
     width: 50px;
     top: 0;
+    position: fixed;
 }
 
 .img--YourFacilitator {
     width: 100vw;
     bottom: 0;
+    position: absolute;
 }
