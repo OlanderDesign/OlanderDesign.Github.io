@@ -2,6 +2,12 @@ body {
     background: #202020;
 } 
 
+* {font-family: Arial, Helvetica, sans-serif;}
+
+a {
+    color: #000000;
+}
+
 .gallery__item {
     padding-left: 10%;
     padding-right: 10%;
@@ -29,4 +35,12 @@ body {
     width: 100vw; /*follows browser width*/
     bottom: 0; /*placed in the bottom*/
     position: absolute; /*moves while scrolling*/
+}
+
+.contact__inner {
+    display: flex;
+}
+
+.contact__column {
+    width: 50%;
 }
