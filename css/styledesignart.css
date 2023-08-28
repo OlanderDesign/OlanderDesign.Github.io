@@ -2,6 +2,11 @@ body {
     background: #202020;
 } 
 
+.gallery__item {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .gallery__img {
     width: 100%;
 }
@@ -11,17 +16,17 @@ body {
 }
 
 .img--logo {
-
+    /*My img--logo images have to act totally opporsit so I cant put any general info. But if they were to act as the same it would be in this section of the code*/
 }
 
 .img--JeppeO {
-    width: 50px;
-    top: 0;
-    position: fixed;
+    width: 50px; /*specific size*/
+    top: 0; /*placed in the top*/
+    position: fixed; /*locked to the screen*/
 }
 
 .img--YourFacilitator {
-    width: 100vw;
-    bottom: 0;
-    position: absolute;
+    width: 100vw; /*follows browser width*/
+    bottom: 0; /*placed in the bottom*/
+    position: absolute; /*moves while scrolling*/
 }
