@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,700;1,300&family=Patrick+Hand+SC&display=swap');
 
 /* Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
@@ -7,11 +7,11 @@
 /* Colors */
 :root {
   --text-color: #222222;
-  --background-color: #fffff0;
-  --filler-color: #e6be8a;
-  --red: #fa897b;
-  --green: #d0e6a5;
-  --yellow: #f8ffd6;
+  --background-color: #F9f9f9; /*#fffff0*/
+  --filler-color: #ffffff; /*#e6be8a*/
+  --red: #FF9A9A;
+  --green: #e6eebf;
+  --yellow: #fff4bc;
 }
 
 /* Global styles */
@@ -22,119 +22,160 @@
 }
 
 body {
-  font-family: 'Patrick Hand SC', cursive;
-  font-size: 18px;
+  font-family: 'lato', cursive;
+  font-size: 1.5vw; /* Set font size based on viewport width */
+  line-height: 1.2; /* Set line height */
   color: var(--text-color);
   background-color: var(--background-color);
 }
 
+/* Portrait / square view styles
+@media (max-width: 768px) {
+  /* Add any styles you want for portrait / square view here
+} */
+
+/* Landscape view styles */
+@media (min-width: 769px) {
+  /* Add any styles you want for landscape view here */
+  .container {
+    max-width: 200vw; /* set max width to 60% of viewport width for landscape view */
+    padding: 5px; /* add 40 pixels of padding to the container */
+  }
+}
+
+
+/* remove underline and color change on hyperlinks and give them a normal look. could be interesting to do a hover over effect though */
 a {
   text-decoration: none;
   color: var(--text-color);
 }
 
-/* Navigation bar */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background-color: var(--filler-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  z-index: 1;
-}
-
-nav a {
-  margin-right: 20px;
-}
-
-nav img {
-  height: 40px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  margin-left: 20px;
-}
-
-nav li:last-child {
-  margin-right: 0;
-}
-
-nav button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  height: 30px;
-}
-
-nav button img {
-  height: 20px;
-}
-
-/* Font Awesome icons */
-.fa {
-  display: inline-block;
-  font-size: 20px;
-  color: var(--text-color);
-  margin-left: 10px;
-}
-
-.fa-search:before {
-  content: "\f002";
-}
-
-.fa-linkedin:before {
-  content: "\f08c";
-}
-
-.fa-twitter:before {
-  content: "\f099";
-}
-
-.fa-instagram:before {
-  content: "\f16d";
-}
-
-.fa-envelope:before {
-  content: "\f0e0";
-}
-
 /* Main content */
 .container {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: var(--yellow);
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-  text-align: center;
+  max-width: 90vw; /* set max width to 80% of viewport width */
+  margin: 100px auto; /* center the container horizontally with 100 pixels of margin on the top and bottom */
+  padding: 10px; /* add 20 pixels of padding to the container */
+  border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
+}
+
+@media (orientation: landscape) {
+  .container {
+    max-width: 60vw; /* set max width to 60% of viewport width for landscape view */
+    padding: 20px; /* add 40 pixels of padding to the container */
+  }
+}
+
+.container section {
+  padding-top: 50px; /* Adjust the value to create enough space for the header */
+  margin-top: -50px; /* Offset the padding to maintain the original position visually */
+}
+
+.container-panel {
+  max-width: calc(80vw - 20%); /* set max width to 80% of available width (100% - 20% for the side panel) */
+  margin: 100px 0; /* add 100 pixels of margin on the top and bottom, and 0 margin on left and right */
+  padding: 10px; /* add 20 pixels of padding to the container */
+  border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
+}
+
+@media (orientation: landscape) {
+  .container-panel {
+    max-width: calc(60vw - 20%); /* set max width to 60% of available width (100% - 20% for the side panel) for landscape view */
+    padding: 20px; /* add 40 pixels of padding to the container */
+  }
 }
 
 .container h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 7vw;
+  margin-bottom: 20px
+}
+
+.container h2 {
+  font-size: 5vw;
+  margin-top: 20px
+}
+
+.container h3 {
+  font-size: 3vw;
+  margin-top: 20px
 }
 
 .container p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 1.5vw;
+  line-height: 1.2;
+  text-align: justify;
 }
+
+.container ol {
+  font-size: 1.5vw;
+  line-height: 1.2;
+  text-align: justify;
+} 
+
+.container blockquote {
+  padding-left: 40px;
+}
+
+.container img {
+  object-fit: contain; /* Scale the image to fit inside the container */
+}
+
+.room {
+  width: calc(100% / 2); /* Adjust the value based on the number of rooms you want horizontally */
+  float: left;
+  padding: 20px;
+  /*font-size: 2rem;
+  line-height: 1.2;*/
+  /* Add any other styling you want for each room */
+}
+
+.room li{
+  font-size: 2vw;
+}
+
+
+/* highlighter */
+mark {
+  background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
+  font-size: inherit;
+}
+
+/* underlining */
+.underline {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+/* labels */
+.link-label {
+  display: inline-block;
+  padding: 2px 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 8px;
+}
+
+.blue-label {
+  background-color: #284455;
+  color: #FFFFFF;
+}
+
+.gold-label {
+  background-color: #E4B485;
+  color: #FFFFFF;
+}
+
 
 /* Footer */
 footer {
-  background-color: var(--filler-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
