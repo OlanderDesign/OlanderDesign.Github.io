@@ -1,4 +1,5 @@
 body {
+    background-color: #192325;
     background-image: url('../designart/backgroundSplatter.jpeg'); /* Replace 'background-image.jpg' with the path to your image */
     background-size: 100vh; /* Adjust the sizing as needed */
     background-repeat: no-repeat;
