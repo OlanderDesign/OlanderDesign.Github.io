@@ -3,10 +3,6 @@
 
 
 body {
-    font-family: 'Indie Flower', cursive; /* Set font */
-    font-size: clamp(10px, 3vw, 20px); /* Add font size */
-    line-height: 1.2; /* Add line spacing */
-  
     background-color: #192325;
     background-image: url('../designart/backgroundSplatter.jpeg'); /* Replace 'background-image.jpg' with the path to your image */
     background-size: 100vh; /* Adjust the sizing as needed */
@@ -14,6 +10,11 @@ body {
     background-attachment: fixed; /* This keeps the background fixed while scrolling */
 }
 
+* {
+    font-family: 'Indie Flower', cursive; /* Set font */
+    font-size: clamp(10px, 3vw, 20px); /* Add font size */
+    line-height: 1.2; /* Add line spacing */
+}
 
 a {
     color: #F9f9f9;
