@@ -31,6 +31,8 @@ p {
 
 .gallery__img {
     width: 100%;
+    border-radius: 10px; /* Rounded corners - Adjust the value to control the roundness */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow - Adjust the values for shadow size and color */
 }
 
 .section--top {
@@ -58,6 +60,12 @@ p {
     bottom: 0; /*placed in the bottom*/
     position: absolute; /*moves while scrolling*/
 }
+
+
+
+
+
+
 
 .contact__inner {
     display: flex; /*This enamles the column setting to be assight eachother*/
