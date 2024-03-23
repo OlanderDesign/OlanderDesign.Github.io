@@ -1,4 +1,4 @@
-d3.json('test.json').then(function(graph) {
+d3.json('js/test.json').then(function(graph) {
     const width = 900, height = 600;
 
     const svg = d3.select("#network").append("svg")
