@@ -1,18 +1,18 @@
 {
   "nodes": [
-    {"id": "Get Unstuck", "group": 1},
-    {"id": "the CHAOS crew", "group": 2},
-    {"id": "the chaos", "group": 3},
-    {"id": "the foundation", "group": 3},
-    {"id": "the people", "group": 3},
-    {"id": "the journey", "group": 3},
-    {"id": "the methods", "group": 3},
-    {"id": "Idea to Business", "group": 1},
-    {"id": "Search & Testing", "group": 2},
-    {"id": "Discovery", "group": 3},
-    {"id": "Validation", "group": 3},
-    {"id": "Acceleration", "group": 3},
-    {"id": "Execution", "group": 2}
+    {"id": "Get Unstuck", "group": 1, "label": "Get Unstuck", "url": "https://example.com/get-unstuck"},
+    {"id": "the CHAOS crew", "group": 2, "label": "The CHAOS Crew", "url": "#"},
+    {"id": "the chaos", "group": 3, "label": "The Chaos", "url": "#"},
+    {"id": "the foundation", "group": 3, "label": "The Foundation", "url": "#"},
+    {"id": "the people", "group": 3, "label": "The People", "url": "#"},
+    {"id": "the journey", "group": 3, "label": "The Journey", "url": "#"},
+    {"id": "the methods", "group": 3, "label": "The Methods", "url": "#"},
+    {"id": "Idea to Business", "group": 1, "label": "Idea to Business", "url": "https://example.com/idea-to-business"},
+    {"id": "Search & Testing", "group": 2, "label": "Search & Testing", "url": "#"},
+    {"id": "Discovery", "group": 3, "label": "Discovery", "url": "#"},
+    {"id": "Validation", "group": 3, "label": "Validation", "url": "#"},
+    {"id": "Acceleration", "group": 3, "label": "Acceleration", "url": "#"},
+    {"id": "Execution", "group": 2, "label": "Execution", "url": "#"}
   ],
   "links": [
     {"source": "Get Unstuck", "target": "the CHAOS crew", "value": 1},
