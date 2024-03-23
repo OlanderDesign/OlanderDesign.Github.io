@@ -6,7 +6,7 @@ d3.json('js/test.json').then(function(graph) {
         .attr("height", height);
 
     const simulation = d3.forceSimulation(graph.nodes)
-        .force("link", d3.forceLink(graph.links).id(d => d.id))
+        .force("link", d3.forceLink(graph.links).id(d => d.id).distance(100)) // set distance on the last number
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
 
