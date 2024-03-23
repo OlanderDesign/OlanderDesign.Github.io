@@ -25,10 +25,24 @@ d3.json('js/test.json').then(function(graph) {
         .join("circle")
         .attr("r", 5)
         .attr("fill", color)
-        .call(drag(simulation));
+        .call(drag(simulation))
+        .on("click", function(event, d) {
+            // Open the URL in a new tab when the node is clicked
+            window.open(d.url, '_blank');
+        });
 
     node.append("title")
         .text(d => d.id);
+
+    const labels = svg.append("g")
+      .attr("class", "labels")
+      .selectAll("text")
+      .data(graph.nodes)
+      .enter().append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(d => d.label)
+      .style("font-size", "12px");
 
     simulation.on("tick", () => {
         link
@@ -40,6 +54,10 @@ d3.json('js/test.json').then(function(graph) {
         node
             .attr("cx", d => d.x)
             .attr("cy", d => d.y);
+
+        labels
+            .attr("x", d => d.x)
+            .attr("y", d => d.y);
     });
 
     function color(d) {
