@@ -1,7 +1,7 @@
 {
   "nodes": [
-    {"id": "TestTopic1", "group": 1},
-    {"id": "TestTopic2", "group": 2}
+    {"id": "TestTopic1", "group": 1, "label": "Topic 1", "url": "https://example.com/topic1"},
+    {"id": "TestTopic2", "group": 2, "label": "Topic 2", "url": "https://example.com/topic2"}
   ],
   "links": [
     {"source": "TestTopic1", "target": "TestTopic2", "value": 1}
