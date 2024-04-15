@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,700;1,300&family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
 
 /* Colors */
 :root {
@@ -19,7 +19,7 @@
 
 /* post-it */
 .post-it {
-  font-family: 'Indie Flower', cursive; /* Set font */
+  font-family: 'permanent marker'; /* Set font */
   font-size: clamp(10px, 3vw, 20px); /* Add font size */
   line-height: 1.2; /* Add line spacing */
   background-color: var(--yellow); /* Set background color */
