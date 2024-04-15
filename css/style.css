@@ -210,8 +210,8 @@ mark {
     position: fixed;
     bottom: 20px; /* Adjust as needed */
     right: 20px; /* Adjust as needed */
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
     background-color: #333;
     border-radius: 50%;
     display: flex;
