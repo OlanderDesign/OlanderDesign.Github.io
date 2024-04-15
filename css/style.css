@@ -186,6 +186,26 @@ mark {
   color: #FFFFFF;
 }
 
+.circle {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* Footer */
 footer {
