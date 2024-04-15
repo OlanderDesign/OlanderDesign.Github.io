@@ -19,7 +19,7 @@
 
 /* post-it */
 .post-it {
-  font-family: 'patrick hand sc'; /* Set font */
+  font-family: 'Patrick Hand SC'; /* Set font */
   font-size: clamp(10px, 3vw, 20px); /* Add font size */
   line-height: 1.2; /* Add line spacing */
   background-color: var(--yellow); /* Set background color */
