@@ -212,13 +212,13 @@ mark {
     right: 20px; /* Adjust as needed */
     width: 100px; /* Adjust as needed */
     height: 100px; /* Adjust as needed */
-    background-color: #333;
+    background-color: #ff000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #ff000;
 }
 
 /* Footer */
