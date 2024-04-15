@@ -21,6 +21,20 @@
   padding: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.site-name {
+  font-family: 'permanent marker';
+  front-size: 24px;
+  margin: 0;
+  text-align: center;  
+}
+
 body {
   font-family: 'lato', cursive;
   font-size: 1.5vw; /* Set font size based on viewport width */
