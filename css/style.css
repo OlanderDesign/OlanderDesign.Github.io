@@ -28,6 +28,11 @@ header {
   padding: 20px;
 }
 
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* This maintains the aspect ratio */
+}
+
 .site-name {
   font-family: 'permanent marker';
   front-size: 24px;
