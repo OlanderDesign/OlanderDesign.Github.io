@@ -68,7 +68,7 @@ a {
 
 @media (max-width: 767px) { /* 767px fits mobile, 768px also fits iPad*/
   .grid-container {
-    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
+    grid-template-columns: repeat(1, 1fr) !important; /* Single column on mobile */ 
   }
   body {
     font-size: 3vw;
