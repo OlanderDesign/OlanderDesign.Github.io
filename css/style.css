@@ -84,7 +84,7 @@ a {
     grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
   }
   body {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 
