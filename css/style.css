@@ -60,12 +60,6 @@ a {
   padding: 0 20px; /* Padding on both sides */
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
 @media (max-width: 767px) { /* 767px fits mobile, 768px also fits iPad*/
   .grid-container {
     grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
@@ -73,6 +67,12 @@ a {
   body {
     font-size: 3vw;
   }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .grid-item {
