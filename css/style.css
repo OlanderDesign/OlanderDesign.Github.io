@@ -70,108 +70,30 @@ a {
 }
 
 /* Main content */
-
-.wall {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.container {
+    padding: 0 20px; /* Padding on both sides */
 }
 
-.tile {
-  padding: 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
+.grid-item {
+    padding: 20px;
+}
+
+.text-container {
+    padding: 20px 0; /* Padding top and bottom */
+}
 
 @media (max-width: 768px) {
-    .wall {
-        grid-template-columns: repeat(1, 1fr);
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
     }
 }
 
-
-
-
-
-.container {
-  max-width: 90vw; /* set max width to 80% of viewport width */
-  margin: 100px auto; /* center the container horizontally with 100 pixels of margin on the top and bottom */
-  padding: 10px; /* add 20 pixels of padding to the container */
-  border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
-}
-
-@media (orientation: landscape) {
-  .container {
-    max-width: 60vw; /* set max width to 60% of viewport width for landscape view */
-    padding: 20px; /* add 40 pixels of padding to the container */
-  }
-}
-
-.container section {
-  padding-top: 50px; /* Adjust the value to create enough space for the header */
-  margin-top: -50px; /* Offset the padding to maintain the original position visually */
-}
-
-.container-panel {
-  max-width: calc(80vw - 20%); /* set max width to 80% of available width (100% - 20% for the side panel) */
-  margin: 100px 0; /* add 100 pixels of margin on the top and bottom, and 0 margin on left and right */
-  padding: 10px; /* add 20 pixels of padding to the container */
-  border-radius: 5px; /* round the corners of the container with a 5 pixel radius */
-}
-
-@media (orientation: landscape) {
-  .container-panel {
-    max-width: /*calc(*/60vw /*- 20%)*/; /* set max width to 60% of available width (100% - 20% for the side panel) for landscape view */
-    padding: 20px; /* add 40 pixels of padding to the container */
-  }
-}
-
-.container h1 {
-  font-size: 7vw;
-  margin-bottom: 20px
-}
-
-.container h2 {
-  font-size: 5vw;
-  margin-top: 20px
-}
-
-.container h3 {
-  font-size: 3vw;
-  margin-top: 20px
-}
-
-.container p {
-  font-size: 1.5vw;
-  line-height: 1.2;
-  text-align: justify;
-}
-
-.container ol {
-  font-size: 1.5vw;
-  line-height: 1.2;
-  text-align: justify;
-} 
-
-.container blockquote {
-  padding-left: 40px;
-}
-
-.container img {
-  object-fit: contain; /* Scale the image to fit inside the container */
-}
-
-.room {
-  width: calc(100% / 2); /* Adjust the value based on the number of rooms you want horizontally */
-  float: left;
-  padding: 20px;
-  /*font-size: 2rem;
-  line-height: 1.2;*/
-  /* Add any other styling you want for each room */
-}
-
-.room li{
-  font-size: 2vw;
-}
 
 
 /* highlighter */
@@ -187,27 +109,7 @@ mark {
   text-decoration-style: wavy;
 }
 
-/* labels */
-.link-label {
-  display: inline-block;
-  padding: 2px 6px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-right: 8px;
-}
-
-.blue-label {
-  background-color: #284455;
-  color: #FFFFFF;
-}
-
-.gold-label {
-  background-color: #E4B485;
-  color: #FFFFFF;
-}
-
+/* my picture */
 .circle {
     position: fixed;
     bottom: 20px; /* Adjust as needed */
