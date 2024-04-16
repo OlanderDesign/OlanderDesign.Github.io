@@ -78,7 +78,7 @@ a {
   padding: 20px 0; /* Padding top and bottom */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) { /* 767px fits mobile, 768px also fits iPad*/
   .grid-container {
     grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
   }
