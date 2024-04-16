@@ -29,8 +29,8 @@ header {
 }
 
 .logo img {
-    width: 75px; /* Adjust the width as needed */
-    height: auto; /* This maintains the aspect ratio */
+  width: 75px; /* Adjust the width as needed */
+  height: auto; /* This maintains the aspect ratio */
 }
 
 .site-name {
@@ -47,21 +47,6 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
-
-/* Portrait / square view styles
-@media (max-width: 768px) {
-  /* Add any styles you want for portrait / square view here
-} */
-
-/* Landscape view styles */
-@media (min-width: 769px) {
-  /* Add any styles you want for landscape view here */
-  .container {
-    max-width: 200vw; /* set max width to 60% of viewport width for landscape view */
-    padding: 5px; /* add 40 pixels of padding to the container */
-  }
-}
-
 
 /* remove underline and color change on hyperlinks and give them a normal look. could be interesting to do a hover over effect though */
 a {
@@ -111,38 +96,38 @@ mark {
 
 /* my picture */
 .circle {
-    position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    width: 75px; /* Adjust as needed */
-    height: 75px; /* Adjust as needed */
-    background-color: #333;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  width: 75px; /* Adjust as needed */
+  height: 75px; /* Adjust as needed */
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contact-button {
-    position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    width: 75px; /* Adjust as needed */
-    height: 75px; /* Adjust as needed */
-    background-color: red;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  width: 75px; /* Adjust as needed */
+  height: 75px; /* Adjust as needed */
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Footer */
