@@ -61,12 +61,17 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 
 .grid-item {
-  padding: 20px;
+  padding: 20px; 
+}
+
+.grid-item img {
+  max-width: 100%; /* Constrain the size of the image */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 .text-container {
@@ -75,7 +80,7 @@ a {
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Single column on mobile */
+    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
   }
 }
 
