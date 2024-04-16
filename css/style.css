@@ -90,7 +90,7 @@ a {
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr); /* Single column on mobile */
     }
 }
 
