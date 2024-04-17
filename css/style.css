@@ -96,13 +96,14 @@ a {
 
 .tile {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: center;
   align-items: center;
 }
 
 .full-width {
   grid-column: 1 / -1; /* Span the full width */
+  padding: 20px 0;
 }
 
 
