@@ -98,6 +98,9 @@ a {
 
 }
 
+.full-width {
+  grid-column: 1 / -1; /* Span the full width */
+}
 
 
 
