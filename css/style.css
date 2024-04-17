@@ -152,10 +152,6 @@ mark {
   body {
     font-size: 3vw;
   }
-  .col-lg-4 {
-    flex: 0 0 100%; /* Set the column to take full width */
-    max-width: 100%;
-  }
 }
 
 /* Footer */
