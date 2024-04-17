@@ -91,6 +91,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   grid-gap: 10px; /* Adjust spacing between items */
+  padding: 20px 0;
 }
 
 .tile {
