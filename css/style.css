@@ -95,7 +95,10 @@ a {
 }
 
 .tile {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-width {
@@ -157,9 +160,6 @@ mark {
 @media (orientation: portrait) { /* 767px fits mobile, 768px also fits iPad*/
   .grid-container {
     grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
-  }
-  body {
-    font-size: 3vw;
   }
 }
 
