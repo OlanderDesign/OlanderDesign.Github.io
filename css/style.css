@@ -83,6 +83,12 @@ a {
   text-align: justify;
 }
 
+.level-1 {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
@@ -147,6 +153,10 @@ mark {
   }
   body {
     font-size: 3vw;
+  }
+  .col-lg-4 {
+    flex: 0 0 100%; /* Set the column to take full width */
+    max-width: 100%;
   }
 }
 
