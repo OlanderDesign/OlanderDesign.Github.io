@@ -135,8 +135,10 @@ mark {
 
 @media (min-width: 1400px) { /* adjusting padding when the viewport width exceeds a certain threshold */
     .container {
-        padding: 0 calc((100% - 1200px) / 2); /* Calculate padding based on viewport width */
+        padding: 0 calc((100% - 1200px) / 2); /* Calculate padding based on viewport width */ 
     }
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* wide windows*/ 
 }
 
 @media (orientation: portrait) { /* 767px fits mobile, 768px also fits iPad*/
