@@ -88,9 +88,9 @@ a {
 }
 
 .level-1 {
-  border: 1px solid #ccc;
+  border: none;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 0px;
 }
 
 /* highlighter */
