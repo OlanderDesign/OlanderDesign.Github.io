@@ -87,6 +87,19 @@ a {
   text-align: justify;
 }
 
+.frame {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-gap: 10px; /* Adjust spacing between items */
+}
+
+.tile {
+
+}
+
+
+
+
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
