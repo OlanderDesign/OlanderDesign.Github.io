@@ -87,12 +87,6 @@ a {
   text-align: justify;
 }
 
-.level-1 {
-  border: none;
-  margin-bottom: 20px;
-  padding: 0px;
-}
-
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
