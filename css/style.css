@@ -70,7 +70,11 @@ a {
 }
 
 .grid-item {
-  padding: 20px; 
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-item img {
