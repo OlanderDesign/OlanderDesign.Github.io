@@ -106,6 +106,26 @@ a {
   padding: 20px 0;
 }
 
+.box { /*.container normal*/
+  width: 80%;  /* Adjust container width as needed */
+  margin: 0 auto;  /* Center the container horizontally */
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  flex: 1;  /* Make columns share available space equally */
+  padding: 10px;  /* Add some padding for spacing */
+}
+
+.inner-row {
+  flex: 1;  /* Make nested rows share space within columns */
+  /* Add borders or background colors for better visualization (optional) */
+}
 
 
 /* highlighter */
