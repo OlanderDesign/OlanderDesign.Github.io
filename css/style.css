@@ -30,7 +30,7 @@ header {
 
 .logo img {
   width: auto; /* Adjust the width as needed */
-  height: 75px; /* This maintains the aspect ratio */
+  height: 50px; /* This maintains the aspect ratio */
 }
 
 .site-name {
