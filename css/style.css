@@ -29,8 +29,8 @@ header {
 }
 
 .logo img {
-  width: 75px; /* Adjust the width as needed */
-  height: auto; /* This maintains the aspect ratio */
+  width: auto; /* Adjust the width as needed */
+  height: 75px; /* This maintains the aspect ratio */
 }
 
 .site-name {
