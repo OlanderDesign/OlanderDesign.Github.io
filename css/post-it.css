@@ -50,7 +50,7 @@
 
 /* used for filling out no post-it areas */
 .empty-post {
-  font-family: 'Indie Flower', cursive; /* Set font */
+  font-family: 'lato', cursive; /* Set font */
   font-size: 14px; /* Add font size */
   line-height: 1.2; /* Add line spacing */
   width: 150px;
