@@ -107,8 +107,9 @@ a {
 }
 
 .box { /*.container normal*/
-  width: 80%;  /* Adjust container width as needed */
-  margin: 0 auto;  /* Center the container horizontally */
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Padding on both sides */
 }
 
 .row {
@@ -116,10 +117,9 @@ a {
 }
 
 .col {
-  display: flex;
-  flex-direction: column;  /* Stack elements vertically */
-  flex: 1;  /* Make columns share available space equally */
-  padding: 10px;  /* Add some padding for spacing */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .inner-row {
