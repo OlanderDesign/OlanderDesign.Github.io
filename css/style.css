@@ -75,58 +75,18 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px; /* Adjust the value to change the roundness */
-  overflow: hidden; /* Ensures the GIF stays within the rounded borders */
 }
 
 .grid-item img {
   max-width: 100%; /* Constrain the size of the image */
   height: auto; /* Maintain the aspect ratio */
+  border-radius: 5px; /* Adjust the value to change the roundness */
+  overflow: hidden; /* Ensures the GIF stays within the rounded borders */
 }
 
 .text-container {
   padding: 20px 0; /* Padding top and bottom */
   text-align: justify;
-}
-
-.frame {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-  grid-gap: 10px; /* Adjust spacing between items */
-  padding: 20px 0;
-}
-
-.tile {
-  display: flex;
-  /*flex-direction: column;*/
-  justify-content: center;
-  align-items: center;
-}
-
-.full-width {
-  grid-column: 1 / -1; /* Span the full width */
-  padding: 20px 0;
-}
-
-.box { /*.container normal*/
-  max-width: 1200px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Padding on both sides */
-}
-
-.row {
-  display: flex;
-}
-
-.col {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.inner-row {
-  flex: 1;  /* Make nested rows share space within columns */
-  /* Add borders or background colors for better visualization (optional) */
 }
 
 
