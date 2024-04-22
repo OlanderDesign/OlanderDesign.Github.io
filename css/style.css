@@ -67,6 +67,8 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  border-radius: 20px; /* Adjust the value to change the roundness */
+  overflow: hidden; /* Ensures the GIF stays within the rounded borders */
 }
 
 .grid-item {
@@ -74,7 +76,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 .grid-item img {
