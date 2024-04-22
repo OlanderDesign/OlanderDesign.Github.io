@@ -82,7 +82,7 @@ a {
 .grid-item img {
   max-width: 100%; /* Constrain the size of the image */
   height: auto; /* Maintain the aspect ratio */
-  border-radius: 5px; /* Adjust the value to change the roundness */
+  border-radius: 1px; /* Adjust the value to change the roundness */
   overflow: hidden; /* Ensures the GIF stays within the rounded borders */
 }
 
