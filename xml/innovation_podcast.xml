@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Innovation Podcast</title>
+    <link>https://jeppeo.com/podcast</link>
+    <description>An exploration of innovation and creativity.</description>
+    <language>da-dk</language>
+    <itunes:author>JeppeO</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="URL to podcast artwork"/>
+    
+    <!-- Pilot Episode -->
+    <item>
+      <title>Pilot Episode: Introduction to Innovation Podcast</title>
+      <description>An introduction to the Innovation Podcast and its goals.</description>
+      <pubDate>Publication date of the pilot episode</pubDate>
+      <enclosure url="URL to pilot episode audio file" length="Audio file size in bytes" type="Audio file MIME type"/>
+      <itunes:duration>00:10:00</itunes:duration>
+    </item>
+    
+    <!-- First Series: Innovation Insights -->
+    <item>
+      <title>Episode 1: Unleashing Creativity</title>
+      <description>Exploring strategies for unlocking creativity in the workplace.</description>
+      <pubDate>Publication date of the first episode of the first series</pubDate>
+      <enclosure url="URL to first episode audio file" length="Audio file size in bytes" type="Audio file MIME type"/>
+      <itunes:duration>00:20:00</itunes:duration>
+    </item>
+    
+    <item>
+      <title>Episode 2: Innovation in Technology</title>
+      <description>Discussing the latest trends and innovations in technology.</description>
+      <pubDate>Publication date of the second episode of the first series</pubDate>
+      <enclosure url="URL to second episode audio file" length="Audio file size in bytes" type="Audio file MIME type"/>
+      <itunes:duration>00:25:00</itunes:duration>
+    </item>
+    
+    <!-- Second Series: Creative Solutions -->
+    <item>
+      <title>Episode 1: Problem-Solving Techniques</title>
+      <description>Exploring effective strategies for solving complex problems.</description>
+      <pubDate>Publication date of the first episode of the second series</pubDate>
+      <enclosure url="URL to third episode audio file" length="Audio file size in bytes" type="Audio file MIME type"/>
+      <itunes:duration>00:18:00</itunes:duration>
+    </item>
+    
+    <item>
+      <title>Episode 2: Design Thinking Principles</title>
+      <description>Introduction to the principles and practices of design thinking.</description>
+      <pubDate>Publication date of the second episode of the second series</pubDate>
+      <enclosure url="URL to fourth episode audio file" length="Audio file size in bytes" type="Audio file MIME type"/>
+      <itunes:duration>00:22:00</itunes:duration>
+    </item>
+    
+    <!-- Add more episodes or series as needed -->
+    
+  </channel>
+</rss>
