@@ -141,13 +141,22 @@ mark {
   color: #fff;
 }
 
-
-@media (orientation: portrait) { /* 767px fits mobile, 768px also fits iPad*/
-  .grid-container {
+/* For portrait orientation on phones */
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+  .gif-container {
     grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
   }
   .grid-item {
     border-radius: 30px; /* Adjust the value to change the roundness */
+}
+
+/* For browsers or larger screens */
+@media only screen and (min-width: 768px) {
+  .gif-container {
+    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
+  }
+  .grid-item {
+    border-radius: 10px; /* Adjust the value to change the roundness */
 }
 
 /* Footer */
