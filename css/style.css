@@ -147,7 +147,7 @@ mark {
     grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
   }
   .grid-item {
-    border-radius: 20px; /* Adjust the value to change the roundness */
+    border-radius: 30px; /* Adjust the value to change the roundness */
 }
 
 /* Footer */
