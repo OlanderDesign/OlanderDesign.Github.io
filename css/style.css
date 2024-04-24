@@ -141,23 +141,16 @@ mark {
   color: #fff;
 }
 
-/* For portrait orientation on phones */
-@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   .gif-container {
-    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
+    grid-template-columns: repeat(1, 1fr); /* Single column on portrait screens */ 
   }
+  
   .grid-item {
-    border-radius: 30px; /* Adjust the value to change the roundness */
+    border-radius: 15px; /* Rounded corners for portrait screens */
+  }
 }
 
-/* For browsers or larger screens */
-@media only screen and (min-width: 768px) {
-  .gif-container {
-    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */ 
-  }
-  .grid-item {
-    border-radius: 10px; /* Adjust the value to change the roundness */
-}
 
 /* Footer */
 footer {
