@@ -141,7 +141,8 @@ mark {
   color: #fff;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 600px) {
+    /* Styles specific to narrow (portrait) screens */
   .gif-container {
     grid-template-columns: repeat(1, 1fr); /* Single column on portrait screens */ 
   }
