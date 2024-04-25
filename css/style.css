@@ -148,9 +148,19 @@ mark {
   }
   
   .grid-item {
-    border-radius: 15px; /* Rounded corners for portrait screens */
+    border-radius: 10px; /* Rounded corners for portrait screens */
   }
 }
+
+.mobile-portrait {
+    /* Styles only for mobile devices in portrait orientation */
+  .gif-container {
+    grid-template-columns: repeat(1, 1fr); /* Single column on portrait screens */ 
+  }
+  
+  .grid-item {
+    border-radius: 30px; /* Rounded corners for portrait screens */
+} 
 
 
 /* Footer */
