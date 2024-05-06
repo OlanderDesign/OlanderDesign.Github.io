@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--<link rel="stylesheet" type="text/css" href="css/navigationbar.css">-->
     <link rel="stylesheet" type="text/css" href="css/post-it.css">
+    <link rel="stylesheet" type="text/css" href="css/kanban.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
@@ -29,53 +30,41 @@
         </p>
     </div>
     
-    <div class="frame">
-      <div class="item full-width">Full Width Content</div>
-      <div class="tile">Content 1</div>
-      <div class="tile"><img src="assets/DessertWall.png" alt="Image 1"></div>
-      <div class="tile">Content 3</div>
-    </div>
-
-
-    <div class="container">
-      <div class="grid-container">
-        <div class="col">
-          <div class="inner-row">Content for row 1 in column 1</div>
-          <div class="inner-row"><img src="assets/DessertWall.png" alt="Image 1"></div>
-          <div class="inner-row">Content for row 3 in column 1</div>
-        </div>
-        <div class="col">
-          <div class="inner-row">Content for row 1 in column 1</div>
-          <div class="inner-row"><img src="assets/DessertWall.png" alt="Image 1"></div>
-          <div class="inner-row">Content for row 3 in column 1</div>
-        </div>
-        <div class="col">
-          <div class="inner-row">Content for row 1 in column 1</div>
-          <div class="inner-row"><img src="assets/DessertWall.png" alt="Image 1"></div>
-          <div class="inner-row">Content for row 3 in column 1</div>
-        </div>
-      </div>  
-    </div>
-
-    <!--<div class="box">
-      <div class="row">
-        <div class="col">
-          <div class="inner-row">Content for row 1 in column 1</div>
-          <div class="inner-row"><img src="assets/DessertWall.png" alt="Image 1"></div>
-          <div class="inner-row">Content for row 3 in column 1</div>
-        </div>
-        <div class="col">
-          <div class="inner-row">Content for row 1 in column 2</div>
-          <div class="inner-row"><img src="assets/DessertWall.png" alt="Image 1"></div>
-          <div class="inner-row">Content for row 3 in column 2</div>
-        </div>
-        <div class="col">
-          <div class="inner-row">Content for row 1 in column 3</div>
-          <div class="inner-row"><img src="assets/DessertWall.png" alt="Image 1"></div>
-          <div class="inner-row">Content for row 3 in column 3</div>
+    <div class="kanban-container">
+      <!-- ToDo column -->
+      <div class="kanban-column">
+        <h2 class="column-header">ToDo</h2>
+        <div class="kanban-card">
+          Task Title
+          ℹ️ Emoji Info
+          Week 1
         </div>
       </div>
-    </div>-->
+    
+      <!-- ToGo column -->
+      <div class="kanban-column">
+        <h2 class="column-header">ToGo</h2>
+        <!-- Cards for ToGo column -->
+      </div>
+    
+      <!-- inFlow column -->
+      <div class="kanban-column">
+        <h2 class="column-header">inFlow</h2>
+        <!-- Cards for inFlow column -->
+      </div>
+    
+      <!-- TaDa column -->
+      <div class="kanban-column">
+        <h2 class="column-header">TaDa</h2>
+        <!-- Cards for TaDa column -->
+      </div>
+    
+      <!-- NoGo column -->
+      <div class="kanban-column">
+        <h2 class="column-header">NoGo</h2>
+        <!-- Cards for NoGo column -->
+      </div>
+    </div>
 
     
     <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle">
