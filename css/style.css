@@ -60,6 +60,7 @@ a {
   max-width: 1200px; /* Set a maximum width for the container */
   margin: 0 auto; /* Center the container horizontally */
   padding: 0 20px; /* Padding on both sides */
+  margin-bottom: 20px; /* Add margin after the container */
 }
 
 
