@@ -40,11 +40,18 @@
       object-fit: contain; /* Adjust to your preference */
     }
 
+    @media screen and (orientation: landscape) {
+      .square {
+        width: calc(50%);
+      }
+    }
+    
     @media screen and (orientation: portrait) {
       .square {
         width: calc(100%);
       }
     }
+    
     /* CSS ends here */
   </style>
 </head>
