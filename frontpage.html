@@ -7,7 +7,6 @@
   <style>
     /* CSS starts here */
     .container {
-      padding: 0 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -16,7 +15,7 @@
     }
 
     .square {
-      width: calc(50% - 20px);
+      width: calc(50%);
       aspect-ratio: 1; /* Maintain square aspect ratio */
       margin: 0; /* Remove margin */
       padding: 0; /* Remove padding */
@@ -44,7 +43,7 @@
 
     @media screen and (orientation: portrait) {
       .square {
-        width: calc(100% - 20px);
+        width: calc(100%);
       }
     }
     /* CSS ends here */
