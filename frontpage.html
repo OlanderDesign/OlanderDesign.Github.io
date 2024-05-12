@@ -43,15 +43,16 @@
     @media screen and (orientation: landscape) {
       .square {
         width: calc(50%);
-        aspect-ratio: 1; /* Maintain square aspect ratio */
       }
     }
     
     @media screen and (orientation: portrait) {
       .square {
         width: calc(100%);
-        aspect-ratio: 1; /* Maintain square aspect ratio */
       }
+      .square img {
+        width: 100%;
+      } 
     }
     
     /* CSS ends here */
