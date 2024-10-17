@@ -127,6 +127,27 @@ mark {
   object-fit: cover;
 }
 
+/* my picture - version 2 for top-right placement */
+.circle-top-right {
+  position: fixed;
+  top: 20px; /* Juster efter behov */
+  right: 20px; /* Juster efter behov */
+  width: 125px; /* Juster efter behov */
+  height: 125px; /* Juster efter behov */
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle-top-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact-button {
   position: fixed;
   bottom: 20px; /* Adjust as needed */
