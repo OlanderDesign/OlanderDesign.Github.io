@@ -132,8 +132,8 @@ mark {
   position: fixed;
   top: 20px; /* Juster efter behov */
   right: 20px; /* Juster efter behov */
-  width: 125px; /* Juster efter behov */
-  height: 125px; /* Juster efter behov */
+  width: 100px; /* Juster efter behov */
+  height: 100px; /* Juster efter behov */
   background-color: #333;
   border-radius: 50%;
   display: flex;
