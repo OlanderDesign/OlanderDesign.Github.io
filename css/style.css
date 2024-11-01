@@ -124,13 +124,6 @@ mark {
   animation: squiggle 1s infinite alternate ease-in-out;
 }
 
-/* Optional: Animation to make it look more dynamic */
-@keyframes squiggle {
-  0% { transform: rotate(-1deg); }
-  50% { transform: rotate(1deg); }
-  100% { transform: rotate(-1deg); }
-}
-
 /* my picture */
 .circle {
   position: fixed;
