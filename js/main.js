@@ -45,3 +45,20 @@ labels.forEach((label, index) => {
     },
   });
 });
+
+// PDF print code
+<script>
+  function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Hent indholdet af den del af siden, du vil gemme som PDF
+    const content = document.getElementById('content-to-print').innerHTML;
+
+    // Tilføj indholdet til PDF'en
+    doc.text(content, 10, 10);
+
+    // Download PDF'en
+    doc.save('webpage.pdf');
+  }
+</script>
