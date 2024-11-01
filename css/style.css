@@ -99,11 +99,36 @@ mark {
   font-size: inherit;
 }
 
-/* underlining */
+/* underlining
 .underline {
   text-decoration: underline;
   text-decoration-color: red;
   text-decoration-style: wavy;
+} */
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Adjust the thickness as needed */
+  background-color: red;
+  border-radius: 1px; /* This softens the edges */
+  transform: rotate(-1deg); /* A slight rotation adds a human touch */
+  animation: squiggle 1s infinite alternate ease-in-out;
+}
+
+/* Optional: Animation to make it look more dynamic */
+@keyframes squiggle {
+  0% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  100% { transform: rotate(-1deg); }
 }
 
 /* my picture */
