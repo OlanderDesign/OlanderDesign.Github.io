@@ -7,6 +7,7 @@
   --red: #FF9A9A;
   --green: #e6eebf;
   --yellow: #fff4bc;
+  --blue: #1d97df
 }
 
 /* Container for post-its */
@@ -46,6 +47,10 @@
 
 .post-it.red {
   background-color: var(--red); /* Set background color */
+}
+
+.post-it.blue {
+  background-color: var(--blue); /* Set background color */
 }
 
 /* used for filling out no post-it areas */
