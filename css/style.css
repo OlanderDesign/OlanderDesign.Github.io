@@ -206,12 +206,15 @@ mark {
 
 /* Footer */
 .footer {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  text-align: center;
-  padding: 20px;
-  /*position: fixed;*/
-  left: 0;
-  bottom: 0;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+    background-color: #f1f1f1; /* Optional: Add background color */
+    text-align: center;
+    padding: 20px; /* Adjust as needed */
+}
+  
+.footer p {
+    margin: 0;
 }
