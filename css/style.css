@@ -23,7 +23,7 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px;
 }
@@ -34,9 +34,9 @@ header {
 }
 
 .site-name {
+  margin: 0;
   font-family: 'Permanent Marker';
   font-size: 50px;
-  margin: 0;
   text-align: center;  
 }
 
@@ -166,6 +166,25 @@ mark {
   object-fit: cover;
 }
 
+/* my logo - version 2 for top-left placement */
+.logo-top-left {
+  position: fixed;
+  top: 10px; /* Juster efter behov */
+  left: 10px; /* Juster efter behov */
+  width: auto; /* følger højde */
+  height: 125px; /* Juster efter behov */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-top-left img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact-button {
   position: fixed;
   bottom: 20px; /* Adjust as needed */
@@ -201,8 +220,7 @@ mark {
   .grid-item {
     border-radius: 30px; /* Rounded corners for portrait screens */
   } 
-} 
-
+}
 
 /* Footer */
 .footer {
