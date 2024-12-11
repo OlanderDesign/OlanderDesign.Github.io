@@ -30,7 +30,7 @@ header {
 
 .logo img {
   width: auto; /* Adjust the width as needed */
-  height: 50px; /* This maintains the aspect ratio */
+  height: 150px; /* This maintains the aspect ratio */
 }
 
 .site-name {
@@ -201,8 +201,7 @@ mark {
   .grid-item {
     border-radius: 30px; /* Rounded corners for portrait screens */
   } 
-} 
-
+}
 
 /* Footer */
 .footer {
