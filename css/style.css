@@ -23,7 +23,7 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px;
 }
@@ -35,14 +35,10 @@ header {
 
 .site-name {
   margin: 0;
-}
-
-.site-name h1 {
   font-family: 'Permanent Marker';
   font-size: 50px;
   text-align: center;  
 }
-
 
 body {
   font-family: 'lato', cursive;
