@@ -169,10 +169,10 @@ mark {
 /* my logo - version 2 for top-left placement */
 .logo-top-left {
   position: fixed;
-  top: 20px; /* Juster efter behov */
-  left: 20px; /* Juster efter behov */
+  top: 10px; /* Juster efter behov */
+  left: 10px; /* Juster efter behov */
   width: auto; /* følger højde */
-  height: 150px; /* Juster efter behov */
+  height: 125px; /* Juster efter behov */
   display: flex;
   justify-content: center;
   align-items: center;
