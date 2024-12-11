@@ -28,6 +28,10 @@ header {
   padding: 50px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .logo img {
   width: auto; /* Adjust the width as needed */
   height: 50px; /* This maintains the aspect ratio */
@@ -173,8 +177,6 @@ mark {
   left: 20px; /* Juster efter behov */
   width: auto; /* følger højde */
   height: 100px; /* Juster efter behov */
-  background-color: #333;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
