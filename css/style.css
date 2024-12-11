@@ -176,7 +176,7 @@ mark {
   top: 20px; /* Juster efter behov */
   left: 20px; /* Juster efter behov */
   width: auto; /* følger højde */
-  height: 100px; /* Juster efter behov */
+  height: 150px; /* Juster efter behov */
   display: flex;
   justify-content: center;
   align-items: center;
