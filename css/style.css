@@ -43,7 +43,7 @@ header {
 body {
   font-family: 'lato', cursive;
   text-align: justify;
-  font-size: 1.5vw; /* Set font size based on viewport width */
+  font-size: 2vw; /* Set font size based on viewport width */
   line-height: 1.2; /* Set line height */
   color: var(--text-color);
   background-color: var(--background-color);
