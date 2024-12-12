@@ -234,10 +234,10 @@ mark {
     align-items: center;
     height: 100px; /* Adjust as needed */
     background-color: #f1f1f1; /* Optional: Add background color */
-    text-align: center;
     padding: 20px; /* Adjust as needed */
 }
   
 .footer p {
     margin: 0;
+    text-align: center;
 }
