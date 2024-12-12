@@ -49,10 +49,6 @@ body {
   background-color: var(--background-color);
 }
 
-br {
-  display: block; /* Allows styling of spacing */
-  line-height: 0.5; /* Adjust to create half the default spacing */
-}
 
 /* remove underline and color change on hyperlinks and give them a normal look. could be interesting to do a hover over effect though */
 a {
