@@ -233,7 +233,7 @@ mark {
 }
 
 /* Footer */
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +242,7 @@ mark {
     padding: 20px; /* Adjust as needed */
 }
   
-.footer p {
+footer p {
     margin: 0;
     text-align: center;
 }
