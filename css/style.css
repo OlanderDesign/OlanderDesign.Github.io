@@ -68,6 +68,11 @@ a {
   margin-bottom: 20px; /* Add margin after the container */
 }
 
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .grid-container {
   display: grid;
