@@ -148,6 +148,48 @@ mark {
   animation: squiggle 1s infinite alternate ease-in-out;
 }
 
+/* visitkort */
+.visitkort {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--filler-color);
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-blend-mode: multiply;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.visitkort .detaljer {
+  flex: 1;
+}
+
+.visitkort .detaljer h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.visitkort .detaljer p {
+  font-size: 0.95em;
+  margin: 4px 0;
+}
+
+.visitkort .logo {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.visitkort .logo img {
+  max-height: 60px;
+  width: auto;
+}
+
+
 /* my picture */
 .circle {
   position: fixed;
