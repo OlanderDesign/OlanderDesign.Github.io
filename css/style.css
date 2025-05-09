@@ -135,15 +135,16 @@ mark {
 
 /* visitkort */
 .visitkort {
-  max-width: 500px;
+  width: 510px;
+  height: 330px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 20px 30px;
   background-color: var(--filler-color);
   background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   background-blend-mode: multiply;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,21 +153,26 @@ mark {
 
 .visitkort .detaljer {
   flex: 1;
+  padding-right: 20px;
 }
 
 .visitkort .detaljer h2 {
-  font-size: 1.5em;
-  margin-bottom: 5px;
+  font-size: 1.6em;
+  margin-bottom: 8px;
 }
 
 .visitkort .detaljer p {
   font-size: 0.95em;
-  margin: 4px 0;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
 }
 
-.visitkort .logo {
-  margin-left: 20px;
-  flex-shrink: 0;
+.visitkort .detaljer i {
+  margin-right: 10px;
+  color: #444;
+  font-size: 1em;
+  width: 20px;
 }
 
 .visitkort .logo img {
