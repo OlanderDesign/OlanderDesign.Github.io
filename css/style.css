@@ -102,21 +102,6 @@ a {
   text-align: justify;
 }
 
-.cta-knap {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-knap:hover {
-  background-color: #005fa3;
-}
-
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
@@ -294,7 +279,6 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100px; /* Adjust as needed */
-    background-color: #f1f1f1; /* Optional: Add background color */
     padding: 20px; /* Adjust as needed */
 }
   
