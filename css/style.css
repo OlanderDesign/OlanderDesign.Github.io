@@ -108,6 +108,11 @@ mark {
   font-size: inherit;
 }
 
+.markred {
+  background: linear-gradient(to bottom, transparent 50%, #ff5f5f 50%);
+  font-size: inherit;
+}
+
 /* underlining
 .underline {
   text-decoration: underline;
