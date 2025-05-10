@@ -138,6 +138,12 @@ mark {
   animation: squiggle 1s infinite alternate ease-in-out;
 }
 
+/* Paper effekt bruges som class i img der skal ligne papir med skygge */
+.paper-effect {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; /* valgfrit – blødere hjørner */
+}
+
 /* visitkort */
 .visitkort {
   width: 510px;
