@@ -7,11 +7,14 @@
     <link rel="icon" type="image/svg+xml" href="assets/JeppeO.jpeg">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
     <!--ref direct to a image on a post by adding https://www.jeppeo.com/index?post=1-->
     <meta property="og:image" content="assets/JeppeO_Logo.svg">
     
   </head>
+  
   <body>
     <header>
       <h1 class="site-name">JeppeO.com</h1>
@@ -45,8 +48,38 @@
       <div class="img-container">
         <img src="assets/Testforløb.jpeg" class="paper-effect" alt="VP statement">
       </div>
-    </div> 
-  
+    </div>
+    
+    <!-- Swiper JS -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/Testforløb.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Testforløb.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/Testforløb.jpeg" alt=""></div>
+      </div>
+      <!-- Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swipe JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 4000,
+        },
+      });
+    </script>  
     
     <a class="logo-top-left"><img src="assets/JeppeO_Logo.svg"></a>
     <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle-top-right"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
