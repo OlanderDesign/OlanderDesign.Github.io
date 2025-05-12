@@ -59,39 +59,41 @@ De fleste SMV’er har idéer, ambitioner og fornemmelser – men mangler tid, s
 Testkortene her er mit værktøj til at udfordre det, vi tror – og skabe klarhed, handling og fremdrift i stedet.
 Hvert kort tager udgangspunkt i en konkret hypotese og giver os mulighed for at teste den hurtigt, praktisk og sammen med jer.
 <br><br>
-<b>Det handler ikke om at have ret. Det handler om at finde ud af, hvad der virker.</b>
-        </p>
-      <!-- Swiper JS -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="assets/Test1.jpeg" class="paper-effect" alt=""></div>
-          <div class="swiper-slide"><img src="assets/Test2.jpeg" class="paper-effect" alt=""></div>
-          <div class="swiper-slide"><img src="assets/Test3.jpeg" class="paper-effect" alt=""></div>
-        </div>
-        <!-- Navigation -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
+<b>Det handler ikke om at have ret. Det handler om at finde ud af, hvad der virker.</b></p>
       </div>
-    </div> 
-    <!-- Swipe JS script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.swiper', {
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        autoplay: {
-          delay: 4000,
-        },
-      });
-    </script>  
+      <!-- Swiper JS -->
+      <div class="swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/Test1.jpeg" class="paper-effect" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Test2.jpeg" class="paper-effect" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Test3.jpeg" class="paper-effect" alt=""></div>
+          </div>
+          <!-- Navigation -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div> 
+      <!-- Swipe JS script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          autoplay: {
+            delay: 4000,
+          },
+        });
+      </script>  
     
     <a class="logo-top-left"><img src="assets/JeppeO_Logo.svg"></a>
     <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle-top-right"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>

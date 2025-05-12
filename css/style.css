@@ -102,6 +102,10 @@ a {
   text-align: justify;
 }
 
+.swiper-container {
+  margin: 0 30px; /* eller padding */
+}
+
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
