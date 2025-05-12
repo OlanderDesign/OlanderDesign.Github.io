@@ -103,7 +103,11 @@ a {
 }
 
 .swiper-container {
-  margin: 0 40px; /* eller padding */
+  margin: 10px 40px; /* eller padding */
+}
+
+.swiper-pagination-bullet-active {
+  background: #fe5442ff;
 }
 
 /* highlighter */
