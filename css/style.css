@@ -111,6 +111,23 @@ a {
   background: #fe5442ff;
 }
 
+.swiper {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+} 
+
+.swiper-slide {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
 /* highlighter */
 mark {
   background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);

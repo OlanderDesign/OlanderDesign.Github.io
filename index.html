@@ -81,13 +81,19 @@
           <div class="swiper-button-next" style="color: #fe5442ff;"></div>
           <div class="swiper-pagination" style="color: #fe5442ff;"></div>
         </div>
-      </div> 
-      <!-- Swipe JS script -->
+      </div>
+      
+      <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
         const swiper = new Swiper('.swiper', {
-          loop: true,
-          spaceBetween: 20,
+          effect: 'cards',
+          grabCursor: true,
+          cardsEffect: {
+            perSlideOffset: 8,
+            perSlideRotate: 2,
+            slideShadows: true,
+          },
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
