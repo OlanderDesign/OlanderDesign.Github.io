@@ -104,6 +104,7 @@ a {
 
 .swiper-container {
   margin: 10px 40px; /* eller padding */
+  padding: 20px 20px; /* Padding top and bottom */ 
 }
 
 .swiper-pagination-bullet-active {
