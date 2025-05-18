@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
     <!--ref direct to a image on a post by adding https://www.jeppeo.com/index?post=1-->
     <meta property="og:image" content="assets/JeppeO_Logo.svg">
-    
   </head>
+  
+
   
   <body>
     <header>
@@ -25,7 +27,7 @@
       <div class="img-container">
         <img src="assets/Post-it_Banner.png" alt="post-it">
         <br><br>
-        <img src="assets/ABC123Method.jpg" class="paper-effect" alt="ABC 123 Method">
+        <img src="assets/ABC123Method.jpg" class="paper-effect" alt="ABC 123 Method" data-aos="fade-up">
       </div>
     </div>
     
@@ -92,7 +94,12 @@
             clickable: true,
           },
         });
-      </script>  
+      </script>
+      <!-- Animate On Scroll Script-->
+      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     
     <a class="logo-top-left"><img src="assets/JeppeO_Logo.svg"></a>
     <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle-top-right"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
