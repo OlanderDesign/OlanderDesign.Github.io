@@ -55,60 +55,8 @@
     </div> -->
     
     <div class="container">
-        <svg width="100%" height="100%" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <!-- Grid Pattern -->
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d0d0d0" stroke-width="1"/>
-            </pattern>
 
-            <!-- Ink Sketch Effekt -->
-            <filter id="ink-sketch" x="-50%" y="-50%" width="200%" height="200%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise"/>
-              <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
-            </filter>
-          </defs>
-
-          <!-- Baggrund med grid og runde hjørner -->
-          <rect x="20" y="20" width="1080" height="900" rx="24" ry="24" fill="#f7f7f7"/>
-          <rect x="20" y="20" width="1080" height="900" fill="url(#grid)" rx="24" ry="24"/>
-
-          <!-- Hovedindhold rykket ind med padding -->
-          <g transform="translate(50,50)" scale(0.25)>
-            <g transform="matrix(1,0,0,1,-40,-145)">
-              <!-- Cirklen -->
-              <g id="Circle" transform="matrix(1.10655,0,0,1.10655,-48.5238,-80.8928)">
-                <circle cx="427.929" cy="552.071" r="347.929" style="fill:white;"/>
-              </g>
-
-              <!-- LightLine -->
-              <g id="LightLine" transform="matrix(0.941176,0,0,0.941176,25.2941,32.0084)">
-                <path d="M885.813,595.004L885.813,454.741L1013.31,529.116L690.596,529.116C646.615,529.116 610.908,493.409 610.908,449.429C610.908,405.448 646.615,369.741 690.596,369.741C734.576,369.741 769.552,399.919 770,460.054C770.463,522.188 770,537.676 770,544.142C770,731.793 617.651,884.142 430,884.142C242.349,884.142 90,731.793 90,544.142C90,356.491 242.349,204.142 430,204.142C457.184,204.142 489.123,205.986 508.973,213.377C535.683,223.324 544.126,234.795 547.375,252.866C558.083,312.426 555.717,526.039 546.875,582.241C527.296,706.687 455.526,721.421 387.5,724.641C281.45,729.661 290.684,655.005 291.592,564.098" 
-                  style="fill:none;stroke:white;stroke-width:75px;"/>
-              </g>
-
-              <!-- DarkLine -->
-              <g id="DarkLine" filter="url(#ink-sketch)" transform="matrix(0.941176,0,0,0.941176,25.2941,32.0084)">
-                <path d="M885.813,595.004L885.813,454.741L1013.31,529.116L690.596,529.116C646.615,529.116 610.908,493.409 610.908,449.429C610.908,405.448 646.615,369.741 690.596,369.741C734.576,369.741 769.552,399.919 770,460.054C770.463,522.188 770,537.676 770,544.142C770,731.793 617.651,884.142 430,884.142C242.349,884.142 90,731.793 90,544.142C90,356.491 242.349,204.142 430,204.142C457.184,204.142 489.123,205.986 508.973,213.377C535.683,223.324 544.126,234.795 547.375,252.866C558.083,312.426 555.717,526.039 546.875,582.241C527.296,706.687 455.526,721.421 387.5,724.641C281.45,729.661 290.684,655.005 291.592,564.098" 
-                  style="fill:none;stroke:black;stroke-width:50px;"/>
-              </g>
-
-              <!-- Dot -->
-              <g id="Dot" transform="matrix(0.0817255,-0.687045,0.687045,0.0817255,-92.3944,683.774)">
-                <path d="M295.653,451.09C297.898,451.396 312.359,452.61 328.805,462.03C332.613,464.211 335.35,466.093 340.77,470.316C345.973,474.371 348.56,477.338 351.212,479.959C382.772,511.147 382.709,562.825 350.029,594.088C315.574,627.05 259.73,622.932 230.082,584.518C201.448,547.418 209.671,493.403 248.74,466.154C270.079,451.271 291.149,451.22 295.653,451.09ZM295.513,508.902C295.42,508.899 283.395,507.705 274.155,517.946C261.002,532.525 266.524,556.169 285.267,563.819C304.747,571.77 327.162,557.629 327.611,535.375C327.635,534.207 328.267,522.851 318.824,512.901C318.808,512.884 318.408,512.205 315.685,510.566C313.622,509.324 312.42,508.758 309.597,508.104C303.704,506.739 299.6,507.677 295.513,508.902Z" 
-                  style="fill:rgb(255,95,95);"/>
-              </g>
-            </g>
-          </g>
-        </svg>
-        
-      
-      
-      
-      
-      
-      
-        <div class="position-relative w-100" style="padding-bottom: 83.33%; height: 0;"> <!-- 1080/900 = 1.2 = 83.33% -->
+      <div class="position-relative w-100" style="padding-bottom: 83.33%; height: 0;"> <!-- 1080/900 = 1.2 = 83.33% -->
         <svg class="position-absolute top-0 start-0 w-100 h-100" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
           <defs>
             <!-- 🎨 Farver -->
@@ -144,7 +92,7 @@
           <rect x="20" y="20" width="1040" height="860" fill="url(#grid)" rx="24" ry="24"/>
 
           <!-- Hovedindhold rykket ind -->
-          <g transform="translate(50,50)">
+          <g transform="translate(540,450) scale(0.50) translate(-540,-450)">
             <g transform="matrix(1,0,0,1,-40,-145)">
               <!-- Cirklen -->
               <g id="Circle" transform="matrix(1.10655,0,0,1.10655,-48.5238,-80.8928)">
@@ -171,70 +119,57 @@
             </g>
           </g>
         </svg>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script>
+          const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+            const lightPath = document.querySelector("#LightLine path");
+            const darkPath = document.querySelector("#DarkLine path");
+            const lightLength = lightPath.getTotalLength();
+            const darkLength = darkPath.getTotalLength();
+
+            // Start: gem alt undtagen cirklen
+            gsap.set("#Dot", { autoAlpha: 0 });
+            gsap.set(lightPath, { strokeDasharray: lightLength, strokeDashoffset: -lightLength });
+            gsap.set(darkPath, { strokeDasharray: darkLength, strokeDashoffset: -darkLength });
+
+            // 1. Dot kommer frem
+            timeline.to("#Dot", { duration: 1.5, autoAlpha: 1 });
+
+            // 2. Light og Dark tegnes (baglæns fra -length til 0)
+            timeline.to(lightPath, { duration: 2, strokeDashoffset: 0, ease: "power1.inOut" }, ">-0.2");
+            timeline.to(darkPath, { duration: 2, strokeDashoffset: 0, ease: "power1.inOut" }, "<");
+
+            // 3. Dot forsvinder og DarkLine viskes ud fremad (0 → +length)
+            timeline.to("#Dot", { duration: 0.5, autoAlpha: 0 }, ">0.5");
+            timeline.to(darkPath, { duration: 1.5, strokeDashoffset: darkLength, ease: "power1.inOut" }, "<");
+            timeline.to("#DarkLine path", {duration: 1.5, strokeDashoffset: 3615, ease: "power1.inOut" }, "<");
+
+            // 4. Zoom cirklen ud
+            timeline.to("#Circle", {
+              duration: 1.5,
+              scale: 2.0,
+              transformOrigin: "center",
+              ease: "power2.inOut"
+            });
+
+            // 5. LightLine forsvinder (0 → +length)
+            timeline.to(lightPath, { duration: 1.5, strokeDashoffset: lightLength, ease: "power1.inOut" });
+            timeline.to("#LightLine path", {duration: 1.5, strokeDashoffset: 3615, ease: "power1.inOut" }, "<");
+
+            // 6. Zoom cirkel tilbage
+            timeline.to("#Circle", {
+              duration: 1.5,
+              scale: 1,
+              transformOrigin: "center",
+              ease: "power2.inOut"
+            });
+          </script>
+
       </div>
 
-    
-    
-    
-    
-    
-    
-    
-      <div class="container">
-      <svg width="100%" height="100%" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <!-- 🎨 Farver -->
-          <style type="text/css">
-            .bg { fill: #f7f7f7; }     /* Light grey */
-            .grid { stroke: #d0d0d0; } /* Grid grey */
-            .white { stroke: #ffffff; fill: none; }
-            .dark { stroke: #222222; fill: none; }
-            .red { fill: #ff5f5f; }
-          </style>
 
-          <!-- 📐 Grid Pattern -->
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" class="grid" stroke-width="1"/>
-          </pattern>
-
-          <!-- ✍️ Ink Sketch Effekt -->
-          <filter id="ink-sketch" x="-50%" y="-50%" width="200%" height="200%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise"/>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
-          </filter>
-        </defs>
-
-        <!-- 🪟 Baggrund med grid og runde hjørner -->
-        <rect x="0" y="0" width="1080" height="900" class="bg" rx="24" ry="24"/>
-        <rect x="0" y="0" width="1080" height="900" fill="url(#grid)" rx="24" ry="24"/>
-
-        <!-- 🧱 Indhold – styret med padding og skalering -->
-        <g id="MainContent" transform="translate(100, 80) scale(0.85)">
-          <!-- Cirklen -->
-          <g transform="matrix(1.10655,0,0,1.10655,-48.5238,-80.8928)">
-            <circle cx="427.929" cy="552.071" r="347.929" fill="white"/>
-          </g>
-
-          <!-- LightLine -->
-          <g transform="scale(0.94)">
-            <path d="M885.813,595.004L885.813,454.741L1013.31,529.116L690.596,529.116C646.615,529.116 610.908,493.409 610.908,449.429C610.908,405.448 646.615,369.741 690.596,369.741C734.576,369.741 769.552,399.919 770,460.054C770.463,522.188 770,537.676 770,544.142C770,731.793 617.651,884.142 430,884.142C242.349,884.142 90,731.793 90,544.142C90,356.491 242.349,204.142 430,204.142C457.184,204.142 489.123,205.986 508.973,213.377C535.683,223.324 544.126,234.795 547.375,252.866C558.083,312.426 555.717,526.039 546.875,582.241C527.296,706.687 455.526,721.421 387.5,724.641C281.45,729.661 290.684,655.005 291.592,564.098"
-              class="white" stroke-width="75"/>
-          </g>
-
-          <!-- DarkLine -->
-          <g filter="url(#ink-sketch)" transform="scale(0.94)">
-            <path d="M885.813,595.004L885.813,454.741L1013.31,529.116L690.596,529.116C646.615,529.116 610.908,493.409 610.908,449.429C610.908,405.448 646.615,369.741 690.596,369.741C734.576,369.741 769.552,399.919 770,460.054C770.463,522.188 770,537.676 770,544.142C770,731.793 617.651,884.142 430,884.142C242.349,884.142 90,731.793 90,544.142C90,356.491 242.349,204.142 430,204.142C457.184,204.142 489.123,205.986 508.973,213.377C535.683,223.324 544.126,234.795 547.375,252.866C558.083,312.426 555.717,526.039 546.875,582.241C527.296,706.687 455.526,721.421 387.5,724.641C281.45,729.661 290.684,655.005 291.592,564.098"
-              class="dark" stroke-width="50"/>
-          </g>
-
-          <!-- Dot -->
-          <g transform="matrix(0.0817255,-0.687045,0.687045,0.0817255,-92.3944,683.774)">
-            <path d="M295.653,451.09C297.898,451.396 312.359,452.61 328.805,462.03C332.613,464.211 335.35,466.093 340.77,470.316C345.973,474.371 348.56,477.338 351.212,479.959C382.772,511.147 382.709,562.825 350.029,594.088C315.574,627.05 259.73,622.932 230.082,584.518C201.448,547.418 209.671,493.403 248.74,466.154C270.079,451.271 291.149,451.22 295.653,451.09ZM295.513,508.902C295.42,508.899 283.395,507.705 274.155,517.946C261.002,532.525 266.524,556.169 285.267,563.819C304.747,571.77 327.162,557.629 327.611,535.375C327.635,534.207 328.267,522.851 318.824,512.901C318.808,512.884 318.408,512.205 315.685,510.566C313.622,509.324 312.42,508.758 309.597,508.104C303.704,506.739 299.6,507.677 295.513,508.902Z"
-              class="red"/>
-          </g>
-        </g>
-      </svg>
-    </div>
 
       <div class="text-container">
               
