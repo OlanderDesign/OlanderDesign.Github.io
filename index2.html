@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="da" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeppe Olander – Innovation & Udviklingsledelse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 0;
+    }
+    footer {
+      background: var(--bs-light);
+      padding: 20px 0;
+      text-align: center;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      border-bottom: 2px solid currentColor;
+    }
+    .theme-toggle {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100" tabindex="0">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jeppe Olander</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#ydelser">Ydelser</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proces">Proces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#om-mig">Om mig</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item">
+            <a class="nav-link theme-toggle" id="themeToggle" title="Skift tema">
+              <i class="fas fa-circle-half-stroke"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="d-flex align-items-center" id="hero" style="min-height:100vh;">
+    <div class="container text-center" data-aos="fade-up">
+      <h1>Jeg skaber klarhed og momentum i usikkerhed og KAOS</h1>
+      <p class="lead">Innovation på jysk – kan det svare sig?</p>
+      <div class="ratio ratio-16x9 my-4">
+        <iframe src="https://www.youtube.com/embed/" title="Video placeholder" allowfullscreen></iframe>
+      </div>
+      <div class="mx-auto" style="max-width: 500px;">
+        <form>
+          <input type="text" class="form-control mb-2" placeholder="Navn" required>
+          <input type="email" class="form-control mb-2" placeholder="Email" required>
+          <textarea class="form-control mb-2" placeholder="Hvad vil du?" rows="3"></textarea>
+          <button class="btn btn-primary w-100" type="submit">Kontakt mig</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ydelser -->
+  <section id="ydelser" class="bg-light">
+    <div class="container text-center" data-aos="fade-up">
+      <h2>Det jeg tilbyder</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <i class="fa-solid fa-chalkboard-user fa-2x mb-2"></i>
+          <h5>Workshops</h5>
+          <p>3-timers fokuserede sessions med klar retning og energi.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-vial-circle-check fa-2x mb-2"></i>
+          <h5>Testforløb</h5>
+          <p>1-3 måneders eksperimenter – lav risiko, høj læring.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-diagram-project fa-2x mb-2"></i>
+          <h5>Projektledelse</h5>
+          <p>Ledelse med blik for både mennesker og mål – fleksibelt og effektfuldt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proces -->
+  <section id="proces">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Min tilgang</h2>
+      <p class="text-center mb-4">Jeg forstår virksomheden og menneskene – og skaber handling ud fra indsigt og ideer.</p>
+      <ul class="list-group list-group-flush mx-auto" style="max-width: 600px;">
+        <li class="list-group-item">1. Forstå mennesker og system</li>
+        <li class="list-group-item">2. Indsigt skaber ideer og udfordringer</li>
+        <li class="list-group-item">3. Muligheder parres med løsninger</li>
+        <li class="list-group-item">4. Handling og fremdrift</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Om mig -->
+  <section id="om-mig" class="bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Om mig</h2>
+      <p class="text-center mx-auto" style="max-width: 700px;">
+        Jeg elsker at lede forandring og finder altid en vej frem – også når det virker umuligt.
+        Min baggrund i energisektoren kombineret med en kreativ tilgang fra designverdenen gør mig til en krøllet ingeniørhjerne med holistisk blik.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt">
+    <div class="container text-center" data-aos="fade-up">
+      <h2>Kontakt</h2>
+      <p>Send mig en <a href="mailto:jeppe@eksempel.dk">mail</a> eller connect på <a href="https://www.linkedin.com">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Jeppe Olander · CVR 12345678</small>
+      <div><a href="https://www.linkedin.com" class="text-decoration-none"><i class="fab fa-linkedin fa-lg ms-2"></i></a></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("themeToggle").addEventListener("click", function () {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-bs-theme");
+      html.setAttribute("data-bs-theme", currentTheme === "dark" ? "light" : "dark");
+    });
+  </script>
+</body>
+</html>
