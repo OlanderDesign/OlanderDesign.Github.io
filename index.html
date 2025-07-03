@@ -1,245 +1,281 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-<title>Creative Business Development | Jeppe O – Innovation Partner</title>
-<meta name="description" content="Fra idé til implementering. Vi guider SMV’er og startups fra kaos og drømme til klare retninger, testede løsninger og nye forretningsmodeller. Strategisk sparring, kreative workshops og ledelse af initiativer.">
-    <link rel="icon" type="image/svg+xml" href="assets/JeppeO_Logo.svg">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- Animate On Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
-    <!--ref direct to a image on a post by adding https://www.jeppeo.com/index?post=1-->
-    <meta property="og:image" content="assets/JeppeO_Logo.svg">
-  </head>
-  
+<html lang="da" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>JeppeO – Innovation & Udviklingsledelse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-  
-  <body>
-    <header>
-      <h1 class="site-name">JeppeO.com</h1>
-    </header>
+    [data-bs-theme="light"] body {
+      color: #333333;
+    }
+    [data-bs-theme="dark"] body {
+      color: #ffffff;
+    }
 
-    <!-- Main content -->
-    <div class="container py-0 px-5 px-md-0">
-      <div class="text-center">
-        <img src="assets/Post-it_Banner.png" alt="post-it" class="img-fluid mb-4">
+    [data-bs-theme="dark"] .bg-light {
+      background-color: #1e1e1e !important;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+    footer {
+      background: var(--bs-light);
+      padding: 20px 0;
+      text-align: center;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      border-bottom: 2px solid currentColor;
+    }
+    .theme-toggle {
+      cursor: pointer;
+    }
     
-        <img src="assets/ABC123Method.jpg" alt="ABC 123 Method" class="img-fluid paper-effect mx-auto d-block mb-4" data-aos="fade-up" data-aos-duration="1000">
 
-        <a href="mailto:jeppe@jeppeo.com"> <img src="assets/VisitKort.jpg" alt="Visitkort" class="img-fluid paper-effect w-75 mx-auto d-block mb-4" data-aos="fade-up" data-aos-duration="1000"></a>
+    /* Ændre font */
+    body {
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .marker {
+      font-family: 'Permanent Marker';
+    }
+
+    .markerRed {
+      font-family: 'Permanent Marker';
+      color: #ff5f5f;
+    }
+
+    /* Kontakt-knap (btn-primary) i lilla */
+    .btn-primary {
+      background-color: #ff5f5f;
+      border-color: #ff5f5f;
+    }
+    .btn-primary:hover {
+      background-color: transparent;
+      color: #ff5f5f;
+      border-color: #ff5f5f;
+    }
+    /* Ændring af link-farver */
+    a {
+      color: #ff5f5f;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #333333;
+      text-decoration: underline;
+    }
+
+    /* my picture - version 3 for bottom-left placement */
+    .corner-image {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem; /* eller right: 20px; for højre */
+      height: clamp(60px, 12vw, 120px);
+      width: auto;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    .corner-image img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* my logo - version 3 for bottom-right placement */
+    .logo-bottom-right {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      height: clamp(60px, 10vw, 125px); /* Minimum 60px, vokser op til 125px */
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo-bottom-right img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+
+
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100" tabindex="0">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span class="marker">JeppeO</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#steAm">STE<span class="markerRed">A</span>M</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ydelser">Ydelser</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proces">Proces</a></li>
+          <li class="nav-item"><a class="nav-link" href="#om-mig">Om mig</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item">
+            <a class="nav-link theme-toggle" id="themeToggle" title="Skift tema">
+              <i class="fas fa-circle-half-stroke"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    
-<!--    <div class="container">
-      <div class="img-container">
-        <img src="assets/Post-it_Banner.png" alt="post-it">
-        <br><br>
-        <img src="assets/ABC123Method.jpg" class="paper-effect" alt="ABC 123 Method" data-aos="fade-up">
+  </nav>
+
+  <!-- Hero -->
+  <section class="d-flex align-items-center" id="hero" style="min-height:100vh;">
+    <div class="container text-center" data-aos="fade-up">
+      <h1>Skab klarhed i <span class="marker">K<span class="markerRed">A</span>OS</span><br>og Momentum i usikkerhed</h1>
+      <h3><span class="marker">Innov<span class="markerRed">A</span>tion på jysk</span></h3>
+      <div class="ratio ratio-16x9 my-4">
+        <iframe src="https://www.youtube.com/embed/" title="Video placeholder" allowfullscreen></iframe>
       </div>
-    </div> 
-    
-    <div class="visitkort">
-      <div class="visitkort-indhold">
-        <div class="detaljer">
-          <h2>Jeppe Olander</h2>
-          <p>Forretningsudvikler & Innovativ Partner</p>
-          <p><i class="fas fa-envelope" style="color: #fe5442ff;"></i> <a href="mailto:jeppe@jeppeo.com">Jeppe@JeppeO.com</a></p>
-          <p><i class="fas fa-mobile-alt" style="color: #fe5442ff;"></i> +45 6145 0066</p>
+    </div>
+  </section>
+
+  <!-- Ydelser -->
+  <section id="ydelser" class="bg-light">
+    <div class="container text-center" data-aos="fade-up">
+      <h2>Det jeg tilbyder</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <i class="fa-solid fa-chalkboard-user fa-2x mb-2"></i>
+          <h3><span class="marker">Workshops</span></h3>
+          <p>3-timers fokuserede sessions med klar retning og energi.</p>
         </div>
-      </div>
-    </div> -->
-    
-    <div class="container">
-
-      <div class="position-relative w-100" style="padding-bottom: 83.33%; height: 0;"> <!-- 1080/900 = 1.2 = 83.33% -->
-        <svg class="position-absolute top-0 start-0 w-100 h-100" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <!-- 🎨 Farver -->
-            <style type="text/css">
-              .bg { fill: #f7f7f7; }      /* Light grey */
-              .grid { stroke: #d0d0d0; }  /* Grid grey */
-              .white { stroke: #ffffff;   fill: none; }
-              .dark { stroke: #222222;    fill: none; }
-              .red { fill: #ff5f5f; }
-            </style>
-
-            <!-- Grid Pattern -->
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d0d0d0" stroke-width="1"/>
-            </pattern>
-
-            <!-- Ink Sketch Effekt -->
-            <filter id="ink-sketch" x="-50%" y="-50%" width="200%" height="200%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise"/>
-              <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
-            </filter>
-
-            <!-- ✏️ Ink Filter -->
-            <filter id="ink" x="-50%" y="-50%" width="200%" height="200%">
-              <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="1" result="turbulence" />
-              <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="20" xChannelSelector="R" yChannelSelector="G" />
-            </filter>
-            
-          </defs>
-
-          <!-- Baggrund med grid og runde hjørner -->
-          <rect x="20" y="20" width="1040" height="860" rx="24" ry="24" fill="#f7f7f7"/>
-          <rect x="20" y="20" width="1040" height="860" fill="url(#grid)" rx="24" ry="24"/>
-
-          <!-- Hovedindhold rykket ind -->
-          <g transform="translate(540,450) scale(0.50) translate(-540,-450)">
-            <g transform="matrix(1,0,0,1,-40,-145)">
-              <!-- Cirklen -->
-              <g id="Circle" transform="matrix(1.10655,0,0,1.10655,-48.5238,-80.8928)">
-                <circle cx="427.929" cy="552.071" r="347.929" style="fill:white;"/>
-              </g>
-
-              <!-- LightLine -->
-              <g id="LightLine" transform="matrix(0.941176,0,0,0.941176,25.2941,12.0084)">
-                <path d="M885.813,595.004L885.813,454.741L1013.31,529.116L690.596,529.116C646.615,529.116 610.908,493.409 610.908,449.429C610.908,405.448 646.615,369.741 690.596,369.741C734.576,369.741 769.552,399.919 770,460.054C770.463,522.188 770,537.676 770,544.142C770,731.793 617.651,884.142 430,884.142C242.349,884.142 90,731.793 90,544.142C90,356.491 242.349,204.142 430,204.142C457.184,204.142 489.123,205.986 508.973,213.377C535.683,223.324 544.126,234.795 547.375,252.866C558.083,312.426 555.717,526.039 546.875,582.241C527.296,706.687 455.526,721.421 387.5,724.641C281.45,729.661 290.684,655.005 291.592,564.098" 
-                  style="fill:none;stroke:white;stroke-width:75px;stroke-linecap:round;stroke-linejoin:round;"/>
-              </g>
-
-              <!-- DarkLine -->
-              <g id="DarkLine" filter="url(#ink)" transform="matrix(0.941176,0,0,0.941176,25.2941,12.0084)">
-                <path d="M885.813,595.004L885.813,454.741L1013.31,529.116L690.596,529.116C646.615,529.116 610.908,493.409 610.908,449.429C610.908,405.448 646.615,369.741 690.596,369.741C734.576,369.741 769.552,399.919 770,460.054C770.463,522.188 770,537.676 770,544.142C770,731.793 617.651,884.142 430,884.142C242.349,884.142 90,731.793 90,544.142C90,356.491 242.349,204.142 430,204.142C457.184,204.142 489.123,205.986 508.973,213.377C535.683,223.324 544.126,234.795 547.375,252.866C558.083,312.426 555.717,526.039 546.875,582.241C527.296,706.687 455.526,721.421 387.5,724.641C281.45,729.661 290.684,655.005 291.592,564.098" 
-                  class="dark" style=stroke-width:40px;stroke-linecap:round;stroke-linejoin:round;"/>
-              </g>
-
-              <!-- Dot -->
-              <g id="Dot" transform="matrix(0.0817255,-0.687045,0.687045,0.0817255,-82.3944,663.774)">
-                <path d="M295.653,451.09C297.898,451.396 312.359,452.61 328.805,462.03C332.613,464.211 335.35,466.093 340.77,470.316C345.973,474.371 348.56,477.338 351.212,479.959C382.772,511.147 382.709,562.825 350.029,594.088C315.574,627.05 259.73,622.932 230.082,584.518C201.448,547.418 209.671,493.403 248.74,466.154C270.079,451.271 291.149,451.22 295.653,451.09ZM295.513,508.902C295.42,508.899 283.395,507.705 274.155,517.946C261.002,532.525 266.524,556.169 285.267,563.819C304.747,571.77 327.162,557.629 327.611,535.375C327.635,534.207 328.267,522.851 318.824,512.901C318.808,512.884 318.408,512.205 315.685,510.566C313.622,509.324 312.42,508.758 309.597,508.104C303.704,506.739 299.6,507.677 295.513,508.902Z" 
-                  class="red" style=stroke-width:40px;stroke-linecap:round;stroke-linejoin:round;"/>
-              </g>
-            </g>
-          </g>
-        </svg>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script>
-          const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-
-            const lightPath = document.querySelector("#LightLine path");
-            const darkPath = document.querySelector("#DarkLine path");
-            const lightLength = lightPath.getTotalLength();
-            const darkLength = darkPath.getTotalLength();
-
-            // Start: gem alt undtagen cirklen
-            gsap.set("#Dot", { autoAlpha: 0 });
-            gsap.set(lightPath, { strokeDasharray: lightLength, strokeDashoffset: -lightLength });
-            gsap.set(darkPath, { strokeDasharray: darkLength, strokeDashoffset: -darkLength });
-
-            // 1. Dot kommer frem
-            timeline.to("#Dot", { duration: 1.5, autoAlpha: 1 });
-
-            // 2. Light og Dark tegnes (baglæns fra -length til 0)
-            timeline.to(lightPath, { duration: 2, strokeDashoffset: 0, ease: "power1.inOut" }, ">-0.2");
-            timeline.to(darkPath, { duration: 2, strokeDashoffset: 0, ease: "power1.inOut" }, "<");
-
-            // 3. Dot forsvinder og DarkLine viskes ud fremad (0 → +length)
-            timeline.to("#Dot", { duration: 0.5, autoAlpha: 0 }, ">0.5");
-            timeline.to(darkPath, { duration: 1.5, strokeDashoffset: darkLength, ease: "power1.inOut" }, "<");
-            timeline.to("#DarkLine path", {duration: 1.5, strokeDashoffset: 3615, ease: "power1.inOut" }, "<");
-
-            // 4. Zoom cirklen ud
-            timeline.to("#Circle", {
-              duration: 1.5,
-              scale: 2.0,
-              transformOrigin: "center",
-              ease: "power2.inOut"
-            });
-
-            // 5. LightLine forsvinder (0 → +length)
-            timeline.to(lightPath, { duration: 1.5, strokeDashoffset: lightLength, ease: "power1.inOut" });
-            timeline.to("#LightLine path", {duration: 1.5, strokeDashoffset: 3615, ease: "power1.inOut" }, "<");
-
-            // 6. Zoom cirkel tilbage
-            timeline.to("#Circle", {
-              duration: 1.5,
-              scale: 1,
-              transformOrigin: "center",
-              ease: "power2.inOut"
-            });
-          </script>
-
-      </div>
-
-
-
-      <div class="text-container">
-              
-        <br><br>
-        <h1>Fra antagelser til fremdrift
-        <br>
-        Sammen finder vi vejen</h1>
-        <p>Mine ydelser hjælper jer med at skabe overblik, teste idéer og drive dem sikkert videre. Vi kan sammensætte dem hver for sig – eller som en samlet proces.</p>
-      </div>
-      <!-- Swiper JS -->
-      <div class="swiper-container">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/KortWorkshop.jpeg" class="paper-effect" alt=""></div>
-            <div class="swiper-slide"><img src="assets/KortTestforløb.jpeg" class="paper-effect" alt=""></div>
-            <div class="swiper-slide"><img src="assets/KortPartnerskab.jpeg" class="paper-effect" alt=""></div>
-          </div>
-          <!-- Navigation -->
-          <div class="swiper-button-prev" style="color: #fe5442ff;"></div>
-          <div class="swiper-button-next" style="color: #fe5442ff;"></div>
-          <div class="swiper-pagination" style="color: #fe5442ff;"></div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-vial-circle-check fa-2x mb-2"></i>
+          <h3><span class="marker">Testforløb</span></h3>
+          <p>1-3 måneders eksperimenter – lav risiko, høj læring.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-diagram-project fa-2x mb-2"></i>
+          <h3><span class="marker">Partnerskab</span></h3>
+          <p>Ledelse med blik for både mennesker og mål – fleksibelt og effektfuldt.</p>
         </div>
       </div>
     </div>
-      
-    <div class="container">
-      <div class="text-container">
-        <br><br>
-        <h1>Klar på en snak?</h1>
-        <p>Lad os tage en ☕️ og se, hvad vi kan sætte i gang.</p>
-      </div>
-    </div> 
-      
-      <!-- JS: Bootstrap Bundle -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script>
-        const swiper = new Swiper('.swiper', {
-          effect: 'cards',
-          grabCursor: true,
-          cardsEffect: {
-            perSlideOffset: 8,
-            perSlideRotate: 2,
-            slideShadows: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
-      </script>
-      <!-- Animate On Scroll Script-->
-      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-    
-    <a class="logo-top-left"><img src="assets/JeppeO_Logo.svg"></a>
-    <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle-top-right"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2023 JeppeO - All rights reserved</p>
-    </footer>
-  <script src="js/main.js"></script>
-  </body>
+  <!-- Proces -->
+  <section id="proces">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Min tilgang</h2>
+      <p class="text-center mb-4">Jeg forstår virksomheden og menneskene – og skaber handling ud fra indsigt og ideer.</p>
+      <ul class="list-group list-group-flush mx-auto" style="max-width: 600px;">
+        <li class="list-group-item">1. Forstå mennesker og system</li>
+        <li class="list-group-item">2. Indsigt skaber ideer og udfordringer</li>
+        <li class="list-group-item">3. Muligheder parres med løsninger</li>
+        <li class="list-group-item">4. Handling og fremdrift</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Om mig -->
+  <section id="om-mig" class="bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">Om mig</h2>
+      <p class="text-center mx-auto" style="max-width: 700px;">
+        Jeg elsker at lede forandring og finder altid en vej frem – også når det virker umuligt.
+        Min baggrund i energisektoren kombineret med en kreativ tilgang fra designverdenen gør mig til en krøllet ingeniørhjerne med holistisk blik.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt">
+    <div class="container text-center" data-aos="fade-up">
+      <h2>Kontakt</h2>
+      <div class="mx-auto" style="max-width: 500px;">
+        <form id="kontaktForm" action="https://formspree.io/f/mvgrydpl" method="POST">
+          <input type="text" name="navn" class="form-control mb-2" placeholder="Navn" required>
+          <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+          <textarea name="message" class="form-control mb-2" placeholder="Hvordan kan jeg hjælpe dig videre?" rows="3" required></textarea>
+          <button type="submit" class="btn btn-primary w-100">Kontakt mig</button>
+        </form>
+        <!-- Popup besked -->
+        <div id="beskedPopup" style="display:none; margin-top:1rem;" class="alert alert-success">
+          Tak for din besked! Jeg vender tilbage snarest.
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="corner-image"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
+    <a class="logo-bottom-right"><img src="assets/JeppeO_Logo.svg"></a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container d-flex justify-content-center align-items-center gap-2 py-3">
+      <small>&copy; 2025 JeppeO · CVR 38284037 · </small><a href="https://www.linkedin.com/company/jeppeo/" class="text-decoration-none" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("themeToggle").addEventListener("click", function () {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-bs-theme");
+      html.setAttribute("data-bs-theme", currentTheme === "dark" ? "light" : "dark");
+    });
+  </script>
+  <!-- Vis en tak-besked uden side-reload -->
+  <script>
+    document.getElementById("kontaktForm").addEventListener("submit", async function (e) {
+      e.preventDefault(); // Forhindrer siden i at reloade
+
+      const form = e.target;
+      const data = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        document.getElementById("beskedPopup").style.display = "block";
+        form.reset();
+      } else {
+        alert("Ups! Noget gik galt. Prøv igen.");
+      }
+    });
+  </script>
+
+</body>
 </html>
