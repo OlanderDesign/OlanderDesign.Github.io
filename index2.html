@@ -75,6 +75,34 @@
       text-decoration: underline;
     }
 
+    /* my picture - version 2 for top-right placement */
+    .circle-top-right {
+      position: fixed;
+      top: 20px; /* Juster efter behov */
+      right: 20px; /* Juster efter behov */
+      width: 100px; /* Juster efter behov */
+      height: 100px; /* Juster efter behov */
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* my logo - version 2 for top-left placement */
+    .logo-top-left {
+      position: fixed;
+      top: 10px; /* Juster efter behov */
+      left: 10px; /* Juster efter behov */
+      width: auto; /* følger højde */
+      height: 125px; /* Juster efter behov */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
   </style>
 </head>
 
@@ -82,7 +110,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">JeppeO</a>
+      <a class="navbar-brand" href="#"><span class="marker">JeppeO</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -181,6 +209,10 @@
       </div>
     </div>
   </section>
+
+    <a class="logo-top-left"><img src="assets/JeppeO_Logo.svg"></a>
+    <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle-top-right"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
+
 
   <!-- Footer -->
   <footer>
