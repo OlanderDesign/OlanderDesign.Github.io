@@ -115,6 +115,25 @@
       object-fit: cover;
     }
 
+    .logo-bottom-right {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      height: clamp(60px, 10vw, 125px); /* Minimum 60px, vokser op til 125px */
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo-bottom-right img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+
+
   </style>
 </head>
 
