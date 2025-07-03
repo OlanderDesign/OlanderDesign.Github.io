@@ -26,7 +26,11 @@
     [data-bs-theme="dark"] body {
       color: #ffffff;
     }
-    
+
+    [data-bs-theme="dark"] .bg-light {
+      background-color: #000000 !important;
+    }
+
     section {
       padding: 60px 0;
     }
@@ -43,15 +47,6 @@
       cursor: pointer;
     }
     
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --color-bg: #333333;       /* mørk baggrund */
-      }
-    }
-
-    [data-bs-theme="dark"] .bg-light {
-      background-color: #222222 !important;
-    }
 
     /* Ændre font */
     body {
