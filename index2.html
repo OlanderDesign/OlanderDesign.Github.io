@@ -19,6 +19,14 @@
     html {
       scroll-behavior: smooth;
     }
+
+    [data-bs-theme="light"] body {
+      color: #333333;
+    }
+    [data-bs-theme="dark"] body {
+      color: #ffffff;
+    }
+    
     section {
       padding: 60px 0;
     }
@@ -37,12 +45,12 @@
     
     @media (prefers-color-scheme: dark) {
       :root {
-        --color-bg: #1a1a1a;       /* mørk baggrund */
+        --color-bg: #333333;       /* mørk baggrund */
       }
     }
 
     [data-bs-theme="dark"] .bg-light {
-      background-color: #2a2a2a !important;
+      background-color: #222222 !important;
     }
 
     /* Ændre font */
