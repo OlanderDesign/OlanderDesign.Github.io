@@ -164,45 +164,16 @@
     <div class="container text-center" data-aos="fade-up">
       <h2>Kontakt</h2>
       <div class="mx-auto" style="max-width: 500px;">
-        <!--form action="https://formspree.io/f/mvgrydpl" method="POST">
-          <input type="text"   name="Navn"   placeholder="Navn"  required>
-          <input type="email"  name="Email"  placeholder="Email" required>
-          <textarea name="Besked" placeholder="Hvad vil du?" rows="3"></textarea>
-          <button type="submit">Kontakt mig</button>
-        </form-->
-
-        <form action="https://formspree.io/f/mvgrydpl" method="POST">
-          <input type="text" class="form-control mb-2" placeholder="Navn" required>
-          <input type="email" class="form-control mb-2" placeholder="Email" required>
-          <textarea class="form-control mb-2" placeholder="Hvordan kan jeg hjælpe dig videre?" rows="3"></textarea>
-          <button class="btn btn-primary w-100" type="submit">Kontakt mig</button>
-        </form>
-
-
-        <form action="https://formspree.io/f/mvgrydpl" method="POST">
-          <input 
-            type="text" 
-            name="navn" 
-            class="form-control mb-2" 
-            placeholder="Navn" 
-            required
-          >
-          <input 
-            type="email" 
-            name="email" 
-            class="form-control mb-2" 
-            placeholder="Email" 
-            required
-          >
-          <textarea 
-            name="message" 
-            class="form-control mb-2" 
-            placeholder="Hvordan kan jeg hjælpe dig videre?" 
-            rows="3" 
-            required
-          ></textarea>
+        <form id="kontaktForm" action="https://formspree.io/f/mvgrydpl" method="POST">
+          <input type="text" name="navn" class="form-control mb-2" placeholder="Navn" required>
+          <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+          <textarea name="message" class="form-control mb-2" placeholder="Hvordan kan jeg hjælpe dig videre?" rows="3" required></textarea>
           <button type="submit" class="btn btn-primary w-100">Kontakt mig</button>
         </form>
+        <!-- Popup besked -->
+        <div id="beskedPopup" style="display:none; margin-top:1rem;" class="alert alert-success">
+          Tak for din besked! Jeg vender tilbage snarest.
+        </div>
       </div>
     </div>
   </section>
@@ -228,15 +199,26 @@
   </script>
   <!-- Vis en tak-besked uden side-reload -->
   <script>
-    document.querySelector('form').addEventListener('submit', async e => {
-      e.preventDefault();
-      const res = await fetch(e.target.action, {
-        method: 'POST',
-        body: new FormData(e.target),
-        headers: { 'Accept': 'application/json' }
+    document.getElementById("kontaktForm").addEventListener("submit", async function (e) {
+      e.preventDefault(); // Forhindrer siden i at reloade
+
+      const form = e.target;
+      const data = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
-      if (res.ok) { alert('Tak for din besked – jeg vender tilbage!'); e.target.reset(); }
-      else       { alert('Ups … noget gik galt.'); }
+
+      if (response.ok) {
+        document.getElementById("beskedPopup").style.display = "block";
+        form.reset();
+      } else {
+        alert("Ups! Noget gik galt. Prøv igen.");
+      }
     });
   </script>
 
