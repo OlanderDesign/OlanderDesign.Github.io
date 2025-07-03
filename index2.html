@@ -96,25 +96,26 @@
       object-fit: cover;
     }
 
-    /* my logo - version 2 for top-left placement */
-    .logo-top-left {
+    .corner-image {
       position: fixed;
-      top: 10px; /* Juster efter behov */
-      left: 10px; /* Juster efter behov */
-      width: auto; /* følger højde */
-      height: 125px; /* Juster efter behov */
+      bottom: 20px;
+      left: 20px; /* eller right: 20px; for højre */
+      width: clamp(60px, 12vw, 120px);
+      height: clamp(60px, 12vw, 120px);
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
+      z-index: 100;
     }
 
-    .logo-top-left img {
-      width: auto;
+    .corner-image img {
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
+    /* my logo - version 2 for top-left placement */
     .logo-bottom-right {
       position: fixed;
       bottom: 1rem;
@@ -241,8 +242,8 @@
     </div>
   </section>
 
-    <a class="logo-top-left"><img src="assets/JeppeO_Logo.svg"></a>
     <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="circle-top-right"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
+    <a href="https://www.linkedin.com/in/jeppe-olander-2188668?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="corner-image"><img src="assets/JeppeO.jpeg" alt="JeppeO LinkedIn"></a>
     <a class="logo-bottom-right"><img src="assets/JeppeO_Logo.svg"></a>
 
   <!-- Footer -->
