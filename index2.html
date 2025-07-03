@@ -2,7 +2,7 @@
 <html lang="da" data-bs-theme="light">
 <head>
   <meta charset="UTF-8">
-  <title>Jeppe Olander – Innovation & Udviklingsledelse</title>
+  <title>JeppeO – Innovation & Udviklingsledelse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">Jeppe Olander</a>
+      <a class="navbar-brand" href="#">JeppeO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -164,6 +164,13 @@
     <div class="container text-center" data-aos="fade-up">
       <h2>Kontakt</h2>
       <div class="mx-auto" style="max-width: 500px;">
+        <form action="https://formspree.io/f/mvgrydpl" method="POST">
+          <input type="text"   name="Navn"   placeholder="Navn"  required>
+          <input type="email"  name="Email"  placeholder="Email" required>
+          <textarea name="Besked" placeholder="Hvad vil du?" rows="3"></textarea>
+          <button type="submit">Kontakt mig</button>
+        </form>
+
         <form>
           <input type="text" class="form-control mb-2" placeholder="Navn" required>
           <input type="email" class="form-control mb-2" placeholder="Email" required>
@@ -178,7 +185,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <small>&copy; 2025 Jeppe Olander · CVR 12345678</small>
+      <small>&copy; 2025 JeppeO · CVR 38284037</small>
       <div><a href="https://www.linkedin.com" class="text-decoration-none"><i class="fab fa-linkedin fa-lg ms-2"></i></a></div>
     </div>
   </footer>
@@ -195,5 +202,19 @@
       html.setAttribute("data-bs-theme", currentTheme === "dark" ? "light" : "dark");
     });
   </script>
+  <!-- Vis en tak-besked uden side-reload -->
+  <script>
+    document.querySelector('form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const res = await fetch(e.target.action, {
+        method: 'POST',
+        body: new FormData(e.target),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) { alert('Tak for din besked – jeg vender tilbage!'); e.target.reset(); }
+      else       { alert('Ups … noget gik galt.'); }
+    });
+  </script>
+
 </body>
 </html>
