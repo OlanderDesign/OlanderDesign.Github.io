@@ -1,331 +1,105 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Patrick+Hand+SC&family=Permanent+Marker&display=swap');
-
-/* Font Awesome */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-
-/* Colors */
-:root {
-  --text-color: #222222;
-  --background-color: #F9f9f9; /*#fffff0*/
-  --filler-color: #ffffff; /*#e6be8a*/
-  --red: #FF9A9A;
-  --green: #e6eebf;
-  --yellow: #fff4bc;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Global styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+[data-bs-theme="light"] body {
+  color: #333333;
+}
+[data-bs-theme="dark"] body {
+  color: #ffffff;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+[data-bs-theme="dark"] .bg-light {
+  background-color: #1e1e1e !important;
 }
 
-.logo img {
-  width: auto; /* Adjust the width as needed */
-  height: 50px; /* This maintains the aspect ratio */
+section {
+  padding: 60px 0;
 }
-
-.site-name {
-  margin: 0;
-  font-family: 'Permanent Marker';
-  font-size: 50px;
-  text-align: center;  
-}
-
-body {
-  font-family: 'lato', cursive;
-  text-align: justify;
-  font-size: 25px; /* Set font size based on viewport width */
-  line-height: 1.2; /* Set line height */
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
-p br {
-  display: block; /* Ensure it behaves like a block element */
-  margin-bottom: 15px; /* Add extra space after each <br> */
-}
-
-/* remove underline and color change on hyperlinks and give them a normal look. could be interesting to do a hover over effect though */
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-/* Main content */
-.container {
-  max-width: 1200px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Padding on both sides */
-  margin-bottom: 20px; /* Add margin after the container */
-}
-
-.container img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.grid-item {
-  /* padding: 20px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px; /* Adjust the value to change the roundness */
-  overflow: hidden; /* Ensures the GIF stays within the rounded borders */
-}
-
-.grid-item img {
-  max-width: 100%; /* Constrain the size of the image */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 1px; /* Adjust the value to change the roundness */
-  overflow: hidden; /* Ensures the GIF stays within the rounded borders */
-}
-
-.text-container {
-  padding: 20px 0; /* Padding top and bottom */
-  text-align: justify;
-}
-
-.swiper-container {
-  margin: 10px 40px; /* eller padding */
-  padding: 20px 20px; /* Padding top and bottom */ 
-}
-
-.swiper-pagination-bullet-active {
-  background: #fe5442ff;
-}
-
-.swiper {
-    width: 100%;
-    max-width: 600px;
-    margin: 40px auto;
-} 
-
-.swiper-slide {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-.swiper-slide img {
-  width: 100%;
-  display: block;
-}
-
-/* highlighter */
-mark {
-  background: linear-gradient(to bottom, transparent 50%, #fedc56 50%);
-  font-size: inherit;
-}
-
-.markblue {
-  background: linear-gradient(to bottom, transparent 50%, #73c5ee 50%);
-  font-size: inherit;
-}
-
-/* underlining
-.underline {
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-style: wavy;
-} */
-
-.underline {
-  position: relative;
-  display: inline-block;
-}
-
-.underline::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px; /* Adjust the thickness as needed */
-  background-color: red;
-  border-radius: 1px; /* This softens the edges */
-  transform: rotate(-1deg); /* A slight rotation adds a human touch */
-  animation: squiggle 1s infinite alternate ease-in-out;
-}
-
-/* Paper effekt bruges som class i img der skal ligne papir med skygge */
-.paper-effect {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; /* valgfrit – blødere hjørner */
-}
-
-/* visitkort */
-.visitkort {
-  width: 510px;
-  height: 330px;
-  margin: 40px auto;
-  padding: 20px 30px;
-  background-color: var(--filler-color);
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-  background-blend-mode: multiply;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
-}
-
-.visitkort .detaljer {
-  flex: 1;
-  padding-right: 20px;
-}
-
-.visitkort .detaljer h2 {
-  font-size: 1.6em;
-  margin-bottom: 8px;
-}
-
-.visitkort .detaljer p {
-  font-size: 0.95em;
-  margin: 6px 0;
-  display: flex;
-  align-items: center;
-}
-
-.visitkort .detaljer i {
-  margin-right: 10px;
-  color: #444;
-  font-size: 1em;
-  width: 20px;
-}
-
-.visitkort .logo img {
-  max-height: 60px;
-  width: auto;
-}
-
-
-/* my picture */
-.circle {
-  position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  left: 20px; /* Adjust as needed */
-  width: 75px; /* Adjust as needed */
-  height: 75px; /* Adjust as needed */
-  background-color: #333;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* my picture - version 2 for top-right placement */
-.circle-top-right {
-  position: fixed;
-  top: 20px; /* Juster efter behov */
-  right: 20px; /* Juster efter behov */
-  width: 100px; /* Juster efter behov */
-  height: 100px; /* Juster efter behov */
-  background-color: #333;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.circle-top-right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* my logo - version 2 for top-left placement */
-.logo-top-left {
-  position: fixed;
-  top: 10px; /* Juster efter behov */
-  left: 10px; /* Juster efter behov */
-  width: auto; /* følger højde */
-  height: 125px; /* Juster efter behov */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.logo-top-left img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-}
-
-.contact-button {
-  position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  width: 75px; /* Adjust as needed */
-  height: 75px; /* Adjust as needed */
-  background-color: red;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-}
-
-@media only screen and (max-width: 600px) {
-    /* Styles specific to narrow (portrait) screens */
-  .gif-container {
-    grid-template-columns: repeat(1, 1fr); /* Single column on portrait screens */ 
-  }
-  
-  .grid-item {
-    border-radius: 10px; /* Rounded corners for portrait screens */
-  }
-}
-
-.mobile-portrait {
-    /* Styles only for mobile devices in portrait orientation */
-  .gif-container {
-    grid-template-columns: repeat(1, 1fr); /* Single column on portrait screens */ 
-  }
-  
-  .grid-item {
-    border-radius: 30px; /* Rounded corners for portrait screens */
-  } 
-}
-
-/* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Adjust as needed */
-    padding: 20px; /* Adjust as needed */
+  background: var(--bs-light);
+  padding: 20px 0;
+  text-align: center;
 }
-  
-footer p {
-    margin: 0;
-    text-align: center;
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid currentColor;
+}
+.theme-toggle {
+  cursor: pointer;
+}
+
+
+/* Ændre font */
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.marker {
+  font-family: 'Permanent Marker';
+}
+
+.markerRed {
+  font-family: 'Permanent Marker';
+  color: #ff5f5f;
+}
+
+/* Kontakt-knap (btn-primary) i lilla */
+.btn-primary {
+  background-color: #ff5f5f;
+  border-color: #ff5f5f;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: #ff5f5f;
+  border-color: #ff5f5f;
+}
+/* Ændring af link-farver */
+a {
+  color: #ff5f5f;
+  text-decoration: none;
+}
+a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/* my picture - version 3 for bottom-left placement */
+.corner-image {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem; /* eller right: 20px; for højre */
+  height: clamp(60px, 12vw, 120px);
+  width: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.corner-image img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+/* my logo - version 3 for bottom-right placement */
+.logo-bottom-right {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: clamp(60px, 10vw, 125px); /* Minimum 60px, vokser op til 125px */
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo-bottom-right img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
