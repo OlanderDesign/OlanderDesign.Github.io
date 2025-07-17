@@ -27,10 +27,6 @@
             <li class="nav-item"><a class="nav-link" href="https://jeppeo.com"><span class="markerRed">A</span>bout</a></a></li>
             <li class="nav-item"><a class="nav-link" href="https://jeppeo.com/plAybook">pl<span class="markerRed">A</span>ybook</a></a></li>
             <li class="nav-item"><a class="nav-link" href="https://jeppeo.com/Advisory"><span class="markerRed">A</span>dvisory</a></a></li>
-            <li class="nav-item"><a class="nav-link" href="#History">History</a></li>
-            <li class="nav-item"><a class="nav-link" href="#proces">Proces</a></li>
-            <li class="nav-item"><a class="nav-link" href="#om-mig">Om mig</a></li>
-            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
             <li class="nav-item">
               <a class="nav-link theme-toggle" id="themeToggle" title="Skift tema">
                 <i class="fas fa-circle-half-stroke"></i>
@@ -51,52 +47,59 @@
     </section>
 
     <!-- The Art in STEM -->
-    <!-- Ydre accordion: Emne -->
-    <div class="accordion" id="mainAccordion">
+    <div class="accordion" id="niveau1"> <!-- TITEL -->
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingMain1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMain1" aria-expanded="false" aria-controls="collapseMain1">
-            🎯 Emne: Energi-effektivisering på rigge
+        <h2 class="accordion-header" id="titel1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-titel1" aria-expanded="false">
+            🚀 PACMan – Rustdokumentation
           </button>
         </h2>
-        <div id="collapseMain1" class="accordion-collapse collapse" aria-labelledby="headingMain1">
+        <div id="collapse-titel1" class="accordion-collapse collapse" data-bs-parent="#niveau1">
           <div class="accordion-body">
 
-            <!-- Indre accordion: Underemner -->
-            <div class="accordion" id="subAccordion1">
-
+            <!-- NIVEAU 2 – EMNE -->
+            <div class="accordion" id="niveau2-titel1">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSub1">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSub1" aria-expanded="false" aria-controls="collapseSub1">
-                    🔍 Analyse og kortlægning
+                <h2 class="accordion-header" id="emne1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-emne1" aria-expanded="false">
+                    🧪 Prototypefase
                   </button>
                 </h2>
-                <div id="collapseSub1" class="accordion-collapse collapse" aria-labelledby="headingSub1" data-bs-parent="#subAccordion1">
+                <div id="collapse-emne1" class="accordion-collapse collapse" data-bs-parent="#niveau2-titel1">
                   <div class="accordion-body">
-                    Vi gennemgik energiforbruget og identificerede spildzoner.
+
+                    <!-- NIVEAU 3 – UNDEREMNE -->
+                    <div class="accordion" id="niveau3-emne1">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="underemne1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-underemne1" aria-expanded="false">
+                            🎥 Video fra testen
+                          </button>
+                        </h2>
+                        <div id="collapse-underemne1" class="accordion-collapse collapse" data-bs-parent="#niveau3-emne1">
+                          <div class="accordion-body">
+                            <p>Her er videooptagelser fra testforløbet i Esbjerg:</p>
+                            <video controls width="100%">
+                              <source src="din-video-url.mp4" type="video/mp4">
+                              Din browser understøtter ikke video.
+                            </video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- SLUT NIVEAU 3 -->
+
                   </div>
                 </div>
               </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSub2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSub2" aria-expanded="false" aria-controls="collapseSub2">
-                    ⚙️ Prototype og test
-                  </button>
-                </h2>
-                <div id="collapseSub2" class="accordion-collapse collapse" aria-labelledby="headingSub2" data-bs-parent="#subAccordion1">
-                  <div class="accordion-body">
-                    Vi testede en ny løsning med realtidsmonitorering på to rigge.
-                  </div>
-                </div>
-              </div>
-
-            </div> <!-- Slut på indre accordion -->
+            </div>
+            <!-- SLUT NIVEAU 2 -->
 
           </div>
         </div>
       </div>
     </div>
+
 
     <!-- Kontakt -->
     <section id="kontakt">
