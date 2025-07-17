@@ -46,55 +46,7 @@
       </div>
     </section>
 
-    <!-- Art + STEM = STEAM -->
-    <div class="accordion" id="niveau1"> <!-- TITEL -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="titel1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-titel1" aria-expanded="false">
-            Art + STEM = STE<span class="markerRed">A</span>M
-          </button>
-        </h2>
-        <div id="collapse-titel1" class="accordion-collapse collapse" data-bs-parent="#niveau1">
-          <div class="accordion-body">
 
-            <!-- NIVEAU 2 – EMNE -->
-            <div class="accordion" id="niveau2-titel1">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="emne1">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-emne1" aria-expanded="false">
-                    The history of Art
-                  </button>
-                </h2>
-                <div id="collapse-emne1" class="accordion-collapse collapse" data-bs-parent="#niveau2-titel1">
-                  <div class="accordion-body">
-
-                    <!-- NIVEAU 3 – UNDEREMNE -->
-                    <div class="accordion" id="niveau3-emne1">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="underemne1">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-underemne1" aria-expanded="false">
-                            🎥 Video fra testen
-                          </button>
-                        </h2>
-                        <div id="collapse-underemne1" class="accordion-collapse collapse" data-bs-parent="#niveau3-emne1">
-                          <div class="accordion-body">
-                            <p>Her er videooptagelser fra testforløbet i Esbjerg
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- SLUT NIVEAU 3 -->
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- SLUT NIVEAU 2 -->
-
-          </div>
-        </div>
-      </div>
-    </div>
 
     <style>
     details {
@@ -110,31 +62,6 @@
       font-size: 1rem;
       position: relative;
       padding-right: 1.5em;
-    }
-
-    /* Fjern standard pil */
-    summary::-webkit-details-marker {
-      display: none;
-    }
-    summary::marker {
-      display: none;
-    }
-
-    /* Tilføj pil i højre side */
-    summary::after {
-      content: "˅";
-      position: absolute;
-      right: 1em;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1rem;
-      color: #1e40af;
-      transition: transform 0.3s ease;
-    }
-
-    /* Skift pil-retning når åben */
-    details[open] > summary::after {
-      content: "˄";
     }
 
     /* ✅ PROJEKT – nu med fuld ramme og afrundede hjørner */
@@ -161,7 +88,7 @@
         Art + STEM = STE<span class="markerRed">A</span>M</summary><details class="emne"><summary>
           the history of <span class="markerRed">A</span>rt</summary>
           <p>Text</p>
-          <details class="emne"><summary>
+          <details class="emne"><summary></details>
           <span class="markerRed">A</span>rt</summary> integration<details class="underemne"><summary>
             Test</summary>
             <p>Text</p>
