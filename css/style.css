@@ -2,11 +2,6 @@
   --jeppeo-accent: #ff5f5f;
 }
 
-.accordion-collapse.show {
-  border-left: 4px solid var(--jeppeo-accent);
-  background-color: #fff5f5;
-}
-
 html {
   scroll-behavior: smooth;
 }
