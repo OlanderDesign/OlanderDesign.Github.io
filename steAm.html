@@ -112,18 +112,29 @@
       padding-right: 1.5em;
     }
 
-    /* Pil kun på projekt-niveau */
-    details.projekt > summary::after {
-      content: "˅";  /* pil ned */
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 1rem;
-      transition: transform 0.2s ease;
+    /* Fjern standard pil */
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::marker {
+      display: none;
     }
 
-    details.projekt[open] > summary::after {
-      content: "˄";  /* pil op */
+    /* Tilføj pil i højre side */
+    summary::after {
+      content: "˅";
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      color: #1e40af;
+      transition: transform 0.3s ease;
+    }
+
+    /* Skift pil-retning når åben */
+    details[open] > summary::after {
+      content: "˄";
     }
 
     /* ✅ PROJEKT – nu med fuld ramme og afrundede hjørner */
@@ -152,9 +163,6 @@
             📎 Underemne: Video fra testen</summary>
             <p>Her er materialet fra testen i Esbjerg.</p>
         </details></details></details>
-
-
-
 
     <!-- Kontakt -->
     <section id="kontakt">
