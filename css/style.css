@@ -10,11 +10,11 @@ html {
   color: #333333;
 }
 [data-bs-theme="dark"] body {
-  color: #ffffff;
+  color: #1F1B18;
 }
 
 [data-bs-theme="dark"] .bg-light {
-  background-color: #1e1e1e !important;
+  background-color: #000000 !important;
 }
 
 section {
