@@ -1,5 +1,5 @@
 :root {
-  --jeppeo-accent: #ff5f5f;
+  --jeppeo-accent: #1F1B18;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
   color: #333333;
 }
 [data-bs-theme="dark"] body {
-  color: #1F1B18;
+  color: #ffffff;
 }
 
 [data-bs-theme="dark"] .bg-light {
