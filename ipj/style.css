@@ -1,0 +1,1276 @@
+/* ==========================================
+   INNOVATION PÅ JYSK
+   JeppeO.com/ipj/
+   ========================================== */
+
+
+/* ==========================================
+   1. DESIGN SYSTEM
+   ========================================== */
+
+:root {
+
+  /* Colors */
+  --paper: #f7f4ec;
+  --paper-high: #fcfaf6;
+
+  --ink: #151817;
+  --soft-ink: #343c3e;
+  --muted: #626a6c;
+
+  --navy: #0d3553;
+  --blue: #5683aa;
+  --red: #e25648;
+
+  --line: #d7d4ca;
+
+  /* Typography */
+  --heading:
+    "Segoe UI Black",
+    "Segoe UI",
+    "Arial Black",
+    Arial,
+    sans-serif;
+
+  --body:
+    "Segoe UI Semilight",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  --marker:
+    "Permanent Marker",
+    cursive;
+
+  /* Layout */
+  --container: 1220px;
+  --radius: 5px;
+
+}
+
+
+/* ==========================================
+   2. GLOBAL
+   ========================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background: var(--paper);
+  color: var(--ink);
+
+  font-family: var(--body);
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle paper texture */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+
+  pointer-events: none;
+  opacity: .23;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.52' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E");
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(
+    calc(100% - 84px),
+    var(--container)
+  );
+
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: -80px;
+  left: 20px;
+  z-index: 100;
+
+  padding: 12px 18px;
+
+  background: var(--ink);
+  color: white;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+
+/* ==========================================
+   3. HEADER & NAVIGATION
+   ========================================== */
+
+.site-header {
+  position: relative;
+  z-index: 30;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 91px;
+  gap: 28px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+/* JeppeO wordmark */
+
+.wordmark {
+  font-family: var(--body);
+  font-size: 34px;
+  font-weight: 700;
+
+  letter-spacing: -2.1px;
+  line-height: 1;
+
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wordmark span {
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+/* Desktop navigation */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  gap: clamp(18px, 2.7vw, 42px);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-list a {
+  position: relative;
+
+  color: var(--soft-ink);
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: var(--navy);
+}
+
+.nav-list a.current {
+  color: var(--ink);
+}
+
+.nav-list a.current::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+
+  width: 100%;
+  height: 2px;
+
+  background: var(--blue);
+
+  transform: rotate(-2deg);
+}
+
+/* Mobile menu toggle */
+
+.menu-toggle {
+  display: none;
+
+  padding: 9px;
+
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.menu-toggle svg {
+  display: block;
+}
+
+
+/* ==========================================
+   4. HERO
+   ========================================== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, .93fr)
+    minmax(0, 1.07fr);
+
+  column-gap: 8px;
+
+  min-height: 540px;
+  padding-block: 51px 22px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+
+  padding-top: 8px;
+}
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--navy);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: .31em;
+}
+
+/* Main title */
+
+.marker-title {
+  max-width: 720px;
+
+  margin: 0 0 22px;
+
+  font-family: var(--marker);
+  font-size: clamp(45px, 4.8vw, 79px);
+  font-weight: 400;
+
+  line-height: 1.02;
+  letter-spacing: .012em;
+
+  transform: rotate(-1deg);
+}
+
+/* Hand-drawn red underline */
+
+.marker-title .underline {
+  position: relative;
+  white-space: nowrap;
+}
+
+.marker-title .underline::after {
+  content: "";
+
+  position: absolute;
+
+  left: 8%;
+  bottom: -4px;
+
+  width: 89%;
+  height: 7px;
+
+  background: var(--red);
+  border-radius: 60% 40% 40% 60%;
+
+  transform: rotate(-2deg);
+  opacity: .94;
+}
+
+.hero-lead {
+  max-width: 490px;
+
+  margin: 0 0 20px;
+
+  font-size: clamp(18px, 1.6vw, 21px);
+  line-height: 1.38;
+}
+
+
+/* ==========================================
+   5. HERO IMAGE & GRAPHICS
+   ========================================== */
+
+.hero-art {
+  position: relative;
+
+  min-height: 490px;
+
+  margin-left: -20px;
+  align-self: end;
+
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* Background circles */
+
+.hero-art .circle-gray {
+  position: absolute;
+
+  top: 0;
+  left: 17%;
+
+  width: 78%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: #dedbd4;
+
+  opacity: .70;
+  z-index: -2;
+}
+
+.hero-art .circle-red {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 22%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: var(--red);
+
+  opacity: .93;
+  z-index: -1;
+}
+
+.hero-art .circle-blue {
+  position: absolute;
+
+  left: 9%;
+  bottom: 8%;
+
+  width: 29%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: var(--blue);
+
+  opacity: .70;
+  z-index: -1;
+}
+
+/* JeppeO portrait */
+
+.hero-art img {
+  display: block;
+  position: absolute;
+
+  width: 118%;
+  max-width: none;
+  height: auto;
+
+  right: -16%;
+  bottom: -22px;
+
+  filter: drop-shadow(
+    0 8px 10px rgba(11, 24, 32, .04)
+  );
+}
+
+/* Hand-drawn line */
+
+.hero-art .scribble {
+  position: absolute;
+
+  left: -15%;
+  bottom: 5%;
+
+  width: 118%;
+  height: 160px;
+
+  z-index: 2;
+  opacity: .95;
+}
+
+
+/* ==========================================
+   6. SIGNUP FORM
+   ========================================== */
+
+.form-card {
+  position: relative;
+
+  width: min(465px, 100%);
+  padding: 22px 26px 23px;
+
+  background: rgba(255, 255, 255, .90);
+
+  border: 1px solid rgba(217, 211, 199, .85);
+  border-radius: 14px;
+
+  box-shadow:
+    0 15px 30px rgba(36, 30, 19, .055);
+
+  backdrop-filter: blur(2px);
+}
+
+.form-card h2 {
+  margin: 0 0 2px;
+
+  font-family: var(--heading);
+  font-size: 25px;
+  font-weight: 900;
+
+  letter-spacing: -.04em;
+  line-height: 1.15;
+}
+
+.form-card p {
+  margin: 0 0 13px;
+
+  color: var(--soft-ink);
+
+  font-size: 15px;
+  line-height: 1.38;
+}
+
+/* Form layout */
+
+.signup-form {
+  display: grid;
+  gap: 9px;
+}
+
+.field {
+  display: grid;
+  gap: 3px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  min-height: 43px;
+
+  padding: 10px 12px;
+
+  color: var(--ink);
+  background: rgba(255, 255, 255, .55);
+
+  border: 1px solid #a2a29c;
+  border-radius: var(--radius);
+}
+
+.field input::placeholder {
+  color: #737a7b;
+}
+
+.field input:focus {
+  background: white;
+
+  outline: 2px solid var(--blue);
+  outline-offset: 0;
+}
+
+/* Hidden spam field */
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+/* GDPR consent */
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+  margin-top: 3px;
+
+  color: var(--soft-ink);
+
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.consent input {
+  flex: none;
+
+  width: 15px;
+  height: 15px;
+
+  margin: 2px 0 0;
+
+  accent-color: var(--navy);
+}
+
+/* Form footnote */
+
+.form-footnote {
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+
+  color: var(--muted) !important;
+
+  font-size: 12px !important;
+  font-style: italic;
+}
+
+/* Form feedback */
+
+.form-feedback {
+  display: none;
+
+  margin-top: 10px !important;
+  padding: 10px 12px;
+
+  color: #703223 !important;
+  background: #fff2ea;
+
+  border-radius: var(--radius);
+  font-size: 13px !important;
+}
+
+.form-feedback.visible {
+  display: block;
+}
+
+
+/* ==========================================
+   7. BUTTONS
+   ========================================== */
+
+.button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 43px;
+  padding: 10px 17px;
+
+  font-family: var(--heading);
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  background: var(--navy);
+  color: white;
+
+  border: 1px solid var(--navy);
+  border-radius: var(--radius);
+
+  cursor: pointer;
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    box-shadow .2s ease;
+}
+
+.button:hover {
+  background: #174b70;
+  color: white;
+
+  box-shadow:
+    0 4px 14px rgba(13, 53, 83, .13);
+
+  transform: translateY(-1px);
+}
+
+.button svg {
+  flex: none;
+
+  width: 17px;
+  height: 17px;
+}
+
+.button-block {
+  width: 100%;
+}
+
+
+/* ==========================================
+   8. FOUR PROJECT SECTIONS
+   ========================================== */
+
+.features {
+  position: relative;
+
+  margin-top: 20px;
+
+  border-top: 1px solid var(--line);
+}
+
+/* Individual section */
+
+.feature {
+  display: grid;
+
+  grid-template-columns:
+    190px
+    minmax(0, 1fr)
+    212px;
+
+  align-items: center;
+  gap: 34px;
+
+  min-height: 150px;
+  padding: 21px 5px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+/* Illustrations */
+
+.feature-illustration {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 162px;
+  height: 110px;
+}
+
+.feature-illustration .disk {
+  position: absolute;
+
+  left: 18px;
+  top: 6px;
+
+  width: 93px;
+  height: 93px;
+
+  border-radius: 50%;
+  background: #c5d5e0;
+}
+
+.feature-illustration .disk.coral {
+  background: #f0b1a7;
+}
+
+.feature-illustration .disk.gray {
+  background: #d6d6d0;
+}
+
+.feature-illustration .disk.small {
+  left: auto;
+  right: 17px;
+  top: 44px;
+
+  width: 42px;
+  height: 42px;
+
+  background: #e7766b;
+}
+
+.feature-illustration svg {
+  position: relative;
+  z-index: 1;
+
+  width: 100px;
+  height: 100px;
+
+  stroke: #172331;
+  stroke-width: 2.4;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  fill: none;
+
+  transform: rotate(-5deg);
+}
+
+/* Content */
+
+.feature-content h2 {
+  margin: 0 0 4px;
+
+  font-family: var(--heading);
+  font-size: clamp(24px, 2.1vw, 31px);
+  font-weight: 900;
+
+  letter-spacing: -.045em;
+  line-height: 1.1;
+}
+
+.feature-content p {
+  max-width: 660px;
+  margin: 0;
+
+  color: #333b3c;
+
+  font-size: 16px;
+  line-height: 1.43;
+}
+
+/* Actions */
+
+.feature-action {
+  justify-self: end;
+
+  width: 195px;
+  text-align: center;
+}
+
+.feature-action .button {
+  width: 100%;
+}
+
+/* Coming soon label */
+
+.upcoming {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 43px;
+
+  padding: 10px 15px;
+
+  color: #444d50;
+  background: rgba(255, 255, 255, .14);
+
+  border: 1px solid #9ba0a0;
+  border-radius: var(--radius);
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .015em;
+}
+
+.feature-action .hint {
+  display: block;
+
+  padding-top: 5px;
+
+  color: var(--muted);
+  font-size: 11px;
+}
+
+
+/* ==========================================
+   9. FOOTER
+   ========================================== */
+
+.footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  min-height: 100px;
+  padding-block: 24px 30px;
+}
+
+.footer .foot-brand {
+  font-size: 22px;
+  font-weight: 700;
+
+  letter-spacing: -1.2px;
+  white-space: nowrap;
+}
+
+.footer .foot-brand span {
+  font-weight: 900;
+}
+
+.footer p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+}
+
+.footer a {
+  color: var(--navy);
+  text-underline-offset: 3px;
+}
+
+
+/* ==========================================
+   10. LARGE SCREENS
+   ========================================== */
+
+@media (min-width: 1350px) {
+
+  .hero-art img {
+    right: -9%;
+  }
+
+}
+
+
+/* ==========================================
+   11. TABLET
+   ========================================== */
+
+@media (max-width: 1020px) {
+
+  .container {
+    width: min(
+      calc(100% - 52px),
+      var(--container)
+    );
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    min-height: 530px;
+  }
+
+  .marker-title {
+    font-size: clamp(39px, 5vw, 55px);
+  }
+
+  .hero-art {
+    min-height: 430px;
+    margin-left: -15px;
+  }
+
+  .hero-art img {
+    width: 127%;
+    right: -21%;
+  }
+
+  .form-card {
+    padding: 19px;
+  }
+
+  .form-card h2 {
+    font-size: 22px;
+  }
+
+  .feature {
+    grid-template-columns:
+      138px
+      minmax(0, 1fr)
+      170px;
+
+    gap: 22px;
+  }
+
+  .feature-illustration {
+    width: 125px;
+  }
+
+  .feature-action {
+    width: 170px;
+  }
+
+}
+
+
+/* ==========================================
+   12. MOBILE
+   ========================================== */
+
+@media (max-width: 720px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: min(
+      calc(100% - 34px),
+      500px
+    );
+  }
+
+
+  /* Navigation */
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .wordmark {
+    font-size: 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+
+    position: absolute;
+
+    top: 69px;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    padding:
+      14px
+      max(17px, calc((100vw - 500px) / 2))
+      20px;
+
+    background: var(--paper);
+
+    border-bottom: 1px solid var(--line);
+
+    box-shadow:
+      0 16px 20px rgba(0, 0, 0, .05);
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-list a {
+    display: block;
+
+    padding: 12px 0;
+
+    font-size: 15px;
+  }
+
+  .nav-list a.current::after {
+    width: 50px;
+    bottom: 7px;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  .hero-copy {
+    display: contents;
+  }
+
+  .eyebrow {
+    order: 0;
+    margin-bottom: 6px;
+  }
+
+  .marker-title {
+    order: 1;
+
+    margin-bottom: 10px;
+
+    font-size: clamp(35px, 9.15vw, 55px);
+    line-height: 1.12;
+
+    transform: rotate(-.5deg);
+  }
+
+  .marker-title .underline::after {
+    height: 4px;
+    bottom: -2px;
+  }
+
+  .hero-lead {
+    order: 2;
+
+    max-width: 440px;
+
+    margin-bottom: 8px;
+
+    font-size: 17px;
+  }
+
+
+  /* Hero image */
+
+  .hero-art {
+    order: 3;
+
+    width: 100%;
+    height: 320px;
+    min-height: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+  }
+
+  .hero-art .circle-gray {
+    left: 24%;
+    top: 2%;
+
+    width: 67%;
+  }
+
+  .hero-art .circle-red {
+    right: 2%;
+    top: 2%;
+
+    width: 22%;
+  }
+
+  .hero-art .circle-blue {
+    left: 7%;
+    bottom: 13%;
+
+    width: 27%;
+  }
+
+  .hero-art img {
+    width: 108%;
+
+    right: -4%;
+    bottom: -4px;
+  }
+
+  .hero-art .scribble {
+    height: 104px;
+
+    bottom: 10%;
+    left: -8%;
+  }
+
+
+  /* Signup */
+
+  .form-card {
+    order: 4;
+
+    width: 100%;
+
+    margin: 0 0 27px;
+    padding: 21px 21px 19px;
+  }
+
+  .form-card h2 {
+    font-size: 23px;
+  }
+
+
+  /* Feature sections */
+
+  .features {
+    margin-top: 0;
+  }
+
+  .feature {
+    grid-template-columns:
+      93px
+      minmax(0, 1fr);
+
+    align-items: start;
+
+    gap: 16px;
+
+    min-height: 170px;
+    padding: 26px 0;
+  }
+
+  .feature-illustration {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+    width: 93px;
+    height: 103px;
+  }
+
+  .feature-illustration svg {
+    width: 78px;
+    height: 82px;
+  }
+
+  .feature-illustration .disk {
+    left: 6px;
+    top: 7px;
+
+    width: 67px;
+    height: 67px;
+  }
+
+  .feature-illustration .disk.small {
+    right: 3px;
+    top: 43px;
+
+    width: 31px;
+    height: 31px;
+  }
+
+  .feature-content {
+    grid-column: 2;
+  }
+
+  .feature-content h2 {
+    font-size: 25px;
+    line-height: 1.08;
+  }
+
+  .feature-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .feature-action {
+    grid-column: 2;
+
+    justify-self: start;
+
+    width: auto;
+    min-width: 153px;
+
+    margin-top: 10px;
+  }
+
+  .feature-action .button {
+    width: auto;
+
+    padding-inline: 13px;
+
+    font-size: 13px;
+  }
+
+  .feature-action .upcoming {
+    width: auto;
+    min-width: 153px;
+  }
+
+  .feature-action .hint {
+    text-align: left;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    flex-direction: column;
+
+    gap: 7px;
+    padding-top: 30px;
+
+    text-align: center;
+  }
+
+}
+
+
+/* ==========================================
+   13. SMALL MOBILE
+   ========================================== */
+
+@media (max-width: 385px) {
+
+  .marker-title {
+    font-size: 34px;
+  }
+
+  .hero-art {
+    height: 275px;
+  }
+
+  .hero-art img {
+    width: 122%;
+    right: -12%;
+  }
+
+  .feature {
+    grid-template-columns:
+      76px
+      minmax(0, 1fr);
+
+    gap: 10px;
+  }
+
+  .feature-illustration {
+    width: 76px;
+  }
+
+  .feature-illustration svg {
+    width: 70px;
+  }
+
+  .feature-content h2 {
+    font-size: 23px;
+  }
+
+  .form-card {
+    padding-inline: 16px;
+  }
+
+}
+
+
+/* ==========================================
+   14. ACCESSIBILITY
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button {
+    transition: none;
+  }
+
+}

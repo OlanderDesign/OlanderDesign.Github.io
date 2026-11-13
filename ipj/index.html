@@ -1,185 +1,68 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light" />
-  <meta name="theme-color" content="#f7f4ec" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f4ec">
+
   <title>Innovation på Jysk | Et projekt af JeppeO</title>
-  <meta name="description" content="Innovation på Jysk er JeppeOs projekt om nysgerrighed og innovation i praksis. Lyt til podcasten, skriv dig op til bogen, og book et foredrag." />
-  <link rel="canonical" href="https://jeppeo.com/ipj/" />
-  <meta property="og:url" content="https://jeppeo.com/ipj/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Innovation på Jysk | JeppeO" />
-  <meta property="og:description" content="Fra podcast til bog, foredrag og digitale materialer. Et projekt i bevægelse." />
-  <meta property="og:image" content="https://jeppeo.com/ipj/assets/jeppeo-med-bog.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --paper: #f7f4ec;
-      --paper-high: #fcfaf6;
-      --ink: #151817;
-      --soft-ink: #343c3e;
-      --muted: #626a6c;
-      --navy: #0d3553;
-      --blue: #5683aa;
-      --red: #e25648;
-      --line: #d7d4ca;
-      --heading: "Segoe UI Black", "Segoe UI", "Arial Black", "Inter", sans-serif;
-      --body: "Segoe UI Semilight", "Segoe UI", "Inter", Arial, sans-serif;
-      --marker: "Permanent Marker", "Segoe Print", "Comic Neue", "Comic Sans MS", cursive;
-      --container: 1220px;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--body); font-size: 17px; font-weight: 300; line-height: 1.5; -webkit-font-smoothing: antialiased; }
-    body::before { content:""; position:fixed; pointer-events:none; inset:0; opacity:.23; z-index:10; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.52' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E"); }
-    a { color:inherit; }
-    button, input { font:inherit; }
-    button, a { -webkit-tap-highlight-color:transparent; }
-    .skip-link { position:absolute; top:-80px; left:20px; z-index:100; padding:12px 18px; background:var(--ink); color:white; }
-    .skip-link:focus { top:10px; }
-    :focus-visible { outline:3px solid var(--red); outline-offset:3px; }
-    .container { width:min(calc(100% - 84px), var(--container)); margin-inline:auto; }
-    .site-header { position:relative; z-index:30; }
-    .nav { display:flex; align-items:center; justify-content:space-between; min-height:91px; gap:28px; border-bottom:1px solid var(--line); }
-    .wordmark { font-family:var(--body); text-decoration:none; font-size:34px; font-weight:700; letter-spacing:-2.1px; line-height:1; white-space:nowrap; }
-    .wordmark span { font-weight:900; letter-spacing:-2px; }
-    .nav-list { display:flex; align-items:center; gap:clamp(18px,2.7vw,42px); padding:0; margin:0; list-style:none; }
-    .nav-list a { text-decoration:none; font-weight:600; font-size:13px; color:var(--soft-ink); }
-    .nav-list a:hover { color:var(--navy); }
-    .nav-list a.current { position:relative; color:var(--ink); }
-    .nav-list a.current::after { content:""; height:2px; width:100%; left:0; bottom:-12px; background:var(--blue); position:absolute; transform:rotate(-2deg); }
-    .menu-toggle { display:none; background:transparent; border:0; cursor:pointer; padding:9px; color:var(--ink); }
-    .menu-toggle svg { display:block; }
-    .hero { position:relative; isolation:isolate; display:grid; grid-template-columns:minmax(0, .93fr) minmax(0, 1.07fr); min-height:540px; padding-block:51px 22px; column-gap:8px; }
-    .hero-copy { position:relative; z-index:2; padding-top:8px; }
-    .eyebrow { display:block; text-transform:uppercase; letter-spacing:.31em; font-size:11px; font-weight:700; color:var(--navy); margin-bottom:12px; }
-    .marker-title { font-family:var(--marker); font-size:clamp(45px,4.8vw,79px); line-height:1.02; letter-spacing:.012em; font-weight:400; margin:0 0 22px; max-width:720px; transform:rotate(-1deg); }
-    .marker-title .underline { position:relative; white-space:nowrap; }
-    .marker-title .underline::after { content:""; position:absolute; height:7px; background:var(--red); bottom:-4px; left:8%; width:89%; border-radius:60% 40% 40% 60%; transform:rotate(-2deg); opacity:.94; }
-    .hero-lead { font-size:clamp(18px,1.6vw,21px); line-height:1.38; max-width:490px; margin:0 0 20px; }
-    .hero-art { position:relative; min-height:490px; margin-left:-20px; align-self:end; pointer-events:none; overflow:visible; }
-    .hero-art .circle-gray { position:absolute; top:0%; left:17%; width:78%; aspect-ratio:1; border-radius:50%; background:#dedbd4; opacity:.70; z-index:-2; }
-    .hero-art .circle-red { position:absolute; top:0%; right:0%; width:22%; aspect-ratio:1; border-radius:50%; background:var(--red); opacity:.93; z-index:-1; }
-    .hero-art .circle-blue { position:absolute; left:9%; bottom:8%; width:29%; aspect-ratio:1; border-radius:50%; background:var(--blue); opacity:.70; z-index:-1; }
-    .hero-art img { display:block; position:absolute; width:118%; max-width:none; height:auto; bottom:-22px; right:-16%; filter:drop-shadow(0 8px 10px rgba(11, 24, 32, .04)); }
-    .hero-art .scribble { position:absolute; height:160px; width:118%; bottom:5%; left:-15%; z-index:2; opacity:.95; }
-    .form-card { position:relative; width:min(465px,100%); padding:22px 26px 23px; background:rgba(255,255,255,.90); border:1px solid rgba(217,211,199,.85); border-radius:14px; box-shadow:0 15px 30px rgba(36,30,19,.055); backdrop-filter:blur(2px); }
-    .form-card h2 { margin:0 0 2px; font-family:var(--heading); font-weight:900; letter-spacing:-.04em; font-size:25px; line-height:1.15; }
-    .form-card p { margin:0 0 13px; font-size:15px; line-height:1.38; color:var(--soft-ink); }
-    .signup-form { display:grid; gap:9px; }
-    .field { display:grid; gap:3px; }
-    .field label { font-size:13px; font-weight:600; }
-    .field input { min-height:43px; width:100%; padding:10px 12px; border:1px solid #a2a29c; background:rgba(255,255,255,.55); border-radius:5px; color:var(--ink); }
-    .field input::placeholder { color:#737a7b; }
-    .field input:focus { background:white; outline:2px solid var(--blue); outline-offset:0; }
-    .honeypot { position:absolute; left:-9999px; }
-    .consent { display:flex; align-items:flex-start; gap:8px; color:var(--soft-ink); font-size:12px; line-height:1.25; margin-top:3px; }
-    .consent input { margin:2px 0 0; accent-color:var(--navy); width:15px; height:15px; flex:none; }
-    .button { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:43px; padding:10px 17px; font-family:var(--heading); font-weight:800; font-size:14px; text-decoration:none; border:1px solid var(--navy); background:var(--navy); color:white; border-radius:5px; cursor:pointer; transition:transform .2s ease,background .2s ease, box-shadow .2s ease; }
-    .button:hover { background:#174b70; box-shadow:0 4px 14px rgba(13,53,83,.13); transform:translateY(-1px); }
-    .button svg { width:17px; height:17px; flex:none; }
-    .button-outline { background:transparent; color:var(--ink); border:1px solid var(--soft-ink); }
-    .button-outline:hover { background:var(--paper-high); color:var(--ink); }
-    .button-block { width:100%; }
-    .form-footnote { margin-top:8px!important; margin-bottom:0!important; font-size:12px!important; font-style:italic; color:var(--muted)!important; }
-    .form-feedback { display:none; padding:10px 12px; margin-top:10px!important; font-size:13px!important; border-radius:5px; background:#fff2ea; color:#703223!important; }
-    .form-feedback.visible { display:block; }
-    .features { position:relative; border-top:1px solid var(--line); margin-top:20px; }
-    .feature { display:grid; grid-template-columns:190px minmax(0,1fr) 212px; gap:34px; align-items:center; min-height:150px; border-bottom:1px solid var(--line); padding:21px 5px; }
-    .feature-illustration { height:110px; width:162px; position:relative; display:flex; justify-content:center; align-items:center; }
-    .feature-illustration .disk { width:93px; height:93px; border-radius:50%; position:absolute; left:18px; top:6px; background:#c5d5e0; }
-    .feature-illustration .disk.coral { background:#f0b1a7; }
-    .feature-illustration .disk.gray { background:#d6d6d0; }
-    .feature-illustration .disk.small { width:42px; height:42px; right:17px; top:44px; left:auto; background:#e7766b; }
-    .feature-illustration svg { position:relative; z-index:1; width:100px; height:100px; stroke:#172331; fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; transform:rotate(-5deg); }
-    .feature-content h2 { margin:0 0 4px; font-family:var(--heading); font-size:clamp(24px,2.1vw,31px); font-weight:900; letter-spacing:-.045em; line-height:1.1; }
-    .feature-content p { margin:0; max-width:660px; font-size:16px; line-height:1.43; color:#333b3c; }
-    .feature-action { justify-self:end; width:195px; text-align:center; }
-    .feature-action .button { width:100%; }
-    .upcoming { display:inline-flex; align-items:center; justify-content:center; width:100%; min-height:43px; padding:10px 15px; border:1px solid #9ba0a0; color:#444d50; border-radius:5px; background:rgba(255,255,255,.14); font-size:15px; font-weight:600; letter-spacing:.015em; }
-    .feature-action .hint { font-size:11px; color:var(--muted); padding-top:5px; display:block; }
-    .footer { min-height:100px; display:flex; align-items:center; justify-content:space-between; gap:20px; padding-block:24px 30px; }
-    .footer .foot-brand { font-size:22px; font-weight:700; letter-spacing:-1.2px; white-space:nowrap; }
-    .footer .foot-brand span { font-weight:900; }
-    .footer p { font-size:13px; color:var(--muted); margin:0; }
-    .footer a { color:var(--navy); text-underline-offset:3px; }
-    @media (min-width:1350px) { .hero-art img { right:-9%; } }
-    @media (max-width:1020px) {
-      .container { width:min(calc(100% - 52px), var(--container)); }
-      .hero { grid-template-columns:1fr 1fr; min-height:530px; }
-      .marker-title { font-size:clamp(39px,5vw,55px); }
-      .hero-art { margin-left:-15px; min-height:430px; }
-      .hero-art img { width:127%; right:-21%; }
-      .form-card { padding:19px; }
-      .form-card h2 { font-size:22px; }
-      .feature { grid-template-columns:138px 1fr 170px; gap:22px; }
-      .feature-illustration { width:125px; }
-      .feature-action { width:170px; }
-    }
-    @media (max-width:720px) {
-      body { font-size:16px; }
-      .container { width:min(calc(100% - 34px),500px); }
-      .nav { min-height:70px; }
-      .wordmark { font-size:30px; }
-      .menu-toggle { display:block; }
-      .nav-list { display:none; position:absolute; top:69px; left:0; right:0; flex-direction:column; align-items:stretch; padding:14px max(17px,calc((100vw - 500px)/2)) 20px; gap:0; background:var(--paper); border-bottom:1px solid var(--line); box-shadow:0 16px 20px rgba(0,0,0,.05); }
-      .nav-list.open { display:flex; }
-      .nav-list a { display:block; padding:12px 0; font-size:15px; }
-      .nav-list a.current::after { width:50px; bottom:7px; }
-      .hero { display:flex; flex-direction:column; padding-top:25px; padding-bottom:0; gap:0; }
-      .hero-copy { display:contents; }
-      .eyebrow { order:0; margin-bottom:6px; }
-      .marker-title { order:1; font-size:clamp(35px,9.15vw,55px); margin-bottom:10px; transform:rotate(-.5deg); line-height:1.12; }
-      .marker-title .underline::after { height:4px; bottom:-2px; }
-      .hero-lead { order:2; font-size:17px; max-width:440px; margin-bottom:8px; }
-      .hero-art { order:3; width:100%; height:320px; min-height:0; margin:0; overflow:hidden; }
-      .hero-art .circle-gray { left:24%; top:2%; width:67%; }
-      .hero-art .circle-red { right:2%; top:2%; width:22%; }
-      .hero-art .circle-blue { left:7%; bottom:13%; width:27%; }
-      .hero-art img { width:108%; right:-4%; bottom:-4px; }
-      .hero-art .scribble { height:104px; bottom:10%; left:-8%; }
-      .form-card { order:4; margin:0 0 27px; width:100%; padding:21px 21px 19px; }
-      .form-card h2 { font-size:23px; }
-      .features { margin-top:0; }
-      .feature { grid-template-columns:93px minmax(0,1fr); gap:16px; padding:26px 0; min-height:170px; align-items:start; }
-      .feature-illustration { grid-column:1; grid-row:1 / span 2; width:93px; height:103px; }
-      .feature-illustration svg { width:78px; height:82px; }
-      .feature-illustration .disk { width:67px; height:67px; left:6px; top:7px; }
-      .feature-illustration .disk.small { width:31px; height:31px; right:3px; top:43px; }
-      .feature-content { grid-column:2; }
-      .feature-content h2 { font-size:25px; line-height:1.08; }
-      .feature-content p { font-size:14px; line-height:1.4; }
-      .feature-action { justify-self:start; grid-column:2; width:auto; min-width:153px; margin-top:10px; }
-      .feature-action .button { width:auto; padding-inline:13px; font-size:13px; }
-      .feature-action .upcoming { width:auto; min-width:153px; }
-      .feature-action .hint { text-align:left; }
-      .footer { padding-top:30px; flex-direction:column; text-align:center; gap:7px; }
-    }
-    @media (max-width:385px) {
-      .marker-title { font-size:34px; }
-      .hero-art { height:275px; }
-      .hero-art img { width:122%; right:-12%; }
-      .feature { gap:10px; grid-template-columns:76px minmax(0,1fr); }
-      .feature-illustration { width:76px; }
-      .feature-illustration svg { width:70px; }
-      .feature-content h2 { font-size:23px; }
-      .form-card { padding-inline:16px; }
-    }
-    @media (prefers-reduced-motion:reduce) { html {scroll-behavior:auto;} .button {transition:none;} }
-  </style>
+
+  <meta name="description" content="Innovation på Jysk er JeppeOs projekt om nysgerrighed og innovation i praksis. Lyt til podcasten, skriv dig op til bogen, og book et foredrag.">
+
+  <link rel="canonical" href="https://jeppeo.com/ipj/">
+
+  <!-- Social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeppeo.com/ipj/">
+  <meta property="og:title" content="Innovation på Jysk | JeppeO">
+  <meta property="og:description" content="Fra podcast til bog, foredrag og digitale materialer. Et projekt i bevægelse.">
+  <meta property="og:image" content="https://jeppeo.com/ipj/assets/jeppeo-med-bog.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <!-- Design -->
+  <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
+
   <a class="skip-link" href="#indhold">Spring til indhold</a>
+
+  <!-- =========================================
+       HEADER & NAVIGATION
+  ========================================== -->
+
   <header class="site-header">
+
     <nav class="nav container" aria-label="Hovedmenu">
-      <a class="wordmark" href="https://jeppeo.com/" aria-label="JeppeO forside">Jeppe<span>O</span></a>
-      <button class="menu-toggle" type="button" id="menu-toggle" aria-label="Åbn menu" aria-controls="navigation" aria-expanded="false">
-        <svg width="29" height="29" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+
+      <a class="wordmark" href="https://jeppeo.com/" aria-label="JeppeO forside">
+        Jeppe<span>O</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        id="menu-toggle"
+        aria-label="Åbn menu"
+        aria-controls="navigation"
+        aria-expanded="false">
+
+        <svg width="29" height="29" viewBox="0 0 24 24"
+             aria-hidden="true" fill="none"
+             stroke="currentColor" stroke-width="1.6"
+             stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+        </svg>
+
       </button>
+
       <ul class="nav-list" id="navigation">
         <li><a href="https://jeppeo.com/">Forside</a></li>
         <li><a class="current" href="#indhold" aria-current="page">Projekter</a></li>
@@ -188,105 +71,520 @@
         <li><a href="#foredrag">Foredrag</a></li>
         <li><a href="#materialer">Materialer</a></li>
       </ul>
+
     </nav>
+
   </header>
 
-  <main id="indhold" class="container">
-    <section class="hero" aria-labelledby="sidetitel">
-      <div class="hero-copy">
-        <span class="eyebrow">Et projekt af JeppeO</span>
-        <h1 class="marker-title" id="sidetitel">Innovation <span class="underline">på Jysk</span></h1>
-        <p class="hero-lead">Det begyndte med en podcast. Nu bliver samtalerne til en bog, foredrag og materiale, du kan gå videre med.</p>
 
-        <!-- Formularen virker på Netlify, når sitet er deployet med Netlify Forms aktiveret. -->
+  <!-- =========================================
+       MAIN CONTENT
+  ========================================== -->
+
+  <main id="indhold" class="container">
+
+
+    <!-- =======================================
+         HERO
+    ======================================== -->
+
+    <section class="hero" aria-labelledby="sidetitel">
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">Et projekt af JeppeO</span>
+
+        <h1 class="marker-title" id="sidetitel">
+          Innovation <span class="underline">på Jysk</span>
+        </h1>
+
+        <p class="hero-lead">
+          Det begyndte med en podcast.
+          Nu bliver samtalerne til en bog,
+          foredrag og materiale, du kan gå videre med.
+        </p>
+
+
+        <!-- ===================================
+             FORMSPREE FORMULAR
+        ==================================== -->
+
         <div class="form-card" id="opskrivning">
-          <h2>Skriv dig op til et eksemplar</h2>
-          <p>Få besked, når bogen kan købes. Det er uforpligtende, og du betaler ikke noget nu.</p>
-          <form class="signup-form" name="bog-interesseliste" method="POST" action="./tak.html" data-netlify="true" netlify-honeypot="ekstra-felt" id="bog-formular">
-            <input type="hidden" name="form-name" value="bog-interesseliste" />
-            <div class="honeypot" aria-hidden="true"><label>Udfyld ikke dette felt <input name="ekstra-felt" tabindex="-1" autocomplete="off" /></label></div>
+
+          <h2>Få besked, når bogen kan købes</h2>
+
+          <p>
+            Skriv dig op til at få besked om udgivelsen.
+            Det er uforpligtende, og du betaler ikke noget nu.
+          </p>
+
+          <!-- Erstat DIT_FORM_ID med dit Formspree-ID -->
+
+          <form
+            class="signup-form"
+            id="bog-formular"
+            action="https://formspree.io/f/DIT_FORM_ID"
+            method="POST">
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="Innovation på Jysk - Boginteresse">
+
+            <!-- Spam protection -->
+            <div class="honeypot" aria-hidden="true">
+              <label>
+                Udfyld ikke dette felt
+                <input
+                  name="_gotcha"
+                  type="text"
+                  tabindex="-1"
+                  autocomplete="off">
+              </label>
+            </div>
+
+            <!-- Navn -->
             <div class="field">
+
               <label for="fulde-navn">Navn</label>
-              <input id="fulde-navn" name="navn" type="text" autocomplete="name" placeholder="Dit navn" required maxlength="120" />
+
+              <input
+                id="fulde-navn"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Dit navn"
+                maxlength="120"
+                required>
+
             </div>
+
+            <!-- E-mail -->
             <div class="field">
+
               <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="din@email.dk" required maxlength="254" />
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                placeholder="din@email.dk"
+                maxlength="254"
+                required>
+
             </div>
-            <label class="consent"><input type="checkbox" name="samtykke" value="ja" required /> Jeg vil gerne kontaktes om denne bogs udgivelse. Min tilmelding er uforpligtende.</label>
-            <button class="button button-block" type="submit">Skriv mig op <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+
+            <!-- Samtykke -->
+            <label class="consent">
+
+              <input
+                type="checkbox"
+                name="samtykke"
+                value="ja"
+                required>
+
+              Jeg vil gerne modtage en e-mail, når
+              bogen kan købes. Min tilmelding er
+              uforpligtende.
+
+            </label>
+
+            <!-- Submit -->
+            <button class="button button-block" type="submit">
+
+              Skriv mig op
+
+              <svg viewBox="0 0 24 24"
+                   aria-hidden="true"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path d="M5 12h14m-6-6 6 6-6 6"/>
+              </svg>
+
+            </button>
+
           </form>
-          <p class="form-footnote">Kun besked om bogen. Ikke et nyhedsbrev.</p>
-          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+
+          <p class="form-footnote">
+            Kun besked om bogen.
+            Ikke et nyhedsbrev eller en reservation.
+          </p>
+
+          <p
+            class="form-feedback"
+            id="form-feedback"
+            role="status"
+            aria-live="polite">
+          </p>
+
         </div>
+
       </div>
-      <div class="hero-art" aria-label="JeppeO med et prøvetryk af bogen Innovation på Jysk">
+
+
+      <!-- ===================================
+           HERO IMAGE
+      ==================================== -->
+
+      <div class="hero-art">
+
         <div class="circle-gray" aria-hidden="true"></div>
         <div class="circle-blue" aria-hidden="true"></div>
         <div class="circle-red" aria-hidden="true"></div>
-        <img src="assets/jeppeo-med-bog.png" alt="Jeppe Olander holder prøvetrykket af Innovation på Jysk" width="1536" height="1042" fetchpriority="high" />
-        <svg class="scribble" viewBox="0 0 790 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M0 126C129 104 177 2 355 27c104 15 164 130 292 67 44-22 78-60 140-45" stroke="#0c4168" stroke-width="2.4" stroke-linecap="round"/><path d="M0 134C145 106 208 3 352 33" stroke="#3f79ab" stroke-width="1.3" stroke-linecap="round" opacity=".68"/><path d="m777 38 12 10-17 1" stroke="#0c4168" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <img
+          src="./assets/jeppeo-med-bog.png"
+          alt="Jeppe Olander holder prøvetrykket af Innovation på Jysk"
+          width="1536"
+          height="1042"
+          fetchpriority="high">
+
+        <!-- Decorative line -->
+        <svg
+          class="scribble"
+          viewBox="0 0 790 150"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+
+          <path
+            d="M0 126C129 104 177 2 355 27c104 15 164 130 292 67 44-22 78-60 140-45"
+            stroke="#0c4168"
+            stroke-width="2.4"
+            stroke-linecap="round"/>
+
+          <path
+            d="M0 134C145 106 208 3 352 33"
+            stroke="#3f79ab"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            opacity=".68"/>
+
+          <path
+            d="m777 38 12 10-17 1"
+            stroke="#0c4168"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+
+        </svg>
+
       </div>
+
     </section>
+
+
+    <!-- =======================================
+         FEATURES / PROJEKTETS FIRE DELE
+    ======================================== -->
 
     <section class="features" aria-label="Udforsk Innovation på Jysk">
+
+
+      <!-- ===================================
+           1. PODCAST
+      ==================================== -->
+
       <article class="feature" id="podcast">
-        <div class="feature-illustration" aria-hidden="true"><span class="disk"></span><span class="disk small"></span>
-          <svg viewBox="0 0 100 100"><rect x="37" y="14" width="26" height="53" rx="13"/><path d="M38 25h24M38 36h24M38 47h24M28 46v8a22 22 0 0 0 44 0v-8M50 76v15M34 92h32M15 25l-6-8m72 12 7-7M17 49H7"/></svg>
+
+        <div class="feature-illustration" aria-hidden="true">
+
+          <span class="disk"></span>
+          <span class="disk small"></span>
+
+          <svg viewBox="0 0 100 100">
+            <rect x="37" y="14" width="26" height="53" rx="13"/>
+            <path d="M38 25h24M38 36h24M38 47h24M28 46v8a22 22 0 0 0 44 0v-8M50 76v15M34 92h32M15 25l-6-8m72 12 7-7M17 49H7"/>
+          </svg>
+
         </div>
-        <div class="feature-content"><h2>Podcasten</h2><p>Samtaler med mennesker, der tør tænke anderledes. Første sæson er udgangspunktet for bogen — og du kan høre afsnittene allerede nu.</p></div>
-        <div class="feature-action"><a class="button" href="https://podcasts.apple.com/dk/podcast/innovation-p%C3%A5-jysk/id1767822754" target="_blank" rel="noopener noreferrer">Lyt til podcasten <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+
+        <div class="feature-content">
+
+          <h2>Podcasten</h2>
+
+          <p>
+            Samtaler med mennesker, der tør tænke anderledes.
+            Første sæson er udgangspunktet for bogen --
+            og du kan høre afsnittene allerede nu.
+          </p>
+
+        </div>
+
+        <div class="feature-action">
+
+          <a
+            class="button"
+            href="https://podcasts.apple.com/dk/podcast/innovation-p%C3%A5-jysk/id1767822754"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Lyt til podcasten
+
+            <svg viewBox="0 0 24 24"
+                 aria-hidden="true"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M5 12h14m-6-6 6 6-6 6"/>
+            </svg>
+
+          </a>
+
+        </div>
+
       </article>
+
+
+      <!-- ===================================
+           2. BOGEN
+      ==================================== -->
+
       <article class="feature" id="bogen">
-        <div class="feature-illustration" aria-hidden="true"><span class="disk coral"></span>
-          <svg viewBox="0 0 100 100"><path d="M23 16 75 10l7 73-53 8-6-75Z"/><path d="M28 23 69 18m-39 9 40-5M33 35l29-4M34 42l18-2M22 16l-6 7 6 67 7 2m-4-8 53-8M56 53l4 10 12 3-12 4-4 10-4-10-12-4 12-3 4-10Z"/></svg>
+
+        <div class="feature-illustration" aria-hidden="true">
+
+          <span class="disk coral"></span>
+
+          <svg viewBox="0 0 100 100">
+            <path d="M23 16 75 10l7 73-53 8-6-75Z"/>
+            <path d="M28 23 69 18m-39 9 40-5M33 35l29-4M34 42l18-2M22 16l-6 7 6 67 7 2m-4-8 53-8M56 53l4 10 12 3-12 4-4 10-4-10-12-4 12-3 4-10Z"/>
+          </svg>
+
         </div>
-        <div class="feature-content"><h2>Bogen</h2><p>Historierne fra sæson 1 — kombineret med mine egne erfaringer, refleksioner og konkrete greb til innovation i hverdagen. Første prøvetryk er her.</p></div>
-        <div class="feature-action"><span class="upcoming" aria-label="Bogen kan ikke købes endnu">Køb snart</span><span class="hint">Skriv dig op ovenfor</span></div>
+
+        <div class="feature-content">
+
+          <h2>Bogen</h2>
+
+          <p>
+            Historierne fra sæson 1 -- kombineret med mine egne
+            erfaringer, refleksioner og konkrete greb til innovation
+            i hverdagen. Første prøvetryk er her.
+          </p>
+
+        </div>
+
+        <div class="feature-action">
+
+          <span
+            class="upcoming"
+            aria-label="Bogen kan ikke købes endnu">
+            Køb snart
+          </span>
+
+          <span class="hint">
+            Skriv dig op ovenfor
+          </span>
+
+        </div>
+
       </article>
+
+
+      <!-- ===================================
+           3. FOREDRAG
+      ==================================== -->
+
       <article class="feature" id="foredrag">
-        <div class="feature-illustration" aria-hidden="true"><span class="disk"></span><span class="disk small"></span>
-          <svg viewBox="0 0 100 100"><rect x="13" y="14" width="74" height="52" rx="2"/><path d="M13 26h74M50 66v17m-18 7 18-7 18 7M33 44l12-10 14 15 13-14M34 46l10-9M51 21h1M22 78l-8 8m72-8 7 8"/></svg>
+
+        <div class="feature-illustration" aria-hidden="true">
+
+          <span class="disk"></span>
+          <span class="disk small"></span>
+
+          <svg viewBox="0 0 100 100">
+            <rect x="13" y="14" width="74" height="52" rx="2"/>
+            <path d="M13 26h74M50 66v17m-18 7 18-7 18 7M33 44l12-10 14 15 13-14M34 46l10-9M51 21h1M22 78l-8 8m72-8 7 8"/>
+          </svg>
+
         </div>
-        <div class="feature-content"><h2>Få mig forbi</h2><p>Jeg fortæller historien om, hvordan Innovation på Jysk blev til — fra idé og podcast til bog, fejltrin og læring. Et oplæg med perspektiver, I kan tage med hjem.</p></div>
-        <div class="feature-action"><a class="button" href="https://jeppeo.com/#kontakt">Book et oplæg <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+
+        <div class="feature-content">
+
+          <h2>Få mig forbi</h2>
+
+          <p>
+            Jeg fortæller historien om, hvordan Innovation på Jysk
+            blev til -- fra idé og podcast til bog, fejltrin og læring.
+            Et oplæg med perspektiver, I kan tage med hjem.
+          </p>
+
+        </div>
+
+        <div class="feature-action">
+
+          <a
+            class="button"
+            href="https://jeppeo.com/#kontakt">
+
+            Book et oplæg
+
+            <svg viewBox="0 0 24 24"
+                 aria-hidden="true"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M5 12h14m-6-6 6 6-6 6"/>
+            </svg>
+
+          </a>
+
+        </div>
+
       </article>
+
+
+      <!-- ===================================
+           4. DIGITALT MATERIALE
+      ==================================== -->
+
       <article class="feature" id="materialer">
-        <div class="feature-illustration" aria-hidden="true"><span class="disk coral"></span><span class="disk small" style="background:#91b1cc"></span>
-          <svg viewBox="0 0 100 100"><rect x="14" y="16" width="72" height="51" rx="4"/><path d="M8 82h84l-10-13H18L8 82ZM40 75h20M34 39l-6 8 6 8M66 39l6 8-6 8M58 32 44 62M23 24h54"/></svg>
+
+        <div class="feature-illustration" aria-hidden="true">
+
+          <span class="disk coral"></span>
+          <span class="disk small" style="background:#91b1cc"></span>
+
+          <svg viewBox="0 0 100 100">
+            <rect x="14" y="16" width="72" height="51" rx="4"/>
+            <path d="M8 82h84l-10-13H18L8 82ZM40 75h20M34 39l-6 8 6 8M66 39l6 8-6 8M58 32 44 62M23 24h54"/>
+          </svg>
+
         </div>
-        <div class="feature-content"><h2>Digitalt materiale</h2><p>Her samler jeg de begreber, referencer og værktøjer, der hører til projektet. Du kan dykke videre ned i emnerne, når materialet bliver lagt op.</p></div>
-        <div class="feature-action"><span class="upcoming" aria-label="Digitalt materiale er ikke klar endnu">Kommer snart</span></div>
+
+        <div class="feature-content">
+
+          <h2>Digitalt materiale</h2>
+
+          <p>
+            Her samler jeg de begreber, referencer og værktøjer,
+            der hører til projektet. Du kan dykke videre ned
+            i emnerne, når materialet bliver lagt op.
+          </p>
+
+        </div>
+
+        <div class="feature-action">
+
+          <span
+            class="upcoming"
+            aria-label="Digitalt materiale er ikke klar endnu">
+
+            Kommer snart
+
+          </span>
+
+        </div>
+
       </article>
+
     </section>
+
   </main>
 
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
   <footer class="footer container">
-    <div class="foot-brand">Jeppe<span>O</span></div>
-    <p>Et personligt projekt. Flere historier er på vej.</p>
-    <p>Virksomhedsudvikling? <a href="https://bluetrampoline.com/" target="_blank" rel="noopener noreferrer">Blue Trampoline</a></p>
+
+    <div class="foot-brand">
+      Jeppe<span>O</span>
+    </div>
+
+    <p>
+      Et personligt projekt. Flere historier er på vej.
+    </p>
+
+    <p>
+      Virksomhedsudvikling?
+      <a
+        href="https://bluetrampoline.com/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Blue Trampoline
+      </a>
+    </p>
+
   </footer>
+
+
+  <!-- =========================================
+       JAVASCRIPT
+       Mobile navigation
+  ========================================== -->
+
   <script>
-    const toggle = document.getElementById('menu-toggle');
-    const navigation = document.getElementById('navigation');
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') !== 'true';
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Luk menu' : 'Åbn menu');
-      navigation.classList.toggle('open', open);
+
+    const toggle = document.getElementById("menu-toggle");
+    const navigation = document.getElementById("navigation");
+
+    // Open / close mobile menu
+    toggle.addEventListener("click", () => {
+
+      const isOpen =
+        toggle.getAttribute("aria-expanded") === "true";
+
+      toggle.setAttribute(
+        "aria-expanded",
+        String(!isOpen)
+      );
+
+      toggle.setAttribute(
+        "aria-label",
+        isOpen ? "Åbn menu" : "Luk menu"
+      );
+
+      navigation.classList.toggle("open", !isOpen);
+
     });
-    navigation.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      navigation.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }));
-    document.getElementById('bog-formular').addEventListener('submit', (event) => {
-      if (window.location.protocol === 'file:') {
+
+    // Close mobile menu after navigation
+    navigation.querySelectorAll("a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navigation.classList.remove("open");
+
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Åbn menu");
+
+      });
+
+    });
+
+    // Prevent submitting before Formspree is configured
+    const bookForm = document.getElementById("bog-formular");
+
+    bookForm.addEventListener("submit", event => {
+
+      if (bookForm.action.includes("DIT_FORM_ID")) {
+
         event.preventDefault();
-        const feedback = document.getElementById('form-feedback');
-        feedback.textContent = 'Dette er en lokal forhåndsvisning. Formularen kan modtage tilmeldinger, når siden er udgivet på Netlify med Forms aktiveret.';
-        feedback.classList.add('visible');
+
+        const feedback = document.getElementById("form-feedback");
+
+        feedback.textContent =
+          "Formularen er ikke aktiveret endnu.";
+
+        feedback.classList.add("visible");
+
       }
+
     });
+
   </script>
+
 </body>
 </html>
