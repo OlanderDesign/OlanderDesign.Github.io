@@ -580,6 +580,63 @@ a {
   display: block;
 }
 
+/* Location choices */
+
+.location-options {
+  display: grid;
+  gap: 8px;
+
+  margin: 8px 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.location-options legend {
+  margin-bottom: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.location-options label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.location-options input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+
+  accent-color: var(--navy);
+}
+
+/* Dropdown */
+
+.field select {
+  width: 100%;
+  min-height: 43px;
+
+  padding: 10px 12px;
+
+  font: inherit;
+  color: var(--ink);
+  background: white;
+
+  border: 1px solid #a2a29c;
+  border-radius: 5px;
+}
+
+.field select:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 0;
+}
+
 
 /* ==========================================
    7. BUTTONS

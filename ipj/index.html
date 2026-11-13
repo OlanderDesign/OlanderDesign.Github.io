@@ -175,6 +175,54 @@
                 required>
 
             </div>
+            
+            <!-- HVOR BOR DU? -->
+            <fieldset class="location-options">
+              <legend>Hvor bor du?</legend>
+
+              <label>
+                <input
+                  type="radio"
+                  name="omraade"
+                  value="Esbjerg og omegn"
+                  required>
+                Esbjerg og omegn
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  name="omraade"
+                  value="Resten af Danmark">
+                Resten af Danmark
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  name="omraade"
+                  value="Uden for Danmark">
+                Uden for Danmark
+              </label>
+            </fieldset>
+
+
+            <!-- HVORDAN HØRTE DU OM BOGEN? -->
+            <div class="field">
+
+              <label for="kilde">
+                Hvordan hørte du om bogen? (valgfrit)
+              </label>
+
+              <select id="kilde" name="kilde">
+                <option value="">Vælg...</option>
+                <option value="Podcasten">Podcasten</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Ven eller kollega">Ven eller kollega</option>
+                <option value="Andet">Andet</option>
+              </select>
+
+            </div>
 
             <!-- Samtykke -->
             <label class="consent">
@@ -185,9 +233,7 @@
                 value="ja"
                 required>
 
-              Jeg vil gerne modtage en e-mail, når
-              bogen kan købes. Min tilmelding er
-              uforpligtende.
+              Jeg vil gerne kontaktes på e-mail om bogens udgivelse og købsmuligheder, herunder lokal overlevering, hvis det er relevant.
 
             </label>
 
